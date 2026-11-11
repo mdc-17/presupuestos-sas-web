@@ -40,10 +40,6 @@ li { margin: 4px 0; }
 .meta { color: var(--ink-2); font-size: .9em; }
 .reglas { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; padding: 0; list-style: none; }
 .reglas li { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 12px 14px; margin: 0; }
-.graficos { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
-figure { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 8px; }
-figure img { width: 100%; height: auto; display: block; background: #fff; }
-figcaption { font-size: .9em; color: var(--ink-2); margin-top: 6px; word-break: break-word; }
 footer { margin-top: 48px; color: var(--ink-2); font-size: .9em; border-top: 1px solid var(--line); padding-top: 16px; }
 code { font-size: .9em; }
 </style>
@@ -62,22 +58,6 @@ code { font-size: .9em; }
 <li><strong>Presupuestado y ejecutado.</strong> Crédito inicial, crédito definitivo, obligaciones reconocidas y grado de ejecución.</li>
 <li><strong>Trazabilidad.</strong> Cada cifra con su documento de origen, fecha de descarga y fiabilidad (<code>OFICIAL_PRIMARIA</code>, <code>OFICIAL_SECUNDARIA</code>, <code>DERIVADO</code>, <code>NO_DISPONIBLE</code>).</li>
 </ul>
-
-<h2>Informes</h2>
-<ul>
-<li><a href="analisis/2026-11-10_presupuestado_ejecutado_sanidad_2020_2025.html">Sanidad pública andaluza 2020-2025: presupuestado frente a ejecutado</a> <span class="meta">(2026-11-10)</span></li>
-<li><a href="analisis/2026-11-10_presupuestado_ejecutado_sanidad_2010_2025.html">Sanidad pública andaluza 2010-2025: presupuestado frente a ejecutado (serie larga)</a> <span class="meta">(2026-11-10)</span></li>
-<li><a href="analisis/2026-11-10_fondos_extraordinarios_sanidad_2020_2025.html">Fondos extraordinarios en la sanidad pública andaluza, 2020-2025</a> <span class="meta">(2026-11-10)</span></li>
-</ul>
-
-<h2>Gráficos</h2>
-<div class="graficos">
-<figure><a href="graficos/fondos_extraordinarios_2010_2025.png"><img src="graficos/fondos_extraordinarios_2010_2025.png" alt="fondos_extraordinarios_2010_2025" loading="lazy"></a><figcaption>fondos_extraordinarios_2010_2025 · <a href="graficos/fondos_extraordinarios_2010_2025.svg">SVG</a> · <a href="graficos/fondos_extraordinarios_2010_2025.csv">datos (CSV)</a></figcaption></figure>
-<figure><a href="graficos/sanidad_cap6_fases_2010_2025.png"><img src="graficos/sanidad_cap6_fases_2010_2025.png" alt="sanidad_cap6_fases_2010_2025" loading="lazy"></a><figcaption>sanidad_cap6_fases_2010_2025 · <a href="graficos/sanidad_cap6_fases_2010_2025.svg">SVG</a> · <a href="graficos/sanidad_cap6_fases_2010_2025.csv">datos (CSV)</a></figcaption></figure>
-<figure><a href="graficos/sanidad_cap6_fases_2020_2025.png"><img src="graficos/sanidad_cap6_fases_2020_2025.png" alt="sanidad_cap6_fases_2020_2025" loading="lazy"></a><figcaption>sanidad_cap6_fases_2020_2025 · <a href="graficos/sanidad_cap6_fases_2020_2025.svg">SVG</a> · <a href="graficos/sanidad_cap6_fases_2020_2025.csv">datos (CSV)</a></figcaption></figure>
-<figure><a href="graficos/sanidad_total_fases_2010_2025.png"><img src="graficos/sanidad_total_fases_2010_2025.png" alt="sanidad_total_fases_2010_2025" loading="lazy"></a><figcaption>sanidad_total_fases_2010_2025 · <a href="graficos/sanidad_total_fases_2010_2025.svg">SVG</a> · <a href="graficos/sanidad_total_fases_2010_2025.csv">datos (CSV)</a></figcaption></figure>
-<figure><a href="graficos/sanidad_total_fases_2020_2025.png"><img src="graficos/sanidad_total_fases_2020_2025.png" alt="sanidad_total_fases_2020_2025" loading="lazy"></a><figcaption>sanidad_total_fases_2020_2025 · <a href="graficos/sanidad_total_fases_2020_2025.svg">SVG</a> · <a href="graficos/sanidad_total_fases_2020_2025.csv">datos (CSV)</a></figcaption></figure>
-</div>
 
 <h2>Datos descargables (CSV)</h2>
 <p class="meta">Formato largo; columnas descritas en <a href="data/processed/LEEME.html">la descripción de los datos</a>. Documentos de origen, con URL oficial y huella sha256: <a href="data/catalogo_fuentes.csv">catálogo de fuentes</a>.</p>
