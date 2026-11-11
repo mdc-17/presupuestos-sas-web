@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Presupuestos sanidad Andalucía</title>
+<meta name="description" content="Presupuestos de la Consejería de Salud y del Servicio Andaluz de Salud 2010-2025: datos oficiales, presupuestado frente a ejecutado, con fuente y nivel de fiabilidad.">
+<!-- Plantilla de la portada pública. La rellena scripts/publicacion/publicar_web.py; no editar el index.html generado. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg: #fbfaf7; --surface: #ffffff; --ink: #1f1b16; --ink-2: #5d554b;
+  --line: #e3ddd2; --accent: #2c6a66;
+  --font-display: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-body: "Source Sans 3", "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1b1a17; --surface: #23221e; --ink: #ede7dd; --ink-2: #b4ab9d; --line: #3b3832; --accent: #7fc1b9;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #1b1a17; --surface: #23221e; --ink: #ede7dd; --ink-2: #b4ab9d; --line: #3b3832; --accent: #7fc1b9;
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--bg); color: var(--ink); font: 17px/1.55 var(--font-body); }
+main { max-width: 980px; margin: 0 auto; padding: 32px 16px 64px; }
+h1, h2 { font-family: var(--font-display); line-height: 1.2; }
+h1 { font-size: clamp(1.7rem, 4vw, 2.4rem); margin: 0 0 8px; }
+h2 { font-size: 1.35rem; margin: 40px 0 12px; padding-top: 16px; border-top: 1px solid var(--line); }
+p.lead { color: var(--ink-2); margin: 0 0 20px; max-width: 70ch; }
+a { color: var(--accent); }
+.cta { display: inline-block; padding: 12px 18px; border-radius: 6px; background: var(--accent); color: var(--bg);
+       text-decoration: none; font-weight: 600; }
+.cta:hover { opacity: .9; }
+ul { padding-left: 1.2em; }
+li { margin: 4px 0; }
+.meta { color: var(--ink-2); font-size: .9em; }
+.reglas { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; padding: 0; list-style: none; }
+.reglas li { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 12px 14px; margin: 0; }
+.graficos { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 16px; }
+figure { margin: 0; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 8px; }
+figure img { width: 100%; height: auto; display: block; background: #fff; }
+figcaption { font-size: .9em; color: var(--ink-2); margin-top: 6px; word-break: break-word; }
+footer { margin-top: 48px; color: var(--ink-2); font-size: .9em; border-top: 1px solid var(--line); padding-top: 16px; }
+code { font-size: .9em; }
+</style>
+</head>
+<body>
+<main>
+<h1>Presupuestos de la sanidad pública andaluza, 2010-2025</h1>
+<p class="lead">Presupuestos de la Consejería de Salud de la Junta de Andalucía y del Servicio Andaluz de Salud (SAS), a partir de documentos oficiales. Cada cifra distingue lo presupuestado de lo ejecutado e indica su fuente y su nivel de fiabilidad.</p>
+<p><a class="cta" href="web/">Abrir la consulta interactiva</a></p>
+<p class="meta">Permite comparar cualquier partida entre años por ámbito, programa y capítulo, en euros corrientes, euros constantes de 2025 y por habitante.</p>
+
+<h2>Criterios</h2>
+<ul class="reglas">
+<li><strong>Solo datos.</strong> Sin valoraciones ni atribución de intenciones.</li>
+<li><strong>Serie completa.</strong> La misma métrica y fórmula para todos los años.</li>
+<li><strong>Presupuestado y ejecutado.</strong> Crédito inicial, crédito definitivo, obligaciones reconocidas y grado de ejecución.</li>
+<li><strong>Trazabilidad.</strong> Cada cifra con su documento de origen, fecha de descarga y fiabilidad (<code>OFICIAL_PRIMARIA</code>, <code>OFICIAL_SECUNDARIA</code>, <code>DERIVADO</code>, <code>NO_DISPONIBLE</code>).</li>
+</ul>
+
+<h2>Informes</h2>
+<ul>
+<li><a href="analisis/2026-11-10_presupuestado_ejecutado_sanidad_2020_2025.html">Sanidad pública andaluza 2020-2025: presupuestado frente a ejecutado</a> <span class="meta">(2026-11-10)</span></li>
+<li><a href="analisis/2026-11-10_presupuestado_ejecutado_sanidad_2010_2025.html">Sanidad pública andaluza 2010-2025: presupuestado frente a ejecutado (serie larga)</a> <span class="meta">(2026-11-10)</span></li>
+<li><a href="analisis/2026-11-10_fondos_extraordinarios_sanidad_2020_2025.html">Fondos extraordinarios en la sanidad pública andaluza, 2020-2025</a> <span class="meta">(2026-11-10)</span></li>
+</ul>
+
+<h2>Gráficos</h2>
+<div class="graficos">
+<figure><a href="graficos/fondos_extraordinarios_2010_2025.png"><img src="graficos/fondos_extraordinarios_2010_2025.png" alt="fondos_extraordinarios_2010_2025" loading="lazy"></a><figcaption>fondos_extraordinarios_2010_2025 · <a href="graficos/fondos_extraordinarios_2010_2025.svg">SVG</a> · <a href="graficos/fondos_extraordinarios_2010_2025.csv">datos (CSV)</a></figcaption></figure>
+<figure><a href="graficos/sanidad_cap6_fases_2010_2025.png"><img src="graficos/sanidad_cap6_fases_2010_2025.png" alt="sanidad_cap6_fases_2010_2025" loading="lazy"></a><figcaption>sanidad_cap6_fases_2010_2025 · <a href="graficos/sanidad_cap6_fases_2010_2025.svg">SVG</a> · <a href="graficos/sanidad_cap6_fases_2010_2025.csv">datos (CSV)</a></figcaption></figure>
+<figure><a href="graficos/sanidad_cap6_fases_2020_2025.png"><img src="graficos/sanidad_cap6_fases_2020_2025.png" alt="sanidad_cap6_fases_2020_2025" loading="lazy"></a><figcaption>sanidad_cap6_fases_2020_2025 · <a href="graficos/sanidad_cap6_fases_2020_2025.svg">SVG</a> · <a href="graficos/sanidad_cap6_fases_2020_2025.csv">datos (CSV)</a></figcaption></figure>
+<figure><a href="graficos/sanidad_total_fases_2010_2025.png"><img src="graficos/sanidad_total_fases_2010_2025.png" alt="sanidad_total_fases_2010_2025" loading="lazy"></a><figcaption>sanidad_total_fases_2010_2025 · <a href="graficos/sanidad_total_fases_2010_2025.svg">SVG</a> · <a href="graficos/sanidad_total_fases_2010_2025.csv">datos (CSV)</a></figcaption></figure>
+<figure><a href="graficos/sanidad_total_fases_2020_2025.png"><img src="graficos/sanidad_total_fases_2020_2025.png" alt="sanidad_total_fases_2020_2025" loading="lazy"></a><figcaption>sanidad_total_fases_2020_2025 · <a href="graficos/sanidad_total_fases_2020_2025.svg">SVG</a> · <a href="graficos/sanidad_total_fases_2020_2025.csv">datos (CSV)</a></figcaption></figure>
+</div>
+
+<h2>Datos descargables (CSV)</h2>
+<p class="meta">Formato largo; columnas descritas en <a href="data/processed/LEEME.html">la descripción de los datos</a>. Documentos de origen, con URL oficial y huella sha256: <a href="data/catalogo_fuentes.csv">catálogo de fuentes</a>.</p>
+<ul>
+<li><a href="data/processed/fondos_extraordinarios_2020_2025.csv">fondos_extraordinarios_2020_2025.csv</a></li>
+<li><a href="data/processed/ipc_andalucia_anual.csv">ipc_andalucia_anual.csv</a></li>
+<li><a href="data/processed/liquidacion_consejeria_sas_2020_2025.csv">liquidacion_consejeria_sas_2020_2025.csv</a></li>
+<li><a href="data/processed/liquidacion_consolidada_junta_2010_2025.csv">liquidacion_consolidada_junta_2010_2025.csv</a></li>
+<li><a href="data/processed/metricas_sanidad_2010_2025.csv">metricas_sanidad_2010_2025.csv</a></li>
+<li><a href="data/processed/poblacion_andalucia.csv">poblacion_andalucia.csv</a></li>
+<li><a href="data/processed/sanidad_programas_2010_2025.csv">sanidad_programas_2010_2025.csv</a></li>
+<li><a href="data/processed/sanidad_sin_fondos_extraordinarios_2010_2025.csv">sanidad_sin_fondos_extraordinarios_2010_2025.csv</a></li>
+</ul>
+
+<h2>Metodología y fuentes</h2>
+<ul>
+<li><a href="docs/METODOLOGIA.html">Metodología: definiciones, fórmulas, deflactor y criterios</a></li>
+<li><a href="docs/FUENTES.html">Fuentes oficiales y cómo se obtienen</a></li>
+<li><a href="docs/INCIDENCIAS_DATOS.html">Incidencias: huecos, discrepancias, prórrogas y cambios de estructura</a></li>
+<li><a href="docs/GLOSARIO.html">Glosario de términos presupuestarios</a></li>
+<li><a href="data/processed/LEEME.html">Descripción de cada fichero de datos</a></li>
+</ul>
+
+<footer>
+Versión de los datos: <code>bd505db</code> (2026-11-11) · Publicado el 2026-11-11.<br>
+Proyecto en curso: solo se publican análisis revisados. Los documentos originales se enlazan por su URL oficial en el catálogo de fuentes.
+</footer>
+</main>
+</body>
+</html>

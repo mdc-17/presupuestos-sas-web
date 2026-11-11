@@ -1,0 +1,1017 @@
+<!doctype html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Presupuesto sanitario andaluz</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&display=swap">
+<!--
+  Página de consulta de los datos del proyecto (web/index.html).
+  Los datos vienen de web/datos.js, generado por scripts/web/generar_datos_web.py
+  a partir de data/processed/. Para actualizarla: volver a ejecutar ese script.
+-->
+<style>
+/* Maqueta: herramienta de consulta. Barra de filtros arriba; gráfico de la serie
+   completa con panel de comparación A/B al lado; tablas de desglose, datos, notas y fuentes debajo.
+   Paleta de una sola tinta (sin colores asociables a partidos; las variaciones no se colorean). */
+:root {
+  --bg: #fbfaf7;
+  --surface: #ffffff;
+  --ink: #1f1b16;
+  --ink-2: #5d554b;
+  --line: #e3ddd2;
+  --line-2: #efeae1;
+  --f1: #b9ab95;      /* fase: crédito inicial */
+  --f2: #86765f;      /* fase: crédito definitivo */
+  --f3: #3f3529;      /* fase: obligaciones reconocidas */
+  --accent: #2c6a66;  /* solo para controles e interacción */
+  --band: rgba(44, 106, 102, 0.09);
+  --font-display: "Source Serif 4", Georgia, "Times New Roman", serif;
+  --font-body: "Source Sans 3", "Segoe UI", system-ui, -apple-system, sans-serif;
+  --radius: 6px;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1b1a17; --surface: #23221e; --ink: #ede7dd; --ink-2: #b4ab9d;
+    --line: #3b3832; --line-2: #2d2b27;
+    --f1: #6b604f; --f2: #a8977d; --f3: #e3d6bf;
+    --accent: #7fc1b9; --band: rgba(127, 193, 185, 0.10);
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #1b1a17; --surface: #23221e; --ink: #ede7dd; --ink-2: #b4ab9d;
+  --line: #3b3832; --line-2: #2d2b27;
+  --f1: #6b604f; --f2: #a8977d; --f3: #e3d6bf;
+  --accent: #7fc1b9; --band: rgba(127, 193, 185, 0.10);
+  color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+body {
+  margin: 0; background: var(--bg); color: var(--ink);
+  font: 15px/1.5 var(--font-body);
+  padding-block: 0 48px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+}
+.contenedor { max-width: 1200px; margin: 0 auto; display: grid; gap: 28px; }
+h1, h2, h3 { font-family: var(--font-display); text-wrap: balance; margin: 0; line-height: 1.2; }
+h1 { font-size: clamp(1.6rem, 3.2vw, 2.2rem); font-weight: 700; }
+h2 { font-size: 1.3rem; font-weight: 600; }
+h3 { font-size: 1.02rem; font-weight: 600; }
+p { margin: 0; }
+a { color: var(--accent); }
+.num { font-variant-numeric: tabular-nums; }
+.etiqueta { font-size: 0.74rem; letter-spacing: 0.06em; text-transform: uppercase; color: var(--ink-2); font-weight: 600; }
+.secundario { color: var(--ink-2); }
+
+/* Cabecera */
+header.cabecera { padding-top: 28px; display: grid; gap: 10px; border-bottom: 1px solid var(--line); padding-bottom: 20px; }
+header.cabecera p { max-width: 72ch; color: var(--ink-2); }
+.sello { display: inline-flex; gap: 8px; flex-wrap: wrap; }
+.chip {
+  display: inline-block; padding: 2px 8px; border: 1px solid var(--line); border-radius: 999px;
+  font-size: 0.75rem; font-weight: 600; letter-spacing: 0.03em; color: var(--ink-2); background: var(--surface);
+  white-space: nowrap;
+}
+
+/* Filtros */
+.filtros {
+  display: grid; grid-template-columns: minmax(0, 2.2fr) minmax(0, 1.6fr) minmax(0, 1.2fr);
+  gap: 14px 18px; align-items: end;
+}
+.campo { display: grid; gap: 5px; min-width: 0; }
+.campo label, .campo .etiqueta { display: block; }
+select {
+  width: 100%; font: inherit; color: var(--ink); background: var(--surface);
+  border: 1px solid var(--line); border-radius: var(--radius); padding: 7px 10px; min-height: 38px;
+}
+select:disabled { opacity: 0.55; }
+.fila-2 { grid-column: 1 / -1; display: flex; flex-wrap: wrap; gap: 14px 28px; align-items: end; }
+.segmentado { display: inline-flex; flex-wrap: wrap; border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; background: var(--surface); }
+.segmentado button {
+  font: inherit; font-size: 0.88rem; border: 0; background: transparent; color: var(--ink);
+  padding: 7px 12px; cursor: pointer; border-right: 1px solid var(--line);
+}
+.segmentado button:last-child { border-right: 0; }
+.segmentado button[aria-pressed="true"] { background: var(--ink); color: var(--bg); }
+.segmentado button:disabled { color: var(--ink-2); opacity: 0.5; cursor: not-allowed; }
+.fases { display: inline-flex; gap: 8px; flex-wrap: wrap; }
+.fase-chip {
+  display: inline-flex; align-items: center; gap: 7px; font: inherit; font-size: 0.88rem; cursor: pointer;
+  border: 1px solid var(--line); background: var(--surface); color: var(--ink); border-radius: 999px; padding: 5px 12px 5px 9px;
+}
+.fase-chip .muestra { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+.fase-chip[aria-pressed="false"] { color: var(--ink-2); }
+.fase-chip[aria-pressed="false"] .muestra { opacity: 0.25; }
+.fase-chip:disabled { opacity: 0.45; cursor: not-allowed; }
+button:focus-visible, select:focus-visible, [tabindex]:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.descripcion { font-size: 0.92rem; color: var(--ink-2); max-width: 90ch; }
+
+/* Bloque principal: gráfico + comparación */
+.principal { display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 24px; align-items: start; }
+.panel { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 18px; min-width: 0; }
+.titulo-grafico { display: grid; gap: 4px; margin-bottom: 10px; }
+.leyenda { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 0.85rem; color: var(--ink-2); margin-bottom: 6px; }
+.leyenda span { display: inline-flex; align-items: center; gap: 6px; }
+.leyenda i { width: 12px; height: 12px; border-radius: 3px; display: inline-block; }
+.leyenda .punto { width: 6px; height: 6px; border-radius: 50%; background: var(--ink-2); }
+.grafico-scroll { overflow-x: auto; position: relative; }
+.grafico { position: relative; min-width: 360px; }
+svg text { fill: var(--ink-2); font-family: var(--font-body); }
+.tooltip {
+  position: absolute; pointer-events: none; z-index: 5; background: var(--surface); color: var(--ink);
+  border: 1px solid var(--line); border-radius: var(--radius); padding: 10px 12px; font-size: 0.85rem;
+  box-shadow: 0 6px 22px rgba(0,0,0,0.12); min-width: 210px; max-width: 290px;
+}
+.tooltip .t-año { font-weight: 700; margin-bottom: 4px; }
+.tooltip .t-fila { display: grid; grid-template-columns: 14px 1fr auto; gap: 6px; align-items: center; }
+.tooltip .t-fila b { font-variant-numeric: tabular-nums; }
+.tooltip .t-key { height: 2px; width: 12px; }
+.tooltip .t-nota { margin-top: 6px; color: var(--ink-2); font-size: 0.78rem; line-height: 1.35; }
+.pie-grafico { font-size: 0.8rem; color: var(--ink-2); margin-top: 6px; }
+
+/* Comparación A/B */
+.comparar { display: grid; gap: 14px; }
+.comparar .selectores { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+.comparar .selectores .ancho { grid-column: 1 / -1; }
+.cifras { display: grid; grid-template-columns: 1fr 1fr; gap: 1px; background: var(--line); border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
+.cifras > div { background: var(--surface); padding: 10px 12px; display: grid; gap: 2px; min-width: 0; }
+.cifras .valor { font-size: 1.25rem; font-weight: 700; font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.cifras .sub { font-size: 0.8rem; color: var(--ink-2); font-variant-numeric: tabular-nums; }
+.mini-tabla { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+.mini-tabla th, .mini-tabla td { padding: 5px 4px; white-space: nowrap; border-bottom: 1px solid var(--line-2); text-align: right; font-variant-numeric: tabular-nums; }
+.mini-tabla th:first-child, .mini-tabla td:first-child { text-align: left; }
+.mini-tabla th { font-weight: 600; color: var(--ink-2); font-size: 0.78rem; }
+
+/* Tablas */
+.seccion { display: grid; gap: 12px; }
+.seccion-cab { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 16px; }
+.tabla-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+table.datos { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
+table.datos th, table.datos td { padding: 8px 12px; border-bottom: 1px solid var(--line-2); text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
+table.datos th:first-child, table.datos td:first-child { text-align: left; }
+table.datos thead th { font-size: 0.78rem; letter-spacing: 0.03em; color: var(--ink-2); font-weight: 600; background: var(--bg); position: sticky; top: 0; }
+table.datos tbody tr:last-child td { border-bottom: 0; }
+table.datos tr.total td { font-weight: 700; }
+table.datos tr.activa td { background: var(--band); }
+table.datos tr.clicable { cursor: pointer; }
+table.datos tr.clicable:hover td { background: var(--band); }
+table.datos td.nombre { white-space: normal; min-width: 240px; text-align: left; }
+.nd { color: var(--ink-2); font-size: 0.78rem; letter-spacing: 0.02em; }
+.barras-ab { display: grid; gap: 3px; width: 120px; }
+.barras-ab i { display: block; height: 6px; border-radius: 0 3px 3px 0; min-width: 1px; }
+
+/* Desplegables (notas y glosario) */
+details.plegable { border-bottom: 1px solid var(--line-2); }
+details.plegable > summary {
+  cursor: pointer; list-style: none; display: grid; grid-template-columns: 16px 56px minmax(0, 1fr);
+  gap: 10px; align-items: baseline; padding: 9px 0; font-size: 0.92rem;
+}
+details.plegable > summary::-webkit-details-marker { display: none; }
+details.plegable > summary::before { content: "▸"; color: var(--ink-2); transition: transform 120ms; display: inline-block; }
+details.plegable[open] > summary::before { transform: rotate(90deg); }
+details.plegable > summary b { font-variant-numeric: tabular-nums; }
+details.plegable > summary .resumen { color: var(--ink-2); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; min-width: 0; }
+details.plegable[open] > summary .resumen { white-space: normal; }
+details.plegable .cuerpo { padding: 0 0 12px 26px; display: grid; gap: 6px; color: var(--ink-2); font-size: 0.9rem; max-width: 95ch; }
+details.plegable .cuerpo p { margin: 0; }
+details.glosario > summary { grid-template-columns: 16px minmax(0, 1fr); font-weight: 600; font-family: var(--font-display); font-size: 1.02rem; }
+.glosario dl { margin: 0; display: grid; gap: 8px; }
+.glosario dl div { display: grid; grid-template-columns: minmax(140px, 260px) minmax(0, 1fr); gap: 4px 16px; }
+.glosario dt { font-weight: 600; color: var(--ink); }
+.glosario dd { margin: 0; }
+.glosario .fuente-desc { font-size: 0.78rem; }
+.botones-texto { display: inline-flex; gap: 12px; }
+.botones-texto button { font: inherit; font-size: 0.85rem; color: var(--accent); background: none; border: 0; padding: 0; cursor: pointer; text-decoration: underline; text-underline-offset: 2px; }
+details.notas-comparar > summary { cursor: pointer; font-size: 0.82rem; color: var(--ink-2); }
+details.notas-comparar .cuerpo { display: grid; gap: 4px; font-size: 0.8rem; color: var(--ink-2); margin-top: 6px; }
+details.notas-comparar .cuerpo p { margin: 0; }
+/* Explicación llana de la selección */
+.explica { display: grid; gap: 8px; background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 14px 16px; }
+.explica .linea { display: grid; grid-template-columns: 92px minmax(0, 1fr); gap: 12px; font-size: 0.92rem; }
+.explica .linea span:last-child { color: var(--ink); }
+.explica details { font-size: 0.85rem; color: var(--ink-2); }
+.explica details summary { cursor: pointer; }
+.desc-fila { display: block; font-size: 0.78rem; color: var(--ink-2); font-weight: 400; margin-top: 2px; max-width: 60ch; }
+@media (max-width: 560px) { .explica .linea, .glosario dl div { grid-template-columns: minmax(0, 1fr); gap: 2px; } }
+.metodo { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px 24px; font-size: 0.9rem; }
+.metodo div { display: grid; gap: 3px; align-content: start; }
+.metodo p { color: var(--ink-2); }
+footer { font-size: 0.82rem; color: var(--ink-2); border-top: 1px solid var(--line); padding-top: 16px; }
+
+@media (max-width: 900px) {
+  .principal { grid-template-columns: minmax(0, 1fr); }
+  .filtros { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .filtros .campo:first-child { grid-column: 1 / -1; }
+}
+@media (max-width: 560px) {
+  .filtros { grid-template-columns: minmax(0, 1fr); }
+  .segmentado button { padding: 7px 9px; font-size: 0.82rem; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .grafico svg rect.barra, .grafico svg path.barra { transition: opacity 120ms; }
+}
+</style>
+
+<div class="contenedor">
+  <header class="cabecera">
+    <span class="etiqueta">Sanidad pública andaluza · Consejería de Salud y Servicio Andaluz de Salud (SAS)</span>
+    <h1>Presupuesto sanitario andaluz, 2010-2025</h1>
+    <p>Crédito inicial, crédito definitivo y obligaciones reconocidas según la Cuenta General de la Junta de Andalucía. Elija un ámbito, un programa o un capítulo y compare cualquier par de años. Se muestra siempre la serie completa disponible.</p>
+    <div class="sello">
+      <span class="chip">Fuente: Intervención General · Cuenta General</span>
+      <span class="chip">IPC y padrón: INE</span>
+      <span class="chip" id="chip-generado">Datos generados: —</span>
+    </div>
+  </header>
+
+  <section class="filtros" aria-label="Filtros">
+    <div class="campo">
+      <label class="etiqueta" for="sel-ambito">Ámbito</label>
+      <select id="sel-ambito"></select>
+    </div>
+    <div class="campo">
+      <label class="etiqueta" for="sel-partida">Programa</label>
+      <select id="sel-partida"></select>
+    </div>
+    <div class="campo">
+      <label class="etiqueta" for="sel-capitulo">Capítulo</label>
+      <select id="sel-capitulo"></select>
+    </div>
+    <div class="fila-2">
+      <div class="campo">
+        <span class="etiqueta" id="lbl-lectura">Lectura de las cifras</span>
+        <div class="segmentado" id="lecturas" role="group" aria-labelledby="lbl-lectura"></div>
+      </div>
+      <div class="campo">
+        <span class="etiqueta" id="lbl-fases">Fases en el gráfico</span>
+        <div class="fases" id="fases" role="group" aria-labelledby="lbl-fases"></div>
+      </div>
+    </div>
+    <div class="explica" id="explica" style="grid-column: 1 / -1" aria-live="polite"></div>
+  </section>
+
+  <section class="principal">
+    <div class="panel">
+      <div class="titulo-grafico">
+        <h2 id="titulo-grafico">—</h2>
+        <p class="secundario" id="subtitulo-grafico"></p>
+      </div>
+      <div class="leyenda" id="leyenda"></div>
+      <div class="grafico-scroll">
+        <div class="grafico" id="grafico"></div>
+      </div>
+      <p class="pie-grafico" id="pie-grafico"></p>
+    </div>
+
+    <aside class="panel comparar" aria-labelledby="titulo-comparar">
+      <h2 id="titulo-comparar">Comparar dos años</h2>
+      <div class="selectores">
+        <div class="campo">
+          <label class="etiqueta" for="sel-a">Año A</label>
+          <select id="sel-a"></select>
+        </div>
+        <div class="campo">
+          <label class="etiqueta" for="sel-b">Año B</label>
+          <select id="sel-b"></select>
+        </div>
+        <div class="campo ancho">
+          <label class="etiqueta" for="sel-fase">Fase que se compara</label>
+          <select id="sel-fase"></select>
+        </div>
+      </div>
+      <div class="cifras" id="cifras"></div>
+      <table class="mini-tabla" id="mini-tabla"></table>
+      <div id="nota-comparar"></div>
+    </aside>
+  </section>
+
+  <section class="seccion" id="sec-desglose-cap">
+    <div class="seccion-cab">
+      <h2 id="titulo-desglose-cap">Desglose por capítulo</h2>
+      <span class="secundario" id="sub-desglose-cap"></span>
+    </div>
+    <div class="tabla-scroll"><table class="datos" id="tabla-desglose-cap"></table></div>
+  </section>
+
+  <section class="seccion" id="sec-desglose-prog">
+    <div class="seccion-cab">
+      <h2 id="titulo-desglose-prog">Desglose por programa</h2>
+      <span class="secundario" id="sub-desglose-prog"></span>
+    </div>
+    <div class="tabla-scroll"><table class="datos" id="tabla-desglose-prog"></table></div>
+  </section>
+
+  <section class="seccion">
+    <div class="seccion-cab">
+      <h2>Serie completa</h2>
+      <span class="secundario" id="sub-serie"></span>
+    </div>
+    <div class="tabla-scroll"><table class="datos" id="tabla-serie"></table></div>
+  </section>
+
+  <section class="seccion">
+    <div class="seccion-cab">
+      <h2>Notas de contexto</h2>
+      <span class="botones-texto"><button type="button" id="btn-desplegar">Desplegar todas</button><button type="button" id="btn-plegar">Plegar todas</button></span>
+    </div>
+    <p class="secundario" style="font-size:0.88rem">Hechos que hay que tener en cuenta al comparar cada año (prórrogas, fondos extraordinarios, cambios de estructura). Pulse un año para ver sus notas.</p>
+    <div class="notas" id="notas"></div>
+  </section>
+
+  <section class="seccion">
+    <h2>¿Qué significa cada cosa?</h2>
+    <p class="secundario" style="font-size:0.88rem">Explicación sencilla de cada elemento del presupuesto. Pulse un apartado para desplegarlo.</p>
+    <div id="glosario"></div>
+  </section>
+
+  <section class="seccion">
+    <h2>Cómo se calcula</h2>
+    <div class="metodo">
+      <div><h3>Fases</h3><p><b>Crédito inicial</b>: Ley de Presupuestos (o prórroga). <b>Crédito definitivo</b>: tras las modificaciones del ejercicio. <b>Obligaciones reconocidas</b>: gasto ejecutado.</p></div>
+      <div><h3>Grado de ejecución</h3><p>Obligaciones reconocidas ÷ crédito definitivo × 100. No depende de la lectura elegida.</p></div>
+      <div><h3>Euros constantes</h3><p>Euros corrientes × factor del IPC general de Andalucía, año base 2025 (decisión registrada en <code>docs/MEMORIA_PROYECTO.md</code>). La media anual es la media aritmética de los 12 índices mensuales del INE (tabla 50913), calculada por el proyecto (<code>DERIVADO</code>, INC-008).</p></div>
+      <div><h3>Por habitante</h3><p>Importe ÷ población a 1 de enero del mismo año según el padrón (INE).</p></div>
+      <div><h3>% del total de la Junta</h3><p>Importe ÷ total del presupuesto consolidado de la Junta en la misma fase × 100. Solo para perímetros consolidados.</p></div>
+      <div><h3>Variación media anual</h3><p>(B ÷ A)<sup>1/(años entre A y B)</sup> − 1. Es una media compuesta; las variaciones de cada año están en la tabla de la serie.</p></div>
+    </div>
+    <p class="secundario" style="font-size:0.88rem; max-width: 90ch">Fiabilidad: los importes en euros corrientes por programa proceden directamente de la Cuenta General (<code>OFICIAL_PRIMARIA</code>). Los perímetros consolidados, los euros constantes, los valores por habitante, los porcentajes y las variaciones son cálculos propios sobre datos oficiales (<code>DERIVADO</code>). <b>No disponible</b> (<code>NO_DISPONIBLE</code>) indica que el dato no figura en el documento de ese año; no se ha estimado ni rellenado. <b>No calculable</b>: la variación no puede calcularse (valor 0 en A o falta uno de los dos). <b>Sin programa con este código en el ejercicio</b> (en el gráfico, «s. p.»): el programa no figura con este código en la estructura del ejercicio; no se interpreta como aumento ni disminución del gasto.</p>
+  </section>
+
+  <section class="seccion">
+    <div class="seccion-cab">
+      <h2>Fuentes</h2>
+      <span class="secundario" id="sub-fuentes"></span>
+    </div>
+    <div class="tabla-scroll"><table class="datos" id="tabla-fuentes"></table></div>
+  </section>
+
+  <footer>
+    Esta página no es una publicación de la Junta de Andalucía: reorganiza y calcula cifras a partir de sus documentos oficiales, citados en «Fuentes». Página generada desde el repositorio del proyecto (<code>web/index.html</code> y <code>web/datos.js</code>, este último producido por <code>scripts/web/generar_datos_web.py</code> a partir de <code>data/processed/</code>). Incidencias de datos citadas como INC-NNN: <code>docs/INCIDENCIAS_DATOS.md</code>.
+  </footer>
+</div>
+
+<script src="descripciones.js"></script>
+<script src="datos.js"></script>
+<script>
+"use strict";
+(function () {
+  const D = window.DATOS;
+  if (!D) {
+    document.querySelector(".contenedor").insertAdjacentHTML("beforeend",
+      "<p>No se han cargado los datos (web/datos.js). Ejecute <code>python3 scripts/web/generar_datos_web.py</code>.</p>");
+    return;
+  }
+
+  // ---------- Diccionarios ----------
+  const FASES = [
+    { id: "inicial", nombre: "Crédito inicial", color: "var(--f1)" },
+    { id: "definitivo", nombre: "Crédito definitivo", color: "var(--f2)" },
+    { id: "obligaciones", nombre: "Obligaciones reconocidas", color: "var(--f3)" },
+  ];
+  const CAPITULOS = {
+    total: "Todos los capítulos",
+    "1": "I · Gastos de personal",
+    "2": "II · Gastos corrientes en bienes y servicios",
+    "3": "III · Gastos financieros",
+    "4": "IV · Transferencias corrientes",
+    "5": "V · Fondo de contingencia",
+    "6": "VI · Inversiones reales",
+    "7": "VII · Transferencias de capital",
+    "8": "VIII · Activos financieros",
+    "9": "IX · Pasivos financieros",
+  };
+  const LECTURAS = [
+    { id: "corr", corto: "€ corrientes", largo: "euros corrientes" },
+    { id: "const", corto: "€ constantes 2025", largo: "euros constantes de 2025" },
+    { id: "hab", corto: "€/hab.", largo: "euros corrientes por habitante" },
+    { id: "habc", corto: "€/hab. constantes", largo: "euros constantes de 2025 por habitante" },
+    { id: "pct", corto: "% de la Junta", largo: "porcentaje del total consolidado de la Junta (misma fase)" },
+  ];
+  const AMB = Object.fromEntries(D.ambitos.map(a => [a.id, a]));
+  // Textos divulgativos (web/descripciones.js). Si faltan, la página funciona sin ellos.
+  const X = Object.assign({ fases: {}, lecturas: {}, capitulos: {}, ambitos: {}, programas: {} }, window.DESCRIPCIONES || {});
+  // Descripción de un programa: primero la específica del ámbito ("ámbito:programa"), luego la general.
+  const progInfo = (id, amb = estado.ambito) => X.programas[`${amb}:${id}`] || X.programas[id] || null;
+  const descProg = (id, amb) => { const p = progInfo(id, amb); return p ? p.texto : null; };
+  const ES_PROGRAMAS = id => id === "consejeria_programas" || id === "sas_programas";
+
+  // ---------- Estado ----------
+  const estado = {
+    ambito: "sanidad_programas", partida: "total", capitulo: "total",
+    lectura: "corr", fases: new Set(["inicial", "definitivo", "obligaciones"]),
+    a: null, b: null, fase: "obligaciones",
+  };
+  try {
+    const g = JSON.parse(localStorage.getItem("presupuesto-sanitario-estado") || "null");
+    if (g && AMB[g.ambito]) Object.assign(estado, g, { fases: new Set(g.fases || []) });
+  } catch (e) { /* sin almacenamiento: se usan los valores por defecto */ }
+  function guardar() {
+    try { localStorage.setItem("presupuesto-sanitario-estado", JSON.stringify({ ...estado, fases: [...estado.fases] })); } catch (e) {}
+  }
+
+  // ---------- Utilidades ----------
+  const $ = id => document.getElementById(id);
+  function h(tag, attrs, ...hijos) {
+    const el = document.createElement(tag);
+    for (const [k, v] of Object.entries(attrs || {})) {
+      if (v == null || v === false) continue;
+      if (k === "class") el.className = v;
+      else if (k === "text") el.textContent = v;
+      else if (k.startsWith("on")) el.addEventListener(k.slice(2), v);
+      else el.setAttribute(k, v);
+    }
+    for (const c of hijos.flat()) if (c != null) el.append(c.nodeType ? c : document.createTextNode(c));
+    return el;
+  }
+  const NS = "http://www.w3.org/2000/svg";
+  function s(tag, attrs) {
+    const el = document.createElementNS(NS, tag);
+    for (const [k, v] of Object.entries(attrs || {})) el.setAttribute(k, v);
+    return el;
+  }
+  const nf = (d) => new Intl.NumberFormat("es-ES", { minimumFractionDigits: d, maximumFractionDigits: d, useGrouping: "always" });
+
+  function serie(amb, partida, cap) { return D.series[`${amb}|${partida}|${cap}`] || null; }
+
+  // Valor de una serie en un año, fase y lectura. null = NO_DISPONIBLE.
+  function valor(ser, año, fase, lectura) {
+    if (!ser) return null;
+    if (lectura === "pct") {
+      const p = ser.pct[año]; return p && p[fase] != null ? p[fase] : null;
+    }
+    const v = ser.valores[año]; const x = v ? v[fase] : null;
+    if (x == null) return null;
+    const f = D.factor_ipc_2025[año], pob = D.poblacion[año];
+    if (lectura === "corr") return x;
+    if (lectura === "const") return x * f;
+    if (lectura === "hab") return x / pob;
+    if (lectura === "habc") return x * f / pob;
+    return null;
+  }
+  function grado(ser, año) {
+    const v = ser && ser.valores[año];
+    if (!v || v.obligaciones == null || !v.definitivo) return null;
+    return v.obligaciones / v.definitivo * 100;
+  }
+
+  // Formato según la lectura. "compacto" se usa en ejes.
+  function fmt(x, lectura, compacto) {
+    if (x == null || !isFinite(x)) return null;
+    if (lectura === "pct") return nf(compacto ? 1 : 2).format(x) + " %";
+    if (lectura === "hab" || lectura === "habc") {
+      const d = compacto ? 0 : (Math.abs(x) < 10 ? 2 : 1);
+      return nf(d).format(x) + " €";
+    }
+    const m = x / 1e6;
+    if (compacto) return nf(Math.abs(m) < 10 && m !== 0 ? 1 : 0).format(m);
+    return nf(Math.abs(m) < 10 ? 2 : 1).format(m) + " M€";
+  }
+  function unidadEje(lectura) {
+    if (lectura === "pct") return "% del total de la Junta";
+    if (lectura === "hab") return "€ corrientes por habitante";
+    if (lectura === "habc") return "€ constantes 2025 por habitante";
+    if (lectura === "const") return "Millones de € constantes de 2025";
+    return "Millones de € corrientes";
+  }
+  function fmtDelta(d, lectura) {
+    if (d == null || !isFinite(d)) return null;
+    const signo = d > 0 ? "+" : d < 0 ? "−" : "";
+    if (lectura === "pct") return signo + nf(2).format(Math.abs(d)) + " p. p.";
+    return signo + fmt(Math.abs(d), lectura);
+  }
+  function fmtPct(p, dec = 1) {
+    if (p == null || !isFinite(p)) return null;
+    const signo = p > 0 ? "+" : p < 0 ? "−" : "";
+    return signo + nf(dec).format(Math.abs(p)) + " %";
+  }
+  // Tres casos distintos de celda vacía (no se mezclan):
+  const ND = () => h("span", { class: "nd", title: "NO_DISPONIBLE: el dato no figura en el documento de ese año" }, "No disponible");
+  const NCG = () => h("span", { class: "nd", title: "No calculable: falta el crédito definitivo o las obligaciones de ese año" }, "No calculable");
+  const NC = () => h("span", { class: "nd", title: "No calculable: el valor del año A es 0 o falta uno de los dos valores" }, "No calculable");
+  const SP = () => h("span", { class: "nd", title: "El programa no figura con este código en la estructura del ejercicio; no se interpreta como aumento ni disminución del gasto" }, "Sin programa con este código en el ejercicio");
+  const celda = (txt, vacio) => txt != null ? txt : (vacio || ND)();
+  const celdaValor = (txt, partida, año) => celda(txt, sinPrograma(partida, año) ? SP : ND);
+
+  // ---------- Disponibilidad ----------
+  function añosAmbito(amb) {
+    const pref = `${amb}|`; const set = new Set();
+    for (const k in D.series) if (k.startsWith(pref)) for (const a in D.series[k].valores) set.add(+a);
+    return [...set].sort((x, y) => x - y);
+  }
+  function capitulosDe(amb, partida) {
+    const pref = `${amb}|${partida}|`; const caps = [];
+    for (const k in D.series) if (k.startsWith(pref)) caps.push(k.slice(pref.length));
+    return caps.sort((x, y) => (x === "total" ? -1 : y === "total" ? 1 : +x - +y));
+  }
+  function fasesDe(amb) {
+    const set = new Set();
+    for (const k in D.series) if (k.startsWith(amb + "|"))
+      for (const a in D.series[k].valores) for (const f in D.series[k].valores[a]) set.add(f);
+    return FASES.filter(f => set.has(f.id));
+  }
+  const tienePct = amb => Object.keys(D.series).some(k => k.startsWith(amb + "|") && Object.keys(D.series[k].pct).length);
+
+  // ---------- Controles ----------
+  function construirAmbitos() {
+    const sel = $("sel-ambito"); sel.textContent = "";
+    const grupos = {};
+    for (const a of D.ambitos) {
+      if (!grupos[a.grupo]) { grupos[a.grupo] = h("optgroup", { label: a.grupo }); sel.append(grupos[a.grupo]); }
+      grupos[a.grupo].append(h("option", { value: a.id, text: a.nombre, title: X.ambitos[a.id] || null }));
+    }
+    sel.value = estado.ambito;
+    sel.onchange = () => { estado.ambito = sel.value; estado.partida = "total"; estado.capitulo = "total"; estado.a = estado.b = null; render(); };
+  }
+  function construirLecturas() {
+    const cont = $("lecturas"); cont.textContent = "";
+    const pctOk = tienePct(estado.ambito);
+    if (!pctOk && estado.lectura === "pct") estado.lectura = "corr";
+    for (const l of LECTURAS) {
+      const deshab = l.id === "pct" && !pctOk;
+      cont.append(h("button", {
+        type: "button", "aria-pressed": String(estado.lectura === l.id), disabled: deshab,
+        title: deshab ? "Solo disponible para perímetros consolidados" : (X.lecturas[l.id] || l.largo),
+        onclick: () => { estado.lectura = l.id; render(); },
+      }, l.corto));
+    }
+  }
+  function construirFases() {
+    const cont = $("fases"); cont.textContent = "";
+    const disponibles = fasesDe(estado.ambito).map(f => f.id);
+    for (const f of FASES) {
+      const ok = disponibles.includes(f.id);
+      const activa = ok && estado.fases.has(f.id);
+      cont.append(h("button", {
+        type: "button", class: "fase-chip", "aria-pressed": String(activa), disabled: !ok,
+        title: ok ? (X.fases[f.id] || "") : "Este ámbito solo tiene obligaciones reconocidas",
+        onclick: () => {
+          if (estado.fases.has(f.id)) { if (estado.fases.size > 1) estado.fases.delete(f.id); }
+          else estado.fases.add(f.id);
+          render();
+        },
+      }, h("span", { class: "muestra", style: `background:${f.color}` }), f.nombre));
+    }
+  }
+  function construirPartidaCapitulo() {
+    const amb = AMB[estado.ambito];
+    const selP = $("sel-partida"); selP.textContent = "";
+    for (const p of amb.partidas) selP.append(h("option", { value: p.id, text: p.nombre, title: descProg(p.id) }));
+    if (!amb.partidas.some(p => p.id === estado.partida)) estado.partida = "total";
+    selP.value = estado.partida;
+    selP.disabled = amb.partidas.length < 2;
+    $("sel-partida").previousElementSibling.textContent = estado.ambito === "fondos" ? "Fondo" : "Programa";
+    selP.onchange = () => { estado.partida = selP.value; estado.a = estado.b = null; if (!capitulosDe(estado.ambito, estado.partida).includes(estado.capitulo)) estado.capitulo = "total"; render(); };
+
+    const selC = $("sel-capitulo"); selC.textContent = "";
+    const caps = capitulosDe(estado.ambito, estado.partida);
+    for (const c of caps) selC.append(h("option", { value: c, text: CAPITULOS[c] || c, title: X.capitulos[c] || null }));
+    if (!caps.includes(estado.capitulo)) estado.capitulo = "total";
+    selC.value = estado.capitulo;
+    selC.disabled = caps.length < 2;
+    selC.onchange = () => { estado.capitulo = selC.value; estado.a = estado.b = null; render(); };
+  }
+  function construirComparacion(años, ser) {
+    const conDato = años.filter(x => ser && ser.valores[x] && Object.values(ser.valores[x]).some(v => v != null));
+    const primero = conDato.length ? conDato[0] : años[0], ultimo = conDato.length ? conDato[conDato.length - 1] : años[años.length - 1];
+    for (const [id, clave, porDefecto] of [["sel-a", "a", primero], ["sel-b", "b", ultimo]]) {
+      const sel = $(id); sel.textContent = "";
+      for (const a of años) sel.append(h("option", { value: a, text: String(a) }));
+      if (!años.includes(estado[clave])) estado[clave] = porDefecto;
+      sel.value = estado[clave];
+      sel.onchange = () => { estado[clave] = +sel.value; render(); };
+    }
+    const selF = $("sel-fase"); selF.textContent = "";
+    const fs = fasesDe(estado.ambito);
+    for (const f of fs) selF.append(h("option", { value: f.id, text: f.nombre, title: X.fases[f.id] || null }));
+    if (!fs.some(f => f.id === estado.fase)) estado.fase = fs[fs.length - 1].id;
+    selF.value = estado.fase;
+    selF.onchange = () => { estado.fase = selF.value; render(); };
+  }
+
+  // ---------- Notas por año ----------
+  function notasAño(año) {
+    const out = [...(AMB[estado.ambito].notas[año] || [])];
+    const p = AMB[estado.ambito].partidas.find(x => x.id === estado.partida);
+    // Cambios de código o de denominación del programa respecto al año anterior
+    if (p && p.literal && p.literal[año] && p.literal[año - 1]) {
+      const [cod, ...r1] = p.literal[año].split(" "), [codPrev, ...r0] = p.literal[año - 1].split(" ");
+      const norm = x => x.join("").replace(/[\s.,]/g, "").toUpperCase();
+      if (codPrev !== cod) out.push(`Código del programa en el documento: ${cod} (antes ${codPrev}).`);
+      else if (norm(r1) !== norm(r0)) out.push(`Denominación en el documento cambia en ${año}: «${r1.join(" ")}» (antes «${r0.join(" ")}») (literales del documento).`);
+    }
+    return out;
+  }
+  // Tipos de contexto presentes en una lista de notas (para los resúmenes plegados)
+  function tiposNotas(notas) {
+    const txt = notas.join(" ");
+    const tipos = [];
+    // "prorrogado" sin contar la nota de INC-003 (prórroga sin confirmar), que se cuenta aparte
+    if (/prorrogad/i.test(notas.filter(n => !/INC-003/.test(n)).join(" "))) tipos.push("presupuesto prorrogado");
+    if (/INC-003/.test(txt)) tipos.push("prórroga sin confirmar");
+    if (/fondos extraordinarios|COVID/i.test(txt)) tipos.push("fondos extraordinarios");
+    if (/INC-015|INC-016|INC-019|INC-026|códigos|Denominación|Código del programa/.test(txt)) tipos.push("cambio de perímetro o de códigos");
+    if (/INC-020/.test(txt)) tipos.push("modificaciones de crédito");
+    return tipos;
+  }
+  // ¿El programa elegido existe en la estructura de ese año? (solo ámbitos por programas)
+  function sinPrograma(partida, año) {
+    if (!ES_PROGRAMAS(estado.ambito) || partida === "total") return false;
+    const p = AMB[estado.ambito].partidas.find(x => x.id === partida);
+    return !(p && p.literal && p.literal[año]);
+  }
+
+  // ---------- Gráfico ----------
+  let anchoPrevio = 0;
+  function dibujarGrafico(años, ser, fasesVis) {
+    const cont = $("grafico"); cont.textContent = "";
+    const W = Math.max(360, cont.clientWidth || cont.parentElement.clientWidth || 700);
+    anchoPrevio = W;
+    const H = 380, m = { l: 62, r: 10, t: 14, b: 50 };
+    const iw = W - m.l - m.r, ih = H - m.t - m.b;
+    const vals = [];
+    for (const a of años) for (const f of fasesVis) { const v = valor(ser, a, f.id, estado.lectura); if (v != null) vals.push(v); }
+    const svg = s("svg", { viewBox: `0 0 ${W} ${H}`, width: W, height: H, role: "img",
+      "aria-label": `${$("titulo-grafico").textContent}. Gráfico de barras por año; los valores están en la tabla de la serie completa.` });
+    cont.append(svg);
+    if (!vals.length) {
+      const t = s("text", { x: W / 2, y: H / 2, "text-anchor": "middle", "font-size": 14 });
+      t.textContent = "No disponible para esta selección";
+      svg.append(t); return;
+    }
+    let vmax = Math.max(0, ...vals), vmin = Math.min(0, ...vals);
+    const paso = pasoBonito((vmax - vmin) / 5 || 1);
+    vmax = Math.ceil(vmax / paso) * paso; vmin = Math.floor(vmin / paso) * paso;
+    if (vmax === vmin) vmax = vmin + paso;
+    const y = v => m.t + ih - (v - vmin) / (vmax - vmin) * ih;
+
+    // Rejilla y eje Y
+    for (let v = vmin; v <= vmax + paso / 2; v += paso) {
+      svg.append(s("line", { x1: m.l, x2: W - m.r, y1: y(v), y2: y(v), stroke: "var(--line)", "stroke-width": Math.abs(v) < paso / 1e6 ? 1.2 : 1 }));
+      const t = s("text", { x: m.l - 8, y: y(v) + 4, "text-anchor": "end", "font-size": 11.5 });
+      t.textContent = fmt(v, estado.lectura, true).replace(" €", "").replace(" %", "");
+      svg.append(t);
+    }
+    const banda = iw / años.length;
+    const grupo = Math.min(banda * 0.74, 64);
+    const gap = 2;
+    const bw = Math.max(2, (grupo - gap * (fasesVis.length - 1)) / fasesVis.length);
+    const corto = banda < 38;
+
+    años.forEach((a, i) => {
+      const cx = m.l + banda * i + banda / 2;
+      const esA = a === estado.a, esB = a === estado.b;
+      if (esA || esB) svg.append(s("rect", { x: m.l + banda * i + 1, y: m.t, width: banda - 2, height: ih, fill: "var(--band)" }));
+      let hay = false;
+      fasesVis.forEach((f, j) => {
+        const v = valor(ser, a, f.id, estado.lectura);
+        if (v == null) return;
+        hay = true;
+        const x0 = cx - grupo / 2 + j * (bw + gap);
+        svg.append(barra(x0, bw, y(0), y(v), f.color));
+      });
+      if (!hay) {
+        const t = s("text", { x: cx, y: y(0) - 6, "text-anchor": "middle", "font-size": 10 });
+        t.textContent = sinPrograma(estado.partida, a) ? "s. p." : "n. d."; svg.append(t);
+      }
+      // Etiqueta del año
+      const t = s("text", { x: cx, y: H - m.b + 18, "text-anchor": "middle", "font-size": corto ? 11 : 12,
+        "font-weight": esA || esB ? 700 : 400 });
+      t.textContent = corto ? "’" + String(a).slice(2) : String(a);
+      if (esA || esB) t.setAttribute("style", "fill: var(--ink)");
+      svg.append(t);
+      if (esA || esB) {
+        const tt = s("text", { x: cx, y: H - m.b + 34, "text-anchor": "middle", "font-size": 11, "font-weight": 700 });
+        tt.textContent = esA && esB ? "A=B" : esA ? "A" : "B";
+        tt.setAttribute("style", "fill: var(--accent)");
+        svg.append(tt);
+      } else if (notasAño(a).length) {
+        svg.append(s("circle", { cx, cy: H - m.b + 30, r: 2.5, fill: "var(--ink-2)" }));
+      }
+      // Zona sensible (más grande que las barras)
+      const zona = s("rect", { x: m.l + banda * i, y: m.t, width: banda, height: ih + 40, fill: "transparent", tabindex: 0,
+        "aria-label": textoTooltip(a, ser, fasesVis) });
+      zona.addEventListener("pointerenter", () => mostrarTooltip(a, ser, fasesVis, cx, W));
+      zona.addEventListener("pointerleave", ocultarTooltip);
+      zona.addEventListener("focus", () => mostrarTooltip(a, ser, fasesVis, cx, W));
+      zona.addEventListener("blur", ocultarTooltip);
+      svg.append(zona);
+    });
+  }
+  function barra(x, w, y0, y1, color) {
+    // Barra con las esquinas del extremo de datos redondeadas (anclada a la línea de base)
+    const r = Math.min(3, w / 2, Math.abs(y0 - y1));
+    const arriba = y1 < y0;
+    const top = Math.min(y0, y1), bot = Math.max(y0, y1);
+    let d;
+    if (arriba) d = `M${x},${bot} V${top + r} Q${x},${top} ${x + r},${top} H${x + w - r} Q${x + w},${top} ${x + w},${top + r} V${bot} Z`;
+    else d = `M${x},${top} V${bot - r} Q${x},${bot} ${x + r},${bot} H${x + w - r} Q${x + w},${bot} ${x + w},${bot - r} V${top} Z`;
+    return s("path", { d, fill: color, class: "barra" });
+  }
+  function pasoBonito(x) {
+    const e = Math.pow(10, Math.floor(Math.log10(x))); const f = x / e;
+    return (f <= 1 ? 1 : f <= 2 ? 2 : f <= 2.5 ? 2.5 : f <= 5 ? 5 : 10) * e;
+  }
+  function textoTooltip(a, ser, fasesVis) {
+    const partes = [String(a)];
+    for (const f of fasesVis) partes.push(`${f.nombre}: ${fmt(valor(ser, a, f.id, estado.lectura), estado.lectura) || "no disponible"}`);
+    const g = grado(ser, a); if (g != null) partes.push(`Grado de ejecución: ${nf(1).format(g)} %`);
+    return partes.join(". ");
+  }
+  function mostrarTooltip(a, ser, fasesVis, cx, W) {
+    ocultarTooltip();
+    const tip = h("div", { class: "tooltip", id: "tooltip" }, h("div", { class: "t-año" }, String(a)));
+    for (const f of fasesVis) {
+      const v = fmt(valor(ser, a, f.id, estado.lectura), estado.lectura);
+      tip.append(h("div", { class: "t-fila" }, h("i", { class: "t-key", style: `background:${f.color}` }),
+        h("span", { class: "secundario" }, f.nombre), v == null ? celdaValor(null, estado.partida, a) : h("b", {}, v)));
+    }
+    const g = grado(ser, a);
+    if (g != null) tip.append(h("div", { class: "t-fila" }, h("i"), h("span", { class: "secundario" }, "Grado de ejecución"), h("b", {}, nf(1).format(g) + " %")));
+    const nn = notasAño(a).length;
+    if (nn) tip.append(h("div", { class: "t-nota" }, `${nn} ${nn === 1 ? "nota" : "notas"} de contexto (${tiposNotas(notasAño(a)).join(", ") || "otras"}): ver «Notas de contexto».`));
+    const cont = $("grafico"); cont.append(tip);
+    const tw = tip.offsetWidth;
+    let left = cx + 14; if (left + tw > W - 4) left = cx - tw - 14;
+    tip.style.left = Math.max(4, left) + "px"; tip.style.top = "12px";
+  }
+  function ocultarTooltip() { const t = $("tooltip"); if (t) t.remove(); }
+
+  // ---------- Comparación A/B ----------
+  function dibujarComparacion(ser) {
+    const { a, b, fase, lectura } = estado;
+    const va = valor(ser, a, fase, lectura), vb = valor(ser, b, fase, lectura);
+    const fn = FASES.find(f => f.id === fase).nombre;
+    const cif = $("cifras"); cif.textContent = "";
+    const dif = va != null && vb != null ? vb - va : null;
+    const pct = va != null && vb != null && va !== 0 ? (vb / va - 1) * 100 : null;
+    const n = b - a;
+    const tam = va != null && vb != null && va > 0 && vb > 0 && n > 0 ? (Math.pow(vb / va, 1 / n) - 1) * 100 : null;
+    const bloque = (et, val, sub, vacio) => h("div", {}, h("span", { class: "etiqueta" }, et), h("span", { class: "valor" }, celda(val, vacio)), sub ? h("span", { class: "sub" }, sub) : null);
+    cif.append(
+      bloque(`A · ${a}`, fmt(va, lectura), fn, sinPrograma(estado.partida, a) ? SP : ND),
+      bloque(`B · ${b}`, fmt(vb, lectura), fn, sinPrograma(estado.partida, b) ? SP : ND),
+      bloque("Diferencia B − A", fmtDelta(dif, lectura), lectura === "pct" ? "puntos porcentuales" : null, NC),
+      lectura === "pct"
+        ? bloque("Variación relativa del porcentaje", fmtPct(pct, 1), null, NC)
+        : bloque("Variación B / A", fmtPct(pct, 1), tam != null && n > 1 ? `Media anual: ${fmtPct(tam, 2)} (${n} años)` : null, NC),
+    );
+    // Mini tabla: las tres fases y el grado de ejecución
+    const t = $("mini-tabla"); t.textContent = "";
+    t.append(h("thead", {}, h("tr", {}, h("th", {}, "Fase"), h("th", {}, String(a)), h("th", {}, String(b)), h("th", {}, "Var."))));
+    const tb = h("tbody");
+    for (const f of fasesDe(estado.ambito)) {
+      const x = valor(ser, a, f.id, lectura), y = valor(ser, b, f.id, lectura);
+      const p = x != null && y != null && x !== 0 ? (y / x - 1) * 100 : null;
+      const varTxt = lectura === "pct" ? (x != null && y != null ? fmtDelta(y - x, "pct") : null) : fmtPct(p);
+      tb.append(h("tr", {}, h("td", {}, f.nombre), h("td", {}, celdaValor(fmt(x, lectura), estado.partida, a)),
+        h("td", {}, celdaValor(fmt(y, lectura), estado.partida, b)), h("td", {}, celda(varTxt, NC))));
+    }
+    const ga = grado(ser, a), gb = grado(ser, b);
+    if (ga != null || gb != null)
+      tb.append(h("tr", {}, h("td", {}, "Grado de ejecución"), h("td", {}, celda(ga == null ? null : nf(1).format(ga) + " %", NCG)),
+        h("td", {}, celda(gb == null ? null : nf(1).format(gb) + " %", NCG)), h("td", {}, celda(ga != null && gb != null ? fmtDelta(gb - ga, "pct") : null, NC))));
+    t.append(tb);
+    const notas = [a, b].filter((x, i, arr) => arr.indexOf(x) === i).flatMap(x => notasAño(x).map(n => `${x}: ${n}`));
+    const lo = Math.min(a, b), hi = Math.max(a, b);
+    const entre = añosAmbito(estado.ambito).filter(x => x > lo && x < hi && notasAño(x).length);
+    if (entre.length) notas.push(`Años entre A y B con nota de contexto: ${entre.join(", ")}. Ver «Notas de contexto».`);
+    const cont = $("nota-comparar"); cont.textContent = "";
+    if (notas.length) {
+      const abierto = estado.notasComparar === true;
+      const det = h("details", { class: "notas-comparar", open: abierto ? "" : null },
+        h("summary", {}, `Notas de contexto de esta comparación (${notas.length}): ${
+          tiposNotas(añosAmbito(estado.ambito).filter(x => x >= lo && x <= hi).flatMap(notasAño)).join(", ") || "otras"}`),
+        h("div", { class: "cuerpo" }, notas.map(n => h("p", {}, n))));
+      det.addEventListener("toggle", () => { estado.notasComparar = det.open; guardar(); });
+      cont.append(det);
+    }
+  }
+
+  // ---------- Tablas de desglose ----------
+  function tablaDesglose(tablaId, filas, alClicar, activa) {
+    const { a, b, fase, lectura } = estado;
+    const t = $(tablaId); t.textContent = "";
+    t.append(h("thead", {}, h("tr", {},
+      h("th", {}, ""), h("th", {}, String(a)), h("th", {}, String(b)),
+      h("th", {}, lectura === "pct" ? "Diferencia (p. p.)" : "Diferencia"), lectura === "pct" ? null : h("th", {}, "Variación"),
+      h("th", {}, "Peso en B"), h("th", { title: "Barra superior: año A (contorno); inferior: año B (relleno). Misma fase." }, `Barras: ${a} (contorno) / ${b} (relleno)`))));
+    const tb = h("tbody");
+    const totalB = filas.find(f => f.total) ? valor(filas.find(f => f.total).ser, b, fase, "corr") : null;
+    const maxV = Math.max(1e-9, ...filas.filter(f => !f.total).flatMap(f => [valor(f.ser, a, fase, lectura), valor(f.ser, b, fase, lectura)]).filter(v => v != null).map(Math.abs));
+    for (const f of filas) {
+      const va = valor(f.ser, a, fase, lectura), vb = valor(f.ser, b, fase, lectura);
+      const dif = va != null && vb != null ? vb - va : null;
+      const pct = va != null && vb != null && va !== 0 ? (vb / va - 1) * 100 : null;
+      const bCorr = valor(f.ser, b, fase, "corr");
+      const peso = totalB && bCorr != null ? bCorr / totalB * 100 : null;
+      const barras = f.total ? h("span") : h("div", { class: "barras-ab", "aria-hidden": "true" },
+        h("i", { style: `width:${va == null ? 0 : Math.abs(va) / maxV * 100}%; background: transparent; box-shadow: inset 0 0 0 1px var(--ink-2)` }),
+        h("i", { style: `width:${vb == null ? 0 : Math.abs(vb) / maxV * 100}%; background: var(--ink-2)` }));
+      const tr = h("tr", { class: [f.total ? "total" : "", f.id === activa ? "activa" : "", alClicar && !f.total ? "clicable" : ""].join(" ").trim(),
+        tabindex: alClicar && !f.total ? 0 : null,
+        title: alClicar && !f.total ? "Ver esta partida en el gráfico" : null },
+        h("td", { class: "nombre", title: f.fuenteDesc ? `Descripción: ${f.fuenteDesc}` : null }, f.nombre, f.desc ? h("span", { class: "desc-fila" }, f.desc) : null),
+        h("td", {}, celdaValor(fmt(va, lectura), f.partida, a)), h("td", {}, celdaValor(fmt(vb, lectura), f.partida, b)),
+        h("td", {}, celda(fmtDelta(dif, lectura), NC)), lectura === "pct" ? null : h("td", {}, celda(fmtPct(pct), NC)),
+        h("td", {}, f.total ? celda(peso == null ? null : "100 %") : celdaValor(peso == null ? null : nf(1).format(peso) + " %", f.partida, b)),
+        h("td", {}, barras));
+      if (alClicar && !f.total) {
+        tr.addEventListener("click", () => alClicar(f.id));
+        tr.addEventListener("keydown", e => { if (e.key === "Enter" || e.key === " ") { e.preventDefault(); alClicar(f.id); } });
+      }
+      tb.append(tr);
+    }
+    t.append(tb);
+  }
+  function dibujarDesgloses() {
+    const { ambito, partida, capitulo, a, b, fase } = estado;
+    const fn = FASES.find(f => f.id === fase).nombre.toLowerCase();
+    const caps = capitulosDe(ambito, partida);
+    const secCap = $("sec-desglose-cap");
+    secCap.hidden = caps.length < 2;
+    if (!secCap.hidden) {
+      const pn = AMB[ambito].partidas.find(p => p.id === partida).nombre;
+      $("titulo-desglose-cap").textContent = `Desglose por capítulo · ${pn}`;
+      $("sub-desglose-cap").textContent = `${fn}, ${a} frente a ${b}. Pulse una fila para verla en el gráfico.`;
+      const filas = caps.map(c => ({ id: c, partida, nombre: CAPITULOS[c] || c, desc: c === "total" ? null : X.capitulos[c], total: c === "total", ser: serie(ambito, partida, c) }));
+      filas.push(filas.shift());
+      tablaDesglose("tabla-desglose-cap", filas, id => { estado.capitulo = id; render(); }, capitulo);
+    }
+    const secProg = $("sec-desglose-prog");
+    secProg.hidden = AMB[ambito].partidas.length < 2;
+    if (!secProg.hidden) {
+      const esFondos = ambito === "fondos";
+      $("titulo-desglose-prog").textContent = esFondos ? "Desglose por fondo" : `Desglose por programa · ${CAPITULOS[capitulo]}`;
+      $("sub-desglose-prog").textContent = `${fn}, ${a} frente a ${b}. Pulse una fila para verla en el gráfico.`;
+      const filas = AMB[ambito].partidas.map(p => ({ id: p.id, partida: p.id, nombre: p.nombre, desc: p.id === "total" ? null : descProg(p.id), fuenteDesc: (progInfo(p.id) || {}).fuente || null, total: p.id === "total", ser: serie(ambito, p.id, capitulo) }));
+      filas.push(filas.shift());
+      tablaDesglose("tabla-desglose-prog", filas, id => { estado.partida = id; if (!capitulosDe(ambito, id).includes(estado.capitulo)) estado.capitulo = "total"; render(); }, partida);
+    }
+  }
+
+  // ---------- Tabla de la serie completa ----------
+  function dibujarSerie(años, ser) {
+    const { lectura } = estado;
+    const fs = fasesDe(estado.ambito);
+    const t = $("tabla-serie"); t.textContent = "";
+    t.append(h("thead", {}, h("tr", {}, h("th", {}, "Año"), fs.map(f => h("th", { title: X.fases[f.id] || null }, f.nombre)),
+      fs.length > 1 ? h("th", { title: X.fases.grado || null }, "Grado de ejecución") : null,
+      h("th", {}, lectura === "pct" ? "Dif. obligaciones s/ año anterior (p. p.)" : "Var. obligaciones s/ año anterior"))));
+    const tb = h("tbody");
+    años.forEach((a, i) => {
+      const prev = i > 0 ? años[i - 1] : null;
+      const vo = valor(ser, a, "obligaciones", lectura), vp = prev != null && prev === a - 1 ? valor(ser, prev, "obligaciones", lectura) : null;
+      const varp = vo == null || vp == null ? null : lectura === "pct" ? fmtDelta(vo - vp, "pct") : vp !== 0 ? fmtPct((vo / vp - 1) * 100) : null;
+      const g = grado(ser, a);
+      tb.append(h("tr", { class: a === estado.a || a === estado.b ? "activa" : "" },
+        h("td", {}, String(a) + (notasAño(a).length ? " *" : "")),
+        fs.map(f => h("td", {}, celdaValor(fmt(valor(ser, a, f.id, lectura), lectura), estado.partida, a))),
+        fs.length > 1 ? h("td", {}, celda(g == null ? null : nf(1).format(g) + " %", NCG)) : null,
+        h("td", {}, i === 0 ? h("span", { class: "nd", title: "Primer año de la serie: sin año anterior" }, "—") : celda(varp, NC))));
+    });
+    t.append(tb);
+    $("sub-serie").textContent = `${unidadEje(lectura)}. * Año con nota de contexto.`;
+  }
+
+  // ---------- Notas y fuentes ----------
+  function dibujarNotas(años) {
+    const cont = $("notas"); cont.textContent = "";
+    let alguna = false;
+    for (const a of años) {
+      const ns = notasAño(a); if (!ns.length) continue;
+      alguna = true;
+      cont.append(h("details", { class: "plegable" },
+        h("summary", {}, h("b", {}, String(a)),
+          h("span", { class: "resumen" }, `${ns.length} ${ns.length === 1 ? "nota" : "notas"} · ${ns[0]}`)),
+        h("div", { class: "cuerpo" }, ns.map(n => h("p", {}, n)))));
+    }
+    if (!alguna) cont.append(h("p", { class: "secundario" }, "Sin notas para esta selección."));
+  }
+  $("btn-desplegar").addEventListener("click", () => document.querySelectorAll("#notas details").forEach(d => d.open = true));
+  $("btn-plegar").addEventListener("click", () => document.querySelectorAll("#notas details").forEach(d => d.open = false));
+
+  // ---------- Explicación llana de la selección ----------
+  function dibujarExplica(amb) {
+    const cont = $("explica"); cont.textContent = "";
+    const linea = (et, txt) => txt ? h("div", { class: "linea" }, h("span", { class: "etiqueta" }, et), h("span", {}, txt)) : null;
+    cont.append(h("span", { class: "etiqueta", style: "color: var(--ink)" }, "Qué está viendo"));
+    const lineas = [linea("Ámbito", X.ambitos[amb.id])];
+    if (amb.partidas.length > 1) {
+      const p = amb.partidas.find(x => x.id === estado.partida);
+      const d = descProg(estado.partida);
+      const info = progInfo(estado.partida);
+      lineas.push(linea(estado.ambito === "fondos" ? "Fondo" : "Programa",
+        d ? `${p.nombre}: ${d}${info && info.fuente ? ` (Fuente: ${info.fuente}.)` : ""}`
+          : `${p.nombre}: descripción pendiente de la memoria oficial del programa.`));
+    }
+    lineas.push(linea("Capítulo", `${CAPITULOS[estado.capitulo]}: ${X.capitulos[estado.capitulo] || ""}`));
+    lineas.push(linea("Lectura", X.lecturas[estado.lectura]));
+    cont.append(...lineas.filter(Boolean));
+    cont.append(h("details", {}, h("summary", {}, "Detalle técnico del ámbito"), h("p", { style: "margin-top:4px" }, amb.descripcion)));
+  }
+
+  // ---------- Glosario desplegable ----------
+  function dibujarGlosario() {
+    const cont = $("glosario"); cont.textContent = "";
+    const grupo = (titulo, filas) => h("details", { class: "plegable glosario" }, h("summary", {}, titulo),
+      h("div", { class: "cuerpo" }, h("dl", {}, filas.filter(f => f[1]).map(([n, d, fuente]) =>
+        h("div", {}, h("dt", {}, n), h("dd", {}, d, fuente ? h("span", { class: "fuente-desc desc-fila" }, fuente) : null))))));
+    cont.append(grupo("Fases del presupuesto", [...FASES.map(f => [f.nombre, X.fases[f.id]]), ["Grado de ejecución", X.fases.grado]]));
+    cont.append(grupo("Formas de leer las cifras", LECTURAS.map(l => [l.corto, X.lecturas[l.id]])));
+    cont.append(grupo("Capítulos: en qué tipo de gasto", Object.keys(CAPITULOS).filter(c => c !== "total").map(c => [CAPITULOS[c], X.capitulos[c]])));
+    cont.append(grupo("Ámbitos: de quién es el gasto", D.ambitos.map(a => [a.nombre, X.ambitos[a.id]])));
+    // Un programa con el mismo código y distinto contenido en Consejería y SAS sale dos veces, con su ámbito.
+    const filasProg = new Map();
+    for (const a of D.ambitos) if (ES_PROGRAMAS(a.id)) for (const p of a.partidas) {
+      if (p.id === "total") continue;
+      const especifica = X.programas[`${a.id}:${p.id}`];
+      const clave = especifica ? `${a.id}:${p.id}` : p.id;
+      if (filasProg.has(clave)) continue;
+      const pr = especifica || X.programas[p.id];
+      const nombre = especifica ? `${p.nombre} (${a.id === "sas_programas" ? "SAS" : "Consejería"})` : p.nombre;
+      filasProg.set(clave, [nombre, pr ? pr.texto : "Descripción pendiente de la memoria oficial del programa.", pr && pr.fuente ? `Fuente: ${pr.fuente}` : null]);
+    }
+    cont.append(grupo("Programas: para qué es el gasto", [...filasProg.values()].sort((x, y) => x[0].localeCompare(y[0], "es"))));
+    cont.append(grupo("Fondos extraordinarios", ["COVID-19", "REACT-UE", "MRR"].map(id => [id, descProg(id)])));
+  }
+  dibujarGlosario();
+  function dibujarFuentes(años) {
+    const amb = AMB[estado.ambito];
+    const ids = new Set();
+    for (const a of años) for (const id of (amb.fuentes[a] || [])) ids.add(id);
+    if (estado.lectura !== "corr") ["INE-IPC-001", "INE-POB-001", "INE-POB-002"].forEach(i => ids.add(i));
+    const t = $("tabla-fuentes"); t.textContent = "";
+    t.append(h("thead", {}, h("tr", {}, h("th", {}, "Id"), h("th", {}, "Documento"), h("th", {}, "Descarga"), h("th", {}, "Fiabilidad"))));
+    const tb = h("tbody");
+    for (const id of [...ids].sort()) {
+      const c = D.catalogo[id];
+      tb.append(h("tr", {},
+        h("td", {}, h("code", {}, id)),
+        h("td", { class: "nombre" }, c ? (c.url && c.url.startsWith("http") ? h("a", { href: c.url, target: "_blank", rel: "noopener" }, c.titulo) : c.titulo)
+          : "Identificador no catalogado: revisar data/catalogo_fuentes.csv"),
+        h("td", {}, c ? c.fecha_descarga : "—"),
+        h("td", {}, h("code", {}, c ? c.fiabilidad : "ver catálogo"))));
+    }
+    t.append(tb);
+    const fiab = !(ES_PROGRAMAS(estado.ambito) && estado.lectura === "corr") ? "DERIVADO (sobre datos oficiales)"
+      : estado.partida === "total" || estado.capitulo === "total" ? "DERIVADO (suma de partidas OFICIAL_PRIMARIA)" : "OFICIAL_PRIMARIA";
+    $("sub-fuentes").textContent = `${ids.size} documentos para la selección actual. Fiabilidad de las cifras mostradas: ${fiab}. Datos generados el ${D.generado}.`;
+  }
+
+  // ---------- Render principal ----------
+  function render() {
+    ocultarTooltip();
+    construirAmbitos();
+    construirPartidaCapitulo();
+    construirLecturas();
+    construirFases();
+    const años = añosAmbito(estado.ambito);
+    const ser = serie(estado.ambito, estado.partida, estado.capitulo);
+    construirComparacion(años, ser);
+    const amb = AMB[estado.ambito];
+    const fasesVis = fasesDe(estado.ambito).filter(f => estado.fases.has(f.id));
+    if (!fasesVis.length) fasesDe(estado.ambito).forEach(f => estado.fases.add(f.id));
+    const fv = fasesVis.length ? fasesVis : fasesDe(estado.ambito);
+
+    dibujarExplica(amb);
+    const pn = amb.partidas.find(p => p.id === estado.partida).nombre;
+    const partes = [amb.nombre];
+    if (amb.partidas.length > 1) partes.push(pn);
+    partes.push(CAPITULOS[estado.capitulo]);
+    $("titulo-grafico").textContent = partes.join(" · ");
+    const lect = LECTURAS.find(l => l.id === estado.lectura);
+    $("subtitulo-grafico").textContent = `${unidadEje(estado.lectura)} · ${años[0]}-${años[años.length - 1]}`;
+
+    const ley = $("leyenda"); ley.textContent = "";
+    for (const f of fv) ley.append(h("span", {}, h("i", { style: `background:${f.color}` }), f.nombre));
+    ley.append(h("span", {}, h("i", { class: "punto" }), "año con nota de contexto"));
+    ley.append(h("span", {}, h("i", { style: "background: var(--band); border: 1px solid var(--line)" }), "años A y B"));
+
+    dibujarGrafico(años, ser, fv);
+    $("pie-grafico").textContent = `Eje vertical desde cero. Lectura: ${lect.largo}. Pase el cursor o el foco por un año para ver los valores; todos figuran también en la tabla de la serie completa.`;
+    dibujarComparacion(ser);
+    dibujarDesgloses();
+    dibujarSerie(años, ser);
+    dibujarNotas(años);
+    dibujarFuentes(años);
+    $("chip-generado").textContent = `Datos generados: ${D.generado}`;
+    guardar();
+  }
+
+  render();
+  let temporizador;
+  window.addEventListener("resize", () => {
+    clearTimeout(temporizador);
+    temporizador = setTimeout(() => {
+      const w = $("grafico").clientWidth;
+      if (Math.abs(w - anchoPrevio) > 4) dibujarGrafico(añosAmbito(estado.ambito), serie(estado.ambito, estado.partida, estado.capitulo),
+        fasesDe(estado.ambito).filter(f => estado.fases.has(f.id)));
+    }, 120);
+  });
+})();
+</script>
