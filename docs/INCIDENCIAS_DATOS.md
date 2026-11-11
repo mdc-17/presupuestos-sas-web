@@ -317,3 +317,133 @@ Los cambios de denominación implican cambios de competencias incluidas en la se
 - Estado: abierta.
 - Tratamiento aplicado: se muestran las cifras de la liquidación tal como figuran (41K en la Consejería). La web explica el programa con la memoria y advierte de esta discrepancia. Sin interpretar la causa.
 
+
+### INC-027 · EGSP: la metodología no contiene una definición expresa de la partida «Conciertos» de la clasificación económico-presupuestaria
+- Fecha de registro: 2026-11-11
+- Años afectados: 2002-2024 (serie EGSP de devengo)
+- Tipo: hueco
+- Descripción:
+  - La «Metodología. Estadística de Gasto Sanitario Público 2024» (MSAN-EGSP-004, 21 págs.) define la remuneración del personal, el consumo intermedio y el consumo de capital fijo (apartado III.1, págs. 13-14) y las funciones (apartado III.2, págs. 14-16), pero no incluye un párrafo de definición de la categoría económica «Conciertos». La palabra «conciertos» aparece en la delimitación del ámbito funcional (pág. 6) y en las definiciones funcionales de «Servicios primarios de salud» y «Servicios especializados» (pág. 15).
+  - Textos oficiales más próximos localizados: «Principales resultados» EGSP 2024 (MSAN-EGSP-003, pág. 5 del PDF / 3 impresa: «los gastos en compras al sector privado a través de conciertos») y «Diferentes series de gasto sanitario» (MSAN-EGSP-006, pág. 3: «Solo aquellos provistos mediante la compra de servicios a agentes privados (conciertos) están debidamente tipificados»).
+  - Las tablas de la EGSP se publican en una única edición vigente (serie 2002-2024, edición mayo 2026); los años 2023 y 2024 figuran como «Cifras provisionales».
+- URL probadas / documentos:
+  - https://www.sanidad.gob.es/estadEstudios/estadisticas/inforRecopilaciones/gastoSanitario2005/home.htm (HTTP 200)
+  - https://www.sanidad.gob.es/estadEstudios/estadisticas/inforRecopilaciones/gastoSanitario2005/tablasEstEGSP/Metodologia_general.pdf (HTTP 200)
+  - https://www.sanidad.gob.es/estadEstudios/estadisticas/docs/GastoSanitarioPublico_NotaMetodologica.pdf (HTTP 200; sin definiciones de partidas)
+  - https://www.sanidad.gob.es/estadEstudios/estadisticas/docs/EGSP2008/egspMetodologiaGeneral.pdf (HTTP 200; es la metodología de la edición 2023, mismo texto sobre conciertos; no descargada a data/raw)
+  - https://www.sanidad.gob.es/estadEstudios/estadisticas/sisInfSanSNS/pdf/IGTGS2005.pdf y .../grupodeTrabajoSanitario2007.pdf (HTTP 200; informes del Grupo de Trabajo de la Conferencia de Presidentes; tratan los conciertos de 1999-2005 sin definirlos; no descargados a data/raw)
+  - https://www.sanidad.gob.es/estadEstudios/estadisticas/inforRecopilaciones/gastoSanitario.htm (HTTP 404)
+- Estado: abierta.
+- Tratamiento aplicado: definición expresa de la partida «Conciertos» = `NO_DISPONIBLE`. Se citan literalmente los textos oficiales más próximos indicados arriba, con su página, al documentar las diferencias con el artículo 25 del SAS.
+
+
+### INC-028 · Ejecución del SAS por clasificación económica (artículo 25): documentos y nivel de detalle según el ejercicio
+- Fecha de registro: 2026-11-11
+- Años afectados: 2010-2025
+- Tipo: cambio_estructura / descarga
+- Descripción:
+  - Páginas oficiales del SAS en la Cuenta General consultadas el 2026-11-11 (HTTP 200): `…/rendicion/cuenta2010/sas.htm`, `…/cuenta2011/sas.htm`, `…/cuentaAAAA/cuenta/sas.htm` (2012-2021 y 2023-2025) y `…/rendicion/junta/docs/content/aa/sas/index.html` (2022). Para 2010 y 2011, `…/cuentaAAAA/cuenta/sas.htm` devuelve 404; la página del SAS cuelga directamente de `…/cuentaAAAA/` (enlazada desde `…/cuentaAAAA/cuentaAAAA.htm`).
+  - Documentos que publican la liquidación de gastos del SAS por debajo del capítulo:
+    - 2010-2019: apartado 3.2 «Desarrollo por clasificación funcional a nivel de aplicación (2010-2014) / partida (2015-2019) presupuestaria» (`SAS3-2.pdf`) y apartado 3.3 «Desarrollo por clasificación funcional y vinculación» (`SAS3-3.pdf`).
+    - 2020-2022: «Desarrollo por clasificación funcional a nivel de partida presupuestaria» (`SAS3-1-5.pdf`) y «Desarrollo por clasificación funcional y vinculación» (`SAS3-1-6.pdf`, ya catalogado como 20XX-IGJA-010).
+    - 2023-2025: «II.1.4. Resumen por conceptos» (`SAS2-1-4.pdf`). En 2023 el documento se desglosa por clasificación funcional (programa) y concepto; en 2024 y 2025, solo por concepto para el total del SAS (5 páginas, sin programa). Desde 2023 no se ha encontrado en la página oficial un documento a nivel de partida ni de vinculación.
+  - En los documentos de vinculación de 2015-2022 la línea muestra solo el código, sin denominación. El artículo 25 aparece vinculado a nivel de artículo (código `25`) en 2010-2014 y 2016-2022 (p. ej. `…41C25 00` en 2020); en 2015 (`2015-IGJA-013`) aparece con códigos de 5 dígitos más sufijo (p. ej. `…41C253021401`), es decir, con más detalle que el artículo.
+  - En 2014 y 2015 hay aplicaciones del artículo 25 también en el programa 31P (además de 41C); en el resto de años los documentos solo las muestran en 41C.
+  - Columnas: 2010-2022, crédito inicial, modificaciones, crédito definitivo, gastos comprometidos, obligaciones reconocidas, pagos, obligaciones pendientes y remanentes; 2023-2025, créditos iniciales, modificaciones y definitivos, gastos comprometidos, obligaciones reconocidas netas, pagos, obligaciones pendientes de pago a 31 de diciembre y remanentes de crédito.
+- URL probadas / documentos: ver `scripts/descarga/manifiesto_ejecucion_economica_sas.csv` (ids 2010-2019-IGJA-012/013, 2020-IGJA-017, 2021-IGJA-016, 2022-IGJA-016, 2023-2025-IGJA-013).
+- Estado: aceptada (documentada).
+- Tratamiento aplicado: se descargan los documentos de cada año tal como se publican. El nivel de detalle no es homogéneo (programa × artículo/partida en 2010-2023; total del SAS por concepto en 2024-2025); el único nivel presente en todos los años es el total del SAS por artículo/concepto del capítulo II; en los años con desglose por programa, ese total exige sumar programas en la extracción. Sin interpretar cifras.
+- Observaciones de la extracción (2026-11-11, `scripts/extraccion/medios_ajenos_ejecucion.py`):
+  - 2016: en la vinculación `1231067980 41C 25`, sufijo 29 (2016-IGJA-013, pág. 47), las obligaciones (52.850.150,62 €) superan al crédito definitivo (52.434.293,40 €). Por eso el total del artículo 25 de 2016 tiene un grado de ejecución del 100,06 %. Es el único caso a nivel de vinculación en 2010-2022; a nivel de línea hay 477 de 1.090.
+  - 2024: el concepto 257 figura rotulado «X», con crédito 0,00 € y obligaciones de 7.661,00 € (2024-IGJA-013, pág. 3). En 2023 se llama «TRANSPORTE SANITARIO». En 2024-2025 el transporte se presupuesta en el concepto 227 (subconceptos .23-.26, artículo 22).
+  - 2023: el servicio 06 tiene 12 bloques de conceptos del capítulo II sin rótulo; varios figuran con el definitivo y las obligaciones a 0,00 €.
+
+
+### INC-029 · Artículo 25 «Asistencia sanitaria con medios ajenos» (SAS + Consejería) frente a la partida «Conciertos» de la EGSP: las cifras no coinciden
+- Fecha de registro: 2026-11-11
+- Años afectados: 2010-2024 (EGSP 2023 y 2024: cifras provisionales)
+- Tipo: discrepancia
+- Descripción:
+  - Magnitudes comparadas: (a) obligaciones reconocidas del artículo 25 del SAS y de la Consejería, **sin el concepto 257** (transporte sanitario), según la Cuenta General (`sas_medios_ajenos_2010_2025.csv`, `consejeria_medios_ajenos_2010_2025.csv`; `DERIVADO` de `20XX-IGJA-012/013/014/016/017/018`, `OFICIAL_PRIMARIA`); (b) partida «Conciertos» del bloque económico-presupuestario de la EGSP, Comunidad Autónoma de Andalucía (`MSAN-EGSP-001`, hoja «Tabla 3.4.01», fila 75, `OFICIAL_SECUNDARIA`, descarga 2026-11-11). Diferencia = (a) − (b); diferencia % = diferencia / (b) × 100.
+  - Lectura complementaria: en los 23 años de la hoja, «Conciertos» es igual, al céntimo, a la suma de las filas 2.2.1.1 «Servicios hospitalarios», 2.2.1.2 «Servicios especializados», 2.2.2 «Servicios primarios de salud», 2.2.4 «Traslado de enfermos» (producción de mercado) y 3.1 «Entre AA.PP. Por servicios concertados» (`scripts/validacion/validar_medios_ajenos.py`, V16). Es una igualdad numérica, no una definición publicada (INC-027). Por ello se muestra también (c) = «Conciertos» − 2.2.4 «Traslado de enfermos» (`DERIVADO`), que excluye el transporte como la serie (a).
+
+    | Año | (a) Art. 25 sin 257 (€) | (b) EGSP Conciertos (€) | (a) − (b) (€) | % | (c) EGSP sin traslado (€) | (a) − (c) (€) | % sobre (c) | EGSP provisional |
+    |---|---|---|---|---|---|---|---|---|
+    | 2010 | 331.547.821,76 | 515.167.000,00 | -183.619.178,24 | -35,64 | 338.421.000,00 | -6.873.178,24 | -2,03 | no |
+    | 2011 | 300.820.293,23 | 446.568.000,00 | -145.747.706,77 | -32,64 | 307.466.000,00 | -6.645.706,77 | -2,16 | no |
+    | 2012 | 322.202.506,55 | 460.375.368,69 | -138.172.862,14 | -30,01 | 309.103.368,69 | 13.099.137,86 | 4,24 | no |
+    | 2013 | 275.115.892,13 | 385.456.000,00 | -110.340.107,87 | -28,63 | 265.291.000,00 | 9.824.892,13 | 3,70 | no |
+    | 2014 | 286.910.757,61 | 424.344.000,00 | -137.433.242,39 | -32,39 | 289.255.000,00 | -2.344.242,39 | -0,81 | no |
+    | 2015 | 254.967.863,41 | 397.981.000,00 | -143.013.136,59 | -35,93 | 263.624.000,00 | -8.656.136,59 | -3,28 | no |
+    | 2016 | 190.826.939,82 | 380.143.000,00 | -189.316.060,18 | -49,80 | 249.057.000,00 | -58.230.060,18 | -23,38 | no |
+    | 2017 | 350.733.470,95 | 422.629.000,00 | -71.895.529,05 | -17,01 | 287.616.000,00 | 63.117.470,95 | 21,95 | no |
+    | 2018 | 310.815.988,00 | 424.528.000,00 | -113.712.012,00 | -26,79 | 289.963.000,00 | 20.852.988,00 | 7,19 | no |
+    | 2019 | 295.160.456,74 | 442.912.000,00 | -147.751.543,26 | -33,36 | 301.916.000,00 | -6.755.543,26 | -2,24 | no |
+    | 2020 | 317.835.280,74 | 471.760.000,00 | -153.924.719,26 | -32,63 | 324.961.000,00 | -7.125.719,26 | -2,19 | no |
+    | 2021 | 306.584.731,19 | 550.845.321,45 | -244.260.590,26 | -44,34 | 400.245.828,45 | -93.661.097,26 | -23,40 | no |
+    | 2022 | 491.454.958,49 | 580.237.006,13 | -88.782.047,64 | -15,30 | 408.220.704,37 | 83.234.254,12 | 20,39 | no |
+    | 2023 | 499.076.277,58 | 594.356.249,78 | -95.279.972,20 | -16,03 | 424.232.249,78 | 74.844.027,80 | 17,64 | sí |
+    | 2024 | 428.190.872,10 | 625.011.774,24 | -196.820.902,14 | -31,49 | 442.284.774,24 | -14.093.902,14 | -3,19 | sí |
+
+  - Suma 2010-2024: (a) 4.962.244.110,30 €; (b) 7.122.313.720,29 € (−30,33 %); (c) 4.901.656.925,53 € (+1,24 %). Las sumas de todos los pares de años consecutivos están en `data/interim/medios_ajenos/validacion_medios_ajenos.md` (V17).
+  - Otras coincidencias numéricas observadas (V16): la fila 2.2.2 «Servicios primarios de salud» coincide con las obligaciones del concepto 254 de la Consejería con diferencias de 0 a 484,54 € (redondeo a miles) en 2011-2024; en 2010 la diferencia es de −771.660,00 €. Las obligaciones del concepto 257 (SAS + Consejería) son menores que la fila 2.2.4 «Traslado de enfermos» entre un 1,47 % y un 9,61 % (sobre la cifra EGSP) en 2010-2023, salvo 2013, en que son mayores un 0,54 %; en 2024 el transporte ya no está en el artículo 25.
+  - Diferencias de definición que constan en documentos oficiales (hipótesis descriptivas; ninguna cuantificada por separado):
+    1. **Criterio de imputación temporal.** La EGSP se elabora «de acuerdo con el principio contable de devengo —gasto real o efectivo, en el lenguaje presupuestario— frente a [...] el principio de caja: liquidaciones presupuestarias» (`MSAN-EGSP-004`, pág. 4). La serie (a) son obligaciones reconocidas del ejercicio. En 2016-2017 y 2021-2022 las diferencias (a) − (c) tienen signo contrario en años consecutivos (−58,2 M€ y +63,1 M€; −93,7 M€ y +83,2 M€); la suma de 2016-2017 difiere un +0,91 % y la de 2021-2022 un −1,29 %.
+    2. **Perímetro de agentes.** La EGSP recoge «todas aquellas unidades institucionales del sector AAPP cuya actividad principal este incluida en las funciones definidas por la COFOG en su apartado 7: SALUD» y «aquellas empresas públicas del sector sanitario que [...] suministran servicios y bienes a la colectividad» (`MSAN-EGSP-004`, pág. 6). Para 2024 lista en Andalucía: Consejería de Salud y Consumo, SAS, Escuela Andaluza de Salud Pública y Agencia de Servicios Sociales y Dependencia de Andalucía (Plan sobre Drogodependencias) (pág. 18). La relación de agentes de años anteriores no figura en ese documento; en 2010-2021 existían agencias públicas empresariales sanitarias con presupuesto propio (INC-016), cuyo gasto no está en (a). No verificado.
+    3. **Contenido de las partidas.** La metodología no define «Conciertos» (INC-027). Las funciones de la EGSP incluyen conciertos de atención primaria y especializada «con profesionales, instituciones o empresas que sean de titularidad pública o privada», y «Traslado de enfermos» incluye «la concertación de servicios de ambulancias» y «los gastos efectuados mediante transferencia corriente (reintegro de gastos) por desplazamientos» (`MSAN-EGSP-004`, pág. 15). La fila 3.1 (transferencias entre AA.PP. por servicios concertados) suma 4.526.000 € en 2010 y 0 € desde 2020. El artículo 25 es una clasificación económica presupuestaria; la EGSP clasifica por agente y función.
+    4. **Consolidación.** En 2021 el consolidado oficial elimina 1.055.329,93 € del capítulo II del SAS (diferencia entre la liquidación sin consolidar y la consolidada); los documentos disponibles no permiten saber si afecta al artículo 25. En el resto de 2020-2025 el capítulo II del SAS y de la Consejería no varía al consolidar.
+    5. **Provisionalidad.** EGSP 2023 y 2024: «(*) Cifras provisionales.»
+- URL probadas / documentos: `MSAN-EGSP-001` (Tabla 3.4.01), `MSAN-EGSP-002` (pág. 72), `MSAN-EGSP-004` (págs. 4, 6, 15, 18); Cuenta General `20XX-IGJA-012`, `20XX-IGJA-014`, `2020-IGJA-017/018`, `2021-2022-IGJA-016/017`, `2023-IGJA-013/014`, `2024-IGJA-013/014`.
+- Estado: aceptada (no resoluble con los documentos disponibles).
+- Tratamiento aplicado: se muestran ambas cifras; no se ajusta ninguna. Tabla completa (con el artículo 25 con 257 y la diferencia correspondiente) en `data/interim/medios_ajenos/contraste_art25_egsp_2010_2024.csv` (`DERIVADO`). La lectura (c) es un cálculo propio a partir de dos filas de la misma tabla oficial; se presenta como complementaria, no como sustituta de «Conciertos».
+
+
+### INC-030 · Consejería 2025: el artículo 25 no se puede separar en la liquidación por conceptos
+- Fecha de registro: 2026-11-11
+- Años afectados: 2025
+- Tipo: hueco
+- Descripción: el resumen por conceptos de la liquidación de la Administración General 2025 (`2025-IGJA-014`) no desglosa por sección. Su artículo 25 (solo el concepto 254 «Asistencia con especialistas») figura con 7.875.000,00 € de crédito inicial, 8.180.839,91 € de definitivo y 5.785.795,72 € de obligaciones (pág. 3), para el conjunto de la Administración General. El crédito inicial de la Consejería en el presupuesto 2025 (`2025-HAC-003`, pág. 36) es también 7.875.000,00 €. En 2010-2024 el artículo 25 de otras secciones de la Junta tiene importes de 0 a 100.000 € de crédito inicial y de 0 a 5.655,00 € de obligaciones (`data/interim/medios_ajenos/junta_art25_otras_secciones_2010_2025.csv`), pero no se ha supuesto que en 2025 todo corresponda a la Consejería.
+- URL probadas / documentos: `2025-IGJA-014`, `2025-HAC-003`.
+- Estado: abierta (pendiente de un documento de 2025 con desglose por sección).
+- Tratamiento aplicado: Consejería 2025, crédito inicial `DERIVADO` del presupuesto; definitivo y obligaciones `NO_DISPONIBLE` (importe vacío) en `consejeria_medios_ajenos_2010_2025.csv`. En `data/processed/metricas_medios_ajenos_2010_2025.csv` (2026-11-11, tras la validación del informe): los conceptos 251, 252, 253, 255 y 256 de la Consejería en 2025 (definitivo y obligaciones) se fijan en 0,00 € (`DERIVADO`), porque en `2025-IGJA-014` (pág. 3) el único concepto 25x de toda la Administración General es el 254; el concepto 254 de la Consejería sigue `NO_DISPONIBLE` (no se le imputa ninguna parte de los 5.785.795,72 € de la Administración General), igual que el total del artículo. El total SAS + Consejería de 2025 solo existe en crédito inicial. El contraste con la EGSP llega a 2024, último año publicado.
+
+
+### INC-031 · Artículo 25 en 2014-2015: reparto entre Consejería y SAS y programa 31P
+- Fecha de registro: 2026-11-11
+- Años afectados: 2013-2016
+- Tipo: cambio_estructura
+- Descripción (lo que muestran los documentos):
+  - 2010-2014: la Consejería presupuesta el concepto 252.04 «Con entidades privadas» (programa 41C, servicio 01; y 31P, servicio 01). Crédito inicial de la Consejería en 2014: 123.653.827,00 € (artículo 25).
+  - 2014: en la Consejería, modificaciones de −54.178.421,31 € en 41C/01 252.04 y de −378.978,40 € en 31P/01 252.04 (`2014-IGJA-014`, págs. 312 y 273); definitivo del artículo 69.234.925,41 € y obligaciones 68.710.028,44 €. En el SAS, modificaciones de +21.432.925,35 € en 41C 252.04 (definitivo 21.758.925,35 €; obligaciones 81.230.832,74 €, `2014-IGJA-012`, pág. 44) y de +378.978,40 € en 31P 252.04 (pág. 8). El importe de 31P es el mismo con signo contrario en ambas entidades. Modificaciones del artículo 25 del SAS en 2014: +112,6 M€ en total.
+  - Concepto 252, obligaciones SAS + Consejería: 2013, 143.541.515,42 €; 2014, 141.977.130,77 €; 2015 (solo SAS), 125.112.369,78 €.
+  - 2015: el 252.04 deja de figurar en la Consejería y se presupuesta en el SAS (inicial del concepto 252 en el SAS: 126.526.872,00 €). Desde 2015 el artículo 25 de la Consejería es casi solo el concepto 254 (asistencia dental y podológica).
+  - 2014 y 2015: el SAS tiene líneas del artículo 25 en el programa 31P (obligaciones 378.675,00 € y 281.321,10 €), además del 41C.
+  - 2016: en el SAS, el concepto 252 tiene 137.000.000,00 € de inicial, 41.126.473,13 € de definitivo y 58.155.122,70 € de obligaciones; el artículo 25 del SAS tiene obligaciones (310.187.559,97 €) mayores que el definitivo (310.008.783,03 €) (INC-028).
+- URL probadas / documentos: `2014-IGJA-012`, `2014-IGJA-014`, `2015-IGJA-012`, `2015-IGJA-014`, `2014-HAC-004`, `2015-HAC-002`.
+- Estado: aceptada (documentada).
+- Tratamiento aplicado: la serie principal suma SAS + Consejería, por lo que el cambio de entidad no altera el total; las series por entidad muestran el cambio tal cual. Los documentos no indican el motivo de las modificaciones; no se interpreta.
+
+
+### INC-032 · Perímetro del artículo 25: programa 31P y concepto 257 de la Consejería
+- Fecha de registro: 2026-11-11
+- Años afectados: 2010-2022 (31P); 2020 (257 de la Consejería)
+- Tipo: criterio_contable
+- Descripción:
+  - El perímetro decidido para la serie de medios ajenos es «SAS + Consejería, todos los años» (artículo 25 completo de cada sección). En la Consejería, buena parte del artículo 25 está en el programa 31P (prestación/asistencia dental, servicio 02; 252.04 con entidades privadas, servicio 01, hasta 2014): obligaciones del programa 31P en la Consejería de 9.523.912,92 € (2010), 8.383.820,42 € (2011), 9.367.936,44 € (2012), 9.384.442,90 € (2013), 8.436.858,37 € (2014), 7.394.816,90 € (2015), 7.450.269,58 € (2016), 7.603.778,02 € (2017), 7.822.962,38 € (2018), 7.748.009,40 € (2019), 6.073.862,48 € (2020), 6.637.081,40 € (2021) y 6.055.296,70 € (2022). En 2023 el artículo 25 de la Consejería figura en el programa 41D (servicio 02, concepto 254) y en 2024 el documento (`2024-IGJA-014`) no desglosa por programa. En el SAS hay líneas de 31P en 2014 y 2015 (INC-031).
+  - El perímetro sanitario general del proyecto (`sanidad_programas`, `docs/METODOLOGIA.md`) **excluye el programa 31P**. Las dos series usan, por tanto, perímetros distintos para la Consejería.
+  - La fila 2.2.2 «Servicios primarios de salud» de la EGSP coincide, con redondeo a miles, con las obligaciones del concepto 254 de la Consejería en 2011-2024, concepto que en 2011-2022 está en su mayor parte en el programa 31P (INC-029).
+  - En 2020 la Consejería tiene 30.250,00 € de definitivo y obligaciones en el concepto 257 (transporte sanitario); la serie «sin 257» también los excluye.
+- URL probadas / documentos: `20XX-IGJA-014` (2010-2019), `2020-IGJA-018`, `2021-2022-IGJA-017`.
+- Estado: resuelta el 2026-11-11. El usuario decide incluir el artículo 25 completo de la Consejería, también el programa 31P, que se muestra desglosado aparte (docs/MEMORIA_PROYECTO.md, sección 3).
+- Tratamiento aplicado: ninguno sobre las cifras. Los programas de cada año figuran en `notas` de `consejeria_medios_ajenos_2010_2025.csv`.
+
+
+### INC-033 · Equivalencias incompletas para los ficheros del artículo 25
+- Fecha de registro: 2026-11-11
+- Años afectados: 2010-2025
+- Tipo: otro
+- Descripción:
+  - Secciones: todas tienen correspondencia en `data/equivalencias/secciones.csv`, pero 21 solo tras normalizar la escritura: «16 31»/«15 31»/«12 31» (liquidación, 2010-2014) frente a «16.31»/«15.31»/«12.31»; «16 00»/«15 00»/«12 00» frente a «16»/«15»/«12»; y «12.31»…«13.31» (presupuesto, 2015-2025) frente a «1231»…«1331».
+  - Programas: `data/equivalencias/programas.csv` no tiene el programa 41C en 2021-2025 (`sas_medios_ajenos_inicial_2010_2025.csv` lo usa como `4.1.C` en todos los años) ni el 31P en ningún año (citado en `notas` de los ficheros del artículo 25). `programas.csv` figura como «Pendiente» en su LEEME.
+- Estado: abierta.
+- Tratamiento aplicado: ninguno sobre los datos. Se recomienda completar `programas.csv` (41C del SAS 2021-2025; 31P) y documentar la regla de normalización de secciones.

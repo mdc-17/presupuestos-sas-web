@@ -65,7 +65,8 @@ Descripción de las fuentes, por orden de prioridad. Las URL cambian con frecuen
 | Presupuestos 2014-2025 (Hacienda) | `https://www.juntadeandalucia.es/organismos/economiahaciendayfondoseuropeos/areas/presupuestos/anteriores.html` | Una página por año; los estados de gastos están en la subpágina "Estado de Ingresos y Gastos por Programas…". 2022: "Prórroga del Presupuesto…". |
 | Presupuestos 2003-2013 (Hacienda) | `…/presupuestos/anteriores/paginas/presupuestos-anteriores.html` | Solo libros completos (programas y servicios). |
 | Leyes en BOJA | `https://www.juntadeandalucia.es/boja/AAAA/NNN/…` | La página HTML de cada disposición enlaza su PDF. |
-| Cuenta General 2010-2021, 2023-2025 | `https://www.juntadeandalucia.es/haciendayadministracionpublica/servicios/fiscalizacion/rendicion/cuentaAAAA/cuenta/junta.htm` y `…/sas.htm` | Liquidación de gastos: apartado 3-1 hasta 2022; apartado 2-1 desde 2023 (INC-004). |
+| Cuenta General 2012-2021, 2023-2025 | `https://www.juntadeandalucia.es/haciendayadministracionpublica/servicios/fiscalizacion/rendicion/cuentaAAAA/cuenta/junta.htm` y `…/sas.htm` | Liquidación de gastos: apartado 3-1 hasta 2022; apartado 2-1 desde 2023 (INC-004). |
+| Cuenta General 2010-2011 | `…/fiscalizacion/rendicion/cuentaAAAA/cuentaAAAA.htm` (menú) y `…/cuentaAAAA/sas.htm` (SAS) | Sin la subcarpeta `cuenta/`; `cuentaAAAA/cuenta/sas.htm` devuelve 404 (INC-028). |
 | Cuenta General 2022 | `…/fiscalizacion/rendicion/junta/docs/index.html` | Ruta distinta del resto (INC-004). |
 | INE – IPC base 2021 por CCAA | `https://www.ine.es/jaxiT3/Datos.htm?t=50913` | Descarga CSV: `https://www.ine.es/jaxiT3/files/t/es/csv_bdsc/50913.csv`. |
 | INE – Padrón por CCAA | `https://www.ine.es/jaxiT3/Datos.htm?t=2853` | Termina en 2021 (INC-007). |

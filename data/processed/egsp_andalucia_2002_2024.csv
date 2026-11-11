@@ -1,0 +1,392 @@
+año,partida,bloque,importe_eur,unidad_documento,provisional,fuente_id,fiabilidad,notas
+2002,Remuneración del personal,economico_presupuestario,2803559509.420827,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!E69; miles de euros × 1.000
+2003,Remuneración del personal,economico_presupuestario,3045593339.891256,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!F69; miles de euros × 1.000
+2004,Remuneración del personal,economico_presupuestario,3246570555.632759,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!G69; miles de euros × 1.000
+2005,Remuneración del personal,economico_presupuestario,3502624429.478653,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!H69; miles de euros × 1.000
+2006,Remuneración del personal,economico_presupuestario,3841587643.23,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!I69; miles de euros × 1.000
+2007,Remuneración del personal,economico_presupuestario,4321707264.65,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!J69; miles de euros × 1.000
+2008,Remuneración del personal,economico_presupuestario,4775553431.52,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!K69; miles de euros × 1.000
+2009,Remuneración del personal,economico_presupuestario,4999607832.18,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!L69; miles de euros × 1.000
+2010,Remuneración del personal,economico_presupuestario,4799158740.06,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!M69; miles de euros × 1.000
+2011,Remuneración del personal,economico_presupuestario,4776014000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!N69; miles de euros × 1.000
+2012,Remuneración del personal,economico_presupuestario,4364872000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!O69; miles de euros × 1.000
+2013,Remuneración del personal,economico_presupuestario,4177245000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!P69; miles de euros × 1.000
+2014,Remuneración del personal,economico_presupuestario,4156149000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Q69; miles de euros × 1.000
+2015,Remuneración del personal,economico_presupuestario,4334493000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!R69; miles de euros × 1.000
+2016,Remuneración del personal,economico_presupuestario,4570432000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!S69; miles de euros × 1.000
+2017,Remuneración del personal,economico_presupuestario,4722253000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!T69; miles de euros × 1.000
+2018,Remuneración del personal,economico_presupuestario,4957534000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!U69; miles de euros × 1.000
+2019,Remuneración del personal,economico_presupuestario,5239105574.99,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!V69; miles de euros × 1.000
+2020,Remuneración del personal,economico_presupuestario,5704473000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!W69; miles de euros × 1.000
+2021,Remuneración del personal,economico_presupuestario,6254959993.72,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!X69; miles de euros × 1.000
+2022,Remuneración del personal,economico_presupuestario,6486531466.96726,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Y69; miles de euros × 1.000
+2023,Remuneración del personal,economico_presupuestario,6786397198.670001,miles de euros,sí,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Z69; miles de euros × 1.000; cifra provisional según el documento («(*) Cifras provisionales.»)
+2024,Remuneración del personal,economico_presupuestario,6906607728.52,miles de euros,sí,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!AA69; miles de euros × 1.000; cifra provisional según el documento («(*) Cifras provisionales.»)
+2002,Consumo intermedio,economico_presupuestario,1113893264.9045433,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!E71; miles de euros × 1.000
+2003,Consumo intermedio,economico_presupuestario,1214452413.1422737,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!F71; miles de euros × 1.000
+2004,Consumo intermedio,economico_presupuestario,1454933939.021611,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!G71; miles de euros × 1.000
+2005,Consumo intermedio,economico_presupuestario,1613693285.700278,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!H71; miles de euros × 1.000
+2006,Consumo intermedio,economico_presupuestario,1951029123.93,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!I71; miles de euros × 1.000
+2007,Consumo intermedio,economico_presupuestario,1829980516.93,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!J71; miles de euros × 1.000
+2008,Consumo intermedio,economico_presupuestario,2552918696.31,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!K71; miles de euros × 1.000
+2009,Consumo intermedio,economico_presupuestario,2116791753.15,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!L71; miles de euros × 1.000
+2010,Consumo intermedio,economico_presupuestario,1899089668.25,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!M71; miles de euros × 1.000
+2011,Consumo intermedio,economico_presupuestario,1917823000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!N71; miles de euros × 1.000
+2012,Consumo intermedio,economico_presupuestario,2423378000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!O71; miles de euros × 1.000
+2013,Consumo intermedio,economico_presupuestario,2106106000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!P71; miles de euros × 1.000
+2014,Consumo intermedio,economico_presupuestario,2095989000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Q71; miles de euros × 1.000
+2015,Consumo intermedio,economico_presupuestario,2443585000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!R71; miles de euros × 1.000
+2016,Consumo intermedio,economico_presupuestario,2435855000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!S71; miles de euros × 1.000
+2017,Consumo intermedio,economico_presupuestario,2434954000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!T71; miles de euros × 1.000
+2018,Consumo intermedio,economico_presupuestario,2563902000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!U71; miles de euros × 1.000
+2019,Consumo intermedio,economico_presupuestario,2712714006,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!V71; miles de euros × 1.000
+2020,Consumo intermedio,economico_presupuestario,3089837000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!W71; miles de euros × 1.000
+2021,Consumo intermedio,economico_presupuestario,3330898825.1100006,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!X71; miles de euros × 1.000
+2022,Consumo intermedio,economico_presupuestario,3279186682.2842304,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Y71; miles de euros × 1.000
+2023,Consumo intermedio,economico_presupuestario,3621221005.45,miles de euros,sí,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Z71; miles de euros × 1.000; cifra provisional según el documento («(*) Cifras provisionales.»)
+2024,Consumo intermedio,economico_presupuestario,3822357442.29,miles de euros,sí,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!AA71; miles de euros × 1.000; cifra provisional según el documento («(*) Cifras provisionales.»)
+2002,Consumo de capital fijo,economico_presupuestario,9995000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!E73; miles de euros × 1.000
+2003,Consumo de capital fijo,economico_presupuestario,7581479.73358231,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!F73; miles de euros × 1.000
+2004,Consumo de capital fijo,economico_presupuestario,12038000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!G73; miles de euros × 1.000
+2005,Consumo de capital fijo,economico_presupuestario,14030000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!H73; miles de euros × 1.000
+2006,Consumo de capital fijo,economico_presupuestario,16697000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!I73; miles de euros × 1.000
+2007,Consumo de capital fijo,economico_presupuestario,21998000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!J73; miles de euros × 1.000
+2008,Consumo de capital fijo,economico_presupuestario,28805000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!K73; miles de euros × 1.000
+2009,Consumo de capital fijo,economico_presupuestario,33060000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!L73; miles de euros × 1.000
+2010,Consumo de capital fijo,economico_presupuestario,29662000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!M73; miles de euros × 1.000
+2011,Consumo de capital fijo,economico_presupuestario,27875000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!N73; miles de euros × 1.000
+2012,Consumo de capital fijo,economico_presupuestario,25339000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!O73; miles de euros × 1.000
+2013,Consumo de capital fijo,economico_presupuestario,22392000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!P73; miles de euros × 1.000
+2014,Consumo de capital fijo,economico_presupuestario,20531000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Q73; miles de euros × 1.000
+2015,Consumo de capital fijo,economico_presupuestario,17610000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!R73; miles de euros × 1.000
+2016,Consumo de capital fijo,economico_presupuestario,17617000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!S73; miles de euros × 1.000
+2017,Consumo de capital fijo,economico_presupuestario,17282000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!T73; miles de euros × 1.000
+2018,Consumo de capital fijo,economico_presupuestario,16503000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!U73; miles de euros × 1.000
+2019,Consumo de capital fijo,economico_presupuestario,16320000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!V73; miles de euros × 1.000
+2020,Consumo de capital fijo,economico_presupuestario,15816000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!W73; miles de euros × 1.000
+2021,Consumo de capital fijo,economico_presupuestario,15010000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!X73; miles de euros × 1.000
+2022,Consumo de capital fijo,economico_presupuestario,639000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Y73; miles de euros × 1.000
+2023,Consumo de capital fijo,economico_presupuestario,492000,miles de euros,sí,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Z73; miles de euros × 1.000; cifra provisional según el documento («(*) Cifras provisionales.»)
+2024,Consumo de capital fijo,economico_presupuestario,426213.89,miles de euros,sí,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!AA73; miles de euros × 1.000; cifra provisional según el documento («(*) Cifras provisionales.»)
+2002,Conciertos,economico_presupuestario,302083248.03862383,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!E75; miles de euros × 1.000
+2003,Conciertos,economico_presupuestario,315067987.8104434,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!F75; miles de euros × 1.000
+2004,Conciertos,economico_presupuestario,333581031.00364306,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!G75; miles de euros × 1.000
+2005,Conciertos,economico_presupuestario,370142469.22274865,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!H75; miles de euros × 1.000
+2006,Conciertos,economico_presupuestario,347852000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!I75; miles de euros × 1.000
+2007,Conciertos,economico_presupuestario,411940000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!J75; miles de euros × 1.000
+2008,Conciertos,economico_presupuestario,442483000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!K75; miles de euros × 1.000
+2009,Conciertos,economico_presupuestario,485994000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!L75; miles de euros × 1.000
+2010,Conciertos,economico_presupuestario,515167000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!M75; miles de euros × 1.000
+2011,Conciertos,economico_presupuestario,446568000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!N75; miles de euros × 1.000
+2012,Conciertos,economico_presupuestario,460375368.69000003,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!O75; miles de euros × 1.000
+2013,Conciertos,economico_presupuestario,385456000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!P75; miles de euros × 1.000
+2014,Conciertos,economico_presupuestario,424344000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Q75; miles de euros × 1.000
+2015,Conciertos,economico_presupuestario,397981000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!R75; miles de euros × 1.000
+2016,Conciertos,economico_presupuestario,380143000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!S75; miles de euros × 1.000
+2017,Conciertos,economico_presupuestario,422629000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!T75; miles de euros × 1.000
+2018,Conciertos,economico_presupuestario,424528000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!U75; miles de euros × 1.000
+2019,Conciertos,economico_presupuestario,442912000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!V75; miles de euros × 1.000
+2020,Conciertos,economico_presupuestario,471760000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!W75; miles de euros × 1.000
+2021,Conciertos,economico_presupuestario,550845321.4509999,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!X75; miles de euros × 1.000
+2022,Conciertos,economico_presupuestario,580237006.1295,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Y75; miles de euros × 1.000
+2023,Conciertos,economico_presupuestario,594356249.78,miles de euros,sí,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Z75; miles de euros × 1.000; cifra provisional según el documento («(*) Cifras provisionales.»)
+2024,Conciertos,economico_presupuestario,625011774.2399999,miles de euros,sí,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!AA75; miles de euros × 1.000; cifra provisional según el documento («(*) Cifras provisionales.»)
+2002,Transferencias corrientes,economico_presupuestario,1549029480.8949146,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!E77; miles de euros × 1.000
+2003,Transferencias corrientes,economico_presupuestario,1747743556.9481035,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!F77; miles de euros × 1.000
+2004,Transferencias corrientes,economico_presupuestario,1842421446.5775623,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!G77; miles de euros × 1.000
+2005,Transferencias corrientes,economico_presupuestario,1900559635.0194074,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!H77; miles de euros × 1.000
+2006,Transferencias corrientes,economico_presupuestario,1952289387.9,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!I77; miles de euros × 1.000
+2007,Transferencias corrientes,economico_presupuestario,2077799415.36,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!J77; miles de euros × 1.000
+2008,Transferencias corrientes,economico_presupuestario,2209356463.3,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!K77; miles de euros × 1.000
+2009,Transferencias corrientes,economico_presupuestario,2338623680.51,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!L77; miles de euros × 1.000
+2010,Transferencias corrientes,economico_presupuestario,2488031815.68,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!M77; miles de euros × 1.000
+2011,Transferencias corrientes,economico_presupuestario,2209576000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!N77; miles de euros × 1.000
+2012,Transferencias corrientes,economico_presupuestario,1878204000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!O77; miles de euros × 1.000
+2013,Transferencias corrientes,economico_presupuestario,2040474000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!P77; miles de euros × 1.000
+2014,Transferencias corrientes,economico_presupuestario,1918780000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Q77; miles de euros × 1.000
+2015,Transferencias corrientes,economico_presupuestario,1859327000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!R77; miles de euros × 1.000
+2016,Transferencias corrientes,economico_presupuestario,1895724000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!S77; miles de euros × 1.000
+2017,Transferencias corrientes,economico_presupuestario,2045540000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!T77; miles de euros × 1.000
+2018,Transferencias corrientes,economico_presupuestario,2107278000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!U77; miles de euros × 1.000
+2019,Transferencias corrientes,economico_presupuestario,2193215000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!V77; miles de euros × 1.000
+2020,Transferencias corrientes,economico_presupuestario,2294810000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!W77; miles de euros × 1.000
+2021,Transferencias corrientes,economico_presupuestario,2437942196.88,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!X77; miles de euros × 1.000
+2022,Transferencias corrientes,economico_presupuestario,2611878461.2499997,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Y77; miles de euros × 1.000
+2023,Transferencias corrientes,economico_presupuestario,2682904326.93,miles de euros,sí,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Z77; miles de euros × 1.000; cifra provisional según el documento («(*) Cifras provisionales.»)
+2024,Transferencias corrientes,economico_presupuestario,2775666536.44,miles de euros,sí,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!AA77; miles de euros × 1.000; cifra provisional según el documento («(*) Cifras provisionales.»)
+2002,Gasto de capital,economico_presupuestario,123603007.2458423,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!E79; miles de euros × 1.000
+2003,Gasto de capital,economico_presupuestario,151508577.56316772,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!F79; miles de euros × 1.000
+2004,Gasto de capital,economico_presupuestario,170488984.78478333,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!G79; miles de euros × 1.000
+2005,Gasto de capital,economico_presupuestario,170142903.0189133,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!H79; miles de euros × 1.000
+2006,Gasto de capital,economico_presupuestario,270465083.38,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!I79; miles de euros × 1.000
+2007,Gasto de capital,economico_presupuestario,232390233.73,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!J79; miles de euros × 1.000
+2008,Gasto de capital,economico_presupuestario,327452619.19000006,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!K79; miles de euros × 1.000
+2009,Gasto de capital,economico_presupuestario,334004468.38000003,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!L79; miles de euros × 1.000
+2010,Gasto de capital,economico_presupuestario,302841136.55,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!M79; miles de euros × 1.000
+2011,Gasto de capital,economico_presupuestario,77591000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!N79; miles de euros × 1.000
+2012,Gasto de capital,economico_presupuestario,82325999.99999999,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!O79; miles de euros × 1.000
+2013,Gasto de capital,economico_presupuestario,91047000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!P79; miles de euros × 1.000
+2014,Gasto de capital,economico_presupuestario,132721000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Q79; miles de euros × 1.000
+2015,Gasto de capital,economico_presupuestario,114608440,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!R79; miles de euros × 1.000
+2016,Gasto de capital,economico_presupuestario,46452050,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!S79; miles de euros × 1.000
+2017,Gasto de capital,economico_presupuestario,58249280,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!T79; miles de euros × 1.000
+2018,Gasto de capital,economico_presupuestario,120962000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!U79; miles de euros × 1.000
+2019,Gasto de capital,economico_presupuestario,74413000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!V79; miles de euros × 1.000
+2020,Gasto de capital,economico_presupuestario,300854000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!W79; miles de euros × 1.000
+2021,Gasto de capital,economico_presupuestario,131650589.19,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!X79; miles de euros × 1.000
+2022,Gasto de capital,economico_presupuestario,155888323.01,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Y79; miles de euros × 1.000
+2023,Gasto de capital,economico_presupuestario,513263192.41,miles de euros,sí,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Z79; miles de euros × 1.000; cifra provisional según el documento («(*) Cifras provisionales.»)
+2024,Gasto de capital,economico_presupuestario,228210424.61000002,miles de euros,sí,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!AA79; miles de euros × 1.000; cifra provisional según el documento («(*) Cifras provisionales.»)
+2002,GASTO PÚBLICO EN SANIDAD GASTO CONSOLIDADO DEL SUBSECTOR,economico_presupuestario,5902163510.5047515,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!E81; miles de euros × 1.000
+2003,GASTO PÚBLICO EN SANIDAD GASTO CONSOLIDADO DEL SUBSECTOR,economico_presupuestario,6481947355.088827,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!F81; miles de euros × 1.000
+2004,GASTO PÚBLICO EN SANIDAD GASTO CONSOLIDADO DEL SUBSECTOR,economico_presupuestario,7060033957.020357,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!G81; miles de euros × 1.000
+2005,GASTO PÚBLICO EN SANIDAD GASTO CONSOLIDADO DEL SUBSECTOR,economico_presupuestario,7571192722.440001,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!H81; miles de euros × 1.000
+2006,GASTO PÚBLICO EN SANIDAD GASTO CONSOLIDADO DEL SUBSECTOR,economico_presupuestario,8379920238.44,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!I81; miles de euros × 1.000
+2007,GASTO PÚBLICO EN SANIDAD GASTO CONSOLIDADO DEL SUBSECTOR,economico_presupuestario,8895815430.67,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!J81; miles de euros × 1.000
+2008,GASTO PÚBLICO EN SANIDAD GASTO CONSOLIDADO DEL SUBSECTOR,economico_presupuestario,10336569210.32,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!K81; miles de euros × 1.000
+2009,GASTO PÚBLICO EN SANIDAD GASTO CONSOLIDADO DEL SUBSECTOR,economico_presupuestario,10308081734.22,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!L81; miles de euros × 1.000
+2010,GASTO PÚBLICO EN SANIDAD GASTO CONSOLIDADO DEL SUBSECTOR,economico_presupuestario,10033950360.54,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!M81; miles de euros × 1.000
+2011,GASTO PÚBLICO EN SANIDAD GASTO CONSOLIDADO DEL SUBSECTOR,economico_presupuestario,9455447000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!N81; miles de euros × 1.000
+2012,GASTO PÚBLICO EN SANIDAD GASTO CONSOLIDADO DEL SUBSECTOR,economico_presupuestario,9234494368.689999,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!O81; miles de euros × 1.000
+2013,GASTO PÚBLICO EN SANIDAD GASTO CONSOLIDADO DEL SUBSECTOR,economico_presupuestario,8822720000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!P81; miles de euros × 1.000
+2014,GASTO PÚBLICO EN SANIDAD GASTO CONSOLIDADO DEL SUBSECTOR,economico_presupuestario,8748514000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Q81; miles de euros × 1.000
+2015,GASTO PÚBLICO EN SANIDAD GASTO CONSOLIDADO DEL SUBSECTOR,economico_presupuestario,9167604440,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!R81; miles de euros × 1.000
+2016,GASTO PÚBLICO EN SANIDAD GASTO CONSOLIDADO DEL SUBSECTOR,economico_presupuestario,9346223050,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!S81; miles de euros × 1.000
+2017,GASTO PÚBLICO EN SANIDAD GASTO CONSOLIDADO DEL SUBSECTOR,economico_presupuestario,9700907280,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!T81; miles de euros × 1.000
+2018,GASTO PÚBLICO EN SANIDAD GASTO CONSOLIDADO DEL SUBSECTOR,economico_presupuestario,10190707000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!U81; miles de euros × 1.000
+2019,GASTO PÚBLICO EN SANIDAD GASTO CONSOLIDADO DEL SUBSECTOR,economico_presupuestario,10678679580.99,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!V81; miles de euros × 1.000
+2020,GASTO PÚBLICO EN SANIDAD GASTO CONSOLIDADO DEL SUBSECTOR,economico_presupuestario,11877550000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!W81; miles de euros × 1.000
+2021,GASTO PÚBLICO EN SANIDAD GASTO CONSOLIDADO DEL SUBSECTOR,economico_presupuestario,12721306926.351,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!X81; miles de euros × 1.000
+2022,GASTO PÚBLICO EN SANIDAD GASTO CONSOLIDADO DEL SUBSECTOR,economico_presupuestario,13114360939.64099,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Y81; miles de euros × 1.000
+2023,GASTO PÚBLICO EN SANIDAD GASTO CONSOLIDADO DEL SUBSECTOR,economico_presupuestario,14198633973.24,miles de euros,sí,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Z81; miles de euros × 1.000; cifra provisional según el documento («(*) Cifras provisionales.»)
+2024,GASTO PÚBLICO EN SANIDAD GASTO CONSOLIDADO DEL SUBSECTOR,economico_presupuestario,14358280119.99,miles de euros,sí,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!AA81; miles de euros × 1.000; cifra provisional según el documento («(*) Cifras provisionales.»)
+2002,( - ) TRANSFERENCIAS INTERSECTORIALES,economico_presupuestario,29505528.37,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!E82; miles de euros × 1.000
+2003,( - ) TRANSFERENCIAS INTERSECTORIALES,economico_presupuestario,31755045.77,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!F82; miles de euros × 1.000
+2004,( - ) TRANSFERENCIAS INTERSECTORIALES,economico_presupuestario,34281341.25,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!G82; miles de euros × 1.000
+2005,( - ) TRANSFERENCIAS INTERSECTORIALES,economico_presupuestario,32001948.2,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!H82; miles de euros × 1.000
+2006,( - ) TRANSFERENCIAS INTERSECTORIALES,economico_presupuestario,40692197.44,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!I82; miles de euros × 1.000
+2007,( - ) TRANSFERENCIAS INTERSECTORIALES,economico_presupuestario,28303990.07,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!J82; miles de euros × 1.000
+2008,( - ) TRANSFERENCIAS INTERSECTORIALES,economico_presupuestario,29501339.77,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!K82; miles de euros × 1.000
+2009,( - ) TRANSFERENCIAS INTERSECTORIALES,economico_presupuestario,32297382.640000003,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!L82; miles de euros × 1.000
+2010,( - ) TRANSFERENCIAS INTERSECTORIALES,economico_presupuestario,24972293.139999998,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!M82; miles de euros × 1.000
+2011,( - ) TRANSFERENCIAS INTERSECTORIALES,economico_presupuestario,13184000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!N82; miles de euros × 1.000
+2012,( - ) TRANSFERENCIAS INTERSECTORIALES,economico_presupuestario,11825000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!O82; miles de euros × 1.000
+2013,( - ) TRANSFERENCIAS INTERSECTORIALES,economico_presupuestario,10799000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!P82; miles de euros × 1.000
+2014,( - ) TRANSFERENCIAS INTERSECTORIALES,economico_presupuestario,11443000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Q82; miles de euros × 1.000
+2015,( - ) TRANSFERENCIAS INTERSECTORIALES,economico_presupuestario,9926000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!R82; miles de euros × 1.000
+2016,( - ) TRANSFERENCIAS INTERSECTORIALES,economico_presupuestario,14367000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!S82; miles de euros × 1.000
+2017,( - ) TRANSFERENCIAS INTERSECTORIALES,economico_presupuestario,8829000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!T82; miles de euros × 1.000
+2018,( - ) TRANSFERENCIAS INTERSECTORIALES,economico_presupuestario,6329000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!U82; miles de euros × 1.000
+2019,( - ) TRANSFERENCIAS INTERSECTORIALES,economico_presupuestario,20204000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!V82; miles de euros × 1.000
+2020,( - ) TRANSFERENCIAS INTERSECTORIALES,economico_presupuestario,19955000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!W82; miles de euros × 1.000
+2021,( - ) TRANSFERENCIAS INTERSECTORIALES,economico_presupuestario,20680141,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!X82; miles de euros × 1.000
+2022,( - ) TRANSFERENCIAS INTERSECTORIALES,economico_presupuestario,21718775.01,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Y82; miles de euros × 1.000
+2023,( - ) TRANSFERENCIAS INTERSECTORIALES,economico_presupuestario,21091326.93,miles de euros,sí,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Z82; miles de euros × 1.000; cifra provisional según el documento («(*) Cifras provisionales.»)
+2024,( - ) TRANSFERENCIAS INTERSECTORIALES,economico_presupuestario,21204092.48,miles de euros,sí,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!AA82; miles de euros × 1.000; cifra provisional según el documento («(*) Cifras provisionales.»)
+2002,APORTACION AL GASTO PÚBLICO EN SANIDAD TOTAL CONSOLIDADO,economico_presupuestario,5872657982.134751,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!E83; miles de euros × 1.000
+2003,APORTACION AL GASTO PÚBLICO EN SANIDAD TOTAL CONSOLIDADO,economico_presupuestario,6450192309.318827,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!F83; miles de euros × 1.000
+2004,APORTACION AL GASTO PÚBLICO EN SANIDAD TOTAL CONSOLIDADO,economico_presupuestario,7025752615.770358,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!G83; miles de euros × 1.000
+2005,APORTACION AL GASTO PÚBLICO EN SANIDAD TOTAL CONSOLIDADO,economico_presupuestario,7539190774.24,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!H83; miles de euros × 1.000
+2006,APORTACION AL GASTO PÚBLICO EN SANIDAD TOTAL CONSOLIDADO,economico_presupuestario,8339228041,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!I83; miles de euros × 1.000
+2007,APORTACION AL GASTO PÚBLICO EN SANIDAD TOTAL CONSOLIDADO,economico_presupuestario,8867511440.6,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!J83; miles de euros × 1.000
+2008,APORTACION AL GASTO PÚBLICO EN SANIDAD TOTAL CONSOLIDADO,economico_presupuestario,10307067870.55,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!K83; miles de euros × 1.000
+2009,APORTACION AL GASTO PÚBLICO EN SANIDAD TOTAL CONSOLIDADO,economico_presupuestario,10275784351.58,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!L83; miles de euros × 1.000
+2010,APORTACION AL GASTO PÚBLICO EN SANIDAD TOTAL CONSOLIDADO,economico_presupuestario,10008978067.400001,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!M83; miles de euros × 1.000
+2011,APORTACION AL GASTO PÚBLICO EN SANIDAD TOTAL CONSOLIDADO,economico_presupuestario,9442263000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!N83; miles de euros × 1.000
+2012,APORTACION AL GASTO PÚBLICO EN SANIDAD TOTAL CONSOLIDADO,economico_presupuestario,9222669368.689999,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!O83; miles de euros × 1.000
+2013,APORTACION AL GASTO PÚBLICO EN SANIDAD TOTAL CONSOLIDADO,economico_presupuestario,8811921000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!P83; miles de euros × 1.000
+2014,APORTACION AL GASTO PÚBLICO EN SANIDAD TOTAL CONSOLIDADO,economico_presupuestario,8737071000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Q83; miles de euros × 1.000
+2015,APORTACION AL GASTO PÚBLICO EN SANIDAD TOTAL CONSOLIDADO,economico_presupuestario,9157678440,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!R83; miles de euros × 1.000
+2016,APORTACION AL GASTO PÚBLICO EN SANIDAD TOTAL CONSOLIDADO,economico_presupuestario,9331856050,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!S83; miles de euros × 1.000
+2017,APORTACION AL GASTO PÚBLICO EN SANIDAD TOTAL CONSOLIDADO,economico_presupuestario,9692078280,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!T83; miles de euros × 1.000
+2018,APORTACION AL GASTO PÚBLICO EN SANIDAD TOTAL CONSOLIDADO,economico_presupuestario,10184378000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!U83; miles de euros × 1.000
+2019,APORTACION AL GASTO PÚBLICO EN SANIDAD TOTAL CONSOLIDADO,economico_presupuestario,10658475580.99,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!V83; miles de euros × 1.000
+2020,APORTACION AL GASTO PÚBLICO EN SANIDAD TOTAL CONSOLIDADO,economico_presupuestario,11857595000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!W83; miles de euros × 1.000
+2021,APORTACION AL GASTO PÚBLICO EN SANIDAD TOTAL CONSOLIDADO,economico_presupuestario,12700626785.350999,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!X83; miles de euros × 1.000
+2022,APORTACION AL GASTO PÚBLICO EN SANIDAD TOTAL CONSOLIDADO,economico_presupuestario,13092642164.630989,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Y83; miles de euros × 1.000
+2023,APORTACION AL GASTO PÚBLICO EN SANIDAD TOTAL CONSOLIDADO,economico_presupuestario,14177542646.31,miles de euros,sí,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Z83; miles de euros × 1.000; cifra provisional según el documento («(*) Cifras provisionales.»)
+2024,APORTACION AL GASTO PÚBLICO EN SANIDAD TOTAL CONSOLIDADO,economico_presupuestario,14337076027.51,miles de euros,sí,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!AA83; miles de euros × 1.000; cifra provisional según el documento («(*) Cifras provisionales.»)
+2002,2.2.1.1 - Servicios hospitalarios,cuenta_satelite_2.2_produccion_mercado,116907000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!E40; miles de euros × 1.000
+2003,2.2.1.1 - Servicios hospitalarios,cuenta_satelite_2.2_produccion_mercado,125793000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!F40; miles de euros × 1.000
+2004,2.2.1.1 - Servicios hospitalarios,cuenta_satelite_2.2_produccion_mercado,123697000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!G40; miles de euros × 1.000
+2005,2.2.1.1 - Servicios hospitalarios,cuenta_satelite_2.2_produccion_mercado,127256000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!H40; miles de euros × 1.000
+2006,2.2.1.1 - Servicios hospitalarios,cuenta_satelite_2.2_produccion_mercado,133887000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!I40; miles de euros × 1.000
+2007,2.2.1.1 - Servicios hospitalarios,cuenta_satelite_2.2_produccion_mercado,147960000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!J40; miles de euros × 1.000
+2008,2.2.1.1 - Servicios hospitalarios,cuenta_satelite_2.2_produccion_mercado,161009000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!K40; miles de euros × 1.000
+2009,2.2.1.1 - Servicios hospitalarios,cuenta_satelite_2.2_produccion_mercado,189148000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!L40; miles de euros × 1.000
+2010,2.2.1.1 - Servicios hospitalarios,cuenta_satelite_2.2_produccion_mercado,159455000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!M40; miles de euros × 1.000
+2011,2.2.1.1 - Servicios hospitalarios,cuenta_satelite_2.2_produccion_mercado,146708000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!N40; miles de euros × 1.000
+2012,2.2.1.1 - Servicios hospitalarios,cuenta_satelite_2.2_produccion_mercado,150698368.69,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!O40; miles de euros × 1.000
+2013,2.2.1.1 - Servicios hospitalarios,cuenta_satelite_2.2_produccion_mercado,143593000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!P40; miles de euros × 1.000
+2014,2.2.1.1 - Servicios hospitalarios,cuenta_satelite_2.2_produccion_mercado,141599000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Q40; miles de euros × 1.000
+2015,2.2.1.1 - Servicios hospitalarios,cuenta_satelite_2.2_produccion_mercado,125112000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!R40; miles de euros × 1.000
+2016,2.2.1.1 - Servicios hospitalarios,cuenta_satelite_2.2_produccion_mercado,122582000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!S40; miles de euros × 1.000
+2017,2.2.1.1 - Servicios hospitalarios,cuenta_satelite_2.2_produccion_mercado,153775000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!T40; miles de euros × 1.000
+2018,2.2.1.1 - Servicios hospitalarios,cuenta_satelite_2.2_produccion_mercado,172628000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!U40; miles de euros × 1.000
+2019,2.2.1.1 - Servicios hospitalarios,cuenta_satelite_2.2_produccion_mercado,174535000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!V40; miles de euros × 1.000
+2020,2.2.1.1 - Servicios hospitalarios,cuenta_satelite_2.2_produccion_mercado,186722000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!W40; miles de euros × 1.000
+2021,2.2.1.1 - Servicios hospitalarios,cuenta_satelite_2.2_produccion_mercado,254906913.65099998,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!X40; miles de euros × 1.000
+2022,2.2.1.1 - Servicios hospitalarios,cuenta_satelite_2.2_produccion_mercado,249449773.58999997,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Y40; miles de euros × 1.000
+2023,2.2.1.1 - Servicios hospitalarios,cuenta_satelite_2.2_produccion_mercado,257669000,miles de euros,sí,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Z40; miles de euros × 1.000; cifra provisional según el documento («(*) Cifras provisionales.»)
+2024,2.2.1.1 - Servicios hospitalarios,cuenta_satelite_2.2_produccion_mercado,272831000,miles de euros,sí,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!AA40; miles de euros × 1.000; cifra provisional según el documento («(*) Cifras provisionales.»)
+2002,2.2.1.2 - Servicios especializados,cuenta_satelite_2.2_produccion_mercado,98471835.44287432,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!E41; miles de euros × 1.000
+2003,2.2.1.2 - Servicios especializados,cuenta_satelite_2.2_produccion_mercado,100124358.53809357,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!F41; miles de euros × 1.000
+2004,2.2.1.2 - Servicios especializados,cuenta_satelite_2.2_produccion_mercado,113603967.43939591,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!G41; miles de euros × 1.000
+2005,2.2.1.2 - Servicios especializados,cuenta_satelite_2.2_produccion_mercado,144159397.85313592,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!H41; miles de euros × 1.000
+2006,2.2.1.2 - Servicios especializados,cuenta_satelite_2.2_produccion_mercado,100739000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!I41; miles de euros × 1.000
+2007,2.2.1.2 - Servicios especializados,cuenta_satelite_2.2_produccion_mercado,140574000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!J41; miles de euros × 1.000
+2008,2.2.1.2 - Servicios especializados,cuenta_satelite_2.2_produccion_mercado,135259000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!K41; miles de euros × 1.000
+2009,2.2.1.2 - Servicios especializados,cuenta_satelite_2.2_produccion_mercado,136398000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!L41; miles de euros × 1.000
+2010,2.2.1.2 - Servicios especializados,cuenta_satelite_2.2_produccion_mercado,166301000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!M41; miles de euros × 1.000
+2011,2.2.1.2 - Servicios especializados,cuenta_satelite_2.2_produccion_mercado,147855000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!N41; miles de euros × 1.000
+2012,2.2.1.2 - Servicios especializados,cuenta_satelite_2.2_produccion_mercado,143859000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!O41; miles de euros × 1.000
+2013,2.2.1.2 - Servicios especializados,cuenta_satelite_2.2_produccion_mercado,107262000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!P41; miles de euros × 1.000
+2014,2.2.1.2 - Servicios especializados,cuenta_satelite_2.2_produccion_mercado,133826000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Q41; miles de euros × 1.000
+2015,2.2.1.2 - Servicios especializados,cuenta_satelite_2.2_produccion_mercado,125257000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!R41; miles de euros × 1.000
+2016,2.2.1.2 - Servicios especializados,cuenta_satelite_2.2_produccion_mercado,112909000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!S41; miles de euros × 1.000
+2017,2.2.1.2 - Servicios especializados,cuenta_satelite_2.2_produccion_mercado,121814000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!T41; miles de euros × 1.000
+2018,2.2.1.2 - Servicios especializados,cuenta_satelite_2.2_produccion_mercado,109037000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!U41; miles de euros × 1.000
+2019,2.2.1.2 - Servicios especializados,cuenta_satelite_2.2_produccion_mercado,119259000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!V41; miles de euros × 1.000
+2020,2.2.1.2 - Servicios especializados,cuenta_satelite_2.2_produccion_mercado,132006000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!W41; miles de euros × 1.000
+2021,2.2.1.2 - Servicios especializados,cuenta_satelite_2.2_produccion_mercado,138524561,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!X41; miles de euros × 1.000
+2022,2.2.1.2 - Servicios especializados,cuenta_satelite_2.2_produccion_mercado,152399930.78,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Y41; miles de euros × 1.000
+2023,2.2.1.2 - Servicios especializados,cuenta_satelite_2.2_produccion_mercado,159887000,miles de euros,sí,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Z41; miles de euros × 1.000; cifra provisional según el documento («(*) Cifras provisionales.»)
+2024,2.2.1.2 - Servicios especializados,cuenta_satelite_2.2_produccion_mercado,163288000,miles de euros,sí,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!AA41; miles de euros × 1.000; cifra provisional según el documento («(*) Cifras provisionales.»)
+2002,2.2.2 - Servicios primarios de salud,cuenta_satelite_2.2_produccion_mercado,0,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!E42; miles de euros × 1.000
+2003,2.2.2 - Servicios primarios de salud,cuenta_satelite_2.2_produccion_mercado,0,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!F42; miles de euros × 1.000
+2004,2.2.2 - Servicios primarios de salud,cuenta_satelite_2.2_produccion_mercado,0,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!G42; miles de euros × 1.000
+2005,2.2.2 - Servicios primarios de salud,cuenta_satelite_2.2_produccion_mercado,0,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!H42; miles de euros × 1.000
+2006,2.2.2 - Servicios primarios de salud,cuenta_satelite_2.2_produccion_mercado,5094000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!I42; miles de euros × 1.000
+2007,2.2.2 - Servicios primarios de salud,cuenta_satelite_2.2_produccion_mercado,5980000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!J42; miles de euros × 1.000
+2008,2.2.2 - Servicios primarios de salud,cuenta_satelite_2.2_produccion_mercado,7386000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!K42; miles de euros × 1.000
+2009,2.2.2 - Servicios primarios de salud,cuenta_satelite_2.2_produccion_mercado,8610000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!L42; miles de euros × 1.000
+2010,2.2.2 - Servicios primarios de salud,cuenta_satelite_2.2_produccion_mercado,8139000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!M42; miles de euros × 1.000
+2011,2.2.2 - Servicios primarios de salud,cuenta_satelite_2.2_produccion_mercado,7906000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!N42; miles de euros × 1.000
+2012,2.2.2 - Servicios primarios de salud,cuenta_satelite_2.2_produccion_mercado,8799000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!O42; miles de euros × 1.000
+2013,2.2.2 - Servicios primarios de salud,cuenta_satelite_2.2_produccion_mercado,8882000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!P42; miles de euros × 1.000
+2014,2.2.2 - Servicios primarios de salud,cuenta_satelite_2.2_produccion_mercado,8342000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Q42; miles de euros × 1.000
+2015,2.2.2 - Servicios primarios de salud,cuenta_satelite_2.2_produccion_mercado,7590000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!R42; miles de euros × 1.000
+2016,2.2.2 - Servicios primarios de salud,cuenta_satelite_2.2_produccion_mercado,7645000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!S42; miles de euros × 1.000
+2017,2.2.2 - Servicios primarios de salud,cuenta_satelite_2.2_produccion_mercado,7846000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!T42; miles de euros × 1.000
+2018,2.2.2 - Servicios primarios de salud,cuenta_satelite_2.2_produccion_mercado,8276000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!U42; miles de euros × 1.000
+2019,2.2.2 - Servicios primarios de salud,cuenta_satelite_2.2_produccion_mercado,8034000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!V42; miles de euros × 1.000
+2020,2.2.2 - Servicios primarios de salud,cuenta_satelite_2.2_produccion_mercado,6233000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!W42; miles de euros × 1.000
+2021,2.2.2 - Servicios primarios de salud,cuenta_satelite_2.2_produccion_mercado,6814353.8,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!X42; miles de euros × 1.000
+2022,2.2.2 - Servicios primarios de salud,cuenta_satelite_2.2_produccion_mercado,6371000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Y42; miles de euros × 1.000
+2023,2.2.2 - Servicios primarios de salud,cuenta_satelite_2.2_produccion_mercado,6676249.78,miles de euros,sí,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Z42; miles de euros × 1.000; cifra provisional según el documento («(*) Cifras provisionales.»)
+2024,2.2.2 - Servicios primarios de salud,cuenta_satelite_2.2_produccion_mercado,6165774.240000001,miles de euros,sí,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!AA42; miles de euros × 1.000; cifra provisional según el documento («(*) Cifras provisionales.»)
+2002,2.2.3 - Farmacia,cuenta_satelite_2.2_produccion_mercado,1467876442.726003,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!E43; miles de euros × 1.000
+2003,2.2.3 - Farmacia,cuenta_satelite_2.2_produccion_mercado,1647158108.770051,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!F43; miles de euros × 1.000
+2004,2.2.3 - Farmacia,cuenta_satelite_2.2_produccion_mercado,1697854374.6845536,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!G43; miles de euros × 1.000
+2005,2.2.3 - Farmacia,cuenta_satelite_2.2_produccion_mercado,1744973339.808529,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!H43; miles de euros × 1.000
+2006,2.2.3 - Farmacia,cuenta_satelite_2.2_produccion_mercado,1794391000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!I43; miles de euros × 1.000
+2007,2.2.3 - Farmacia,cuenta_satelite_2.2_produccion_mercado,1891018000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!J43; miles de euros × 1.000
+2008,2.2.3 - Farmacia,cuenta_satelite_2.2_produccion_mercado,2009909000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!K43; miles de euros × 1.000
+2009,2.2.3 - Farmacia,cuenta_satelite_2.2_produccion_mercado,2132946000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!L43; miles de euros × 1.000
+2010,2.2.3 - Farmacia,cuenta_satelite_2.2_produccion_mercado,2281384000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!M43; miles de euros × 1.000
+2011,2.2.3 - Farmacia,cuenta_satelite_2.2_produccion_mercado,2003883000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!N43; miles de euros × 1.000
+2012,2.2.3 - Farmacia,cuenta_satelite_2.2_produccion_mercado,1712068000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!O43; miles de euros × 1.000
+2013,2.2.3 - Farmacia,cuenta_satelite_2.2_produccion_mercado,1872878000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!P43; miles de euros × 1.000
+2014,2.2.3 - Farmacia,cuenta_satelite_2.2_produccion_mercado,1730448000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Q43; miles de euros × 1.000
+2015,2.2.3 - Farmacia,cuenta_satelite_2.2_produccion_mercado,1673046000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!R43; miles de euros × 1.000
+2016,2.2.3 - Farmacia,cuenta_satelite_2.2_produccion_mercado,1716873000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!S43; miles de euros × 1.000
+2017,2.2.3 - Farmacia,cuenta_satelite_2.2_produccion_mercado,1846109000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!T43; miles de euros × 1.000
+2018,2.2.3 - Farmacia,cuenta_satelite_2.2_produccion_mercado,1911344000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!U43; miles de euros × 1.000
+2019,2.2.3 - Farmacia,cuenta_satelite_2.2_produccion_mercado,1976383000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!V43; miles de euros × 1.000
+2020,2.2.3 - Farmacia,cuenta_satelite_2.2_produccion_mercado,2058134000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!W43; miles de euros × 1.000
+2021,2.2.3 - Farmacia,cuenta_satelite_2.2_produccion_mercado,2190953205,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!X43; miles de euros × 1.000
+2022,2.2.3 - Farmacia,cuenta_satelite_2.2_produccion_mercado,2342833329.29,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Y43; miles de euros × 1.000
+2023,2.2.3 - Farmacia,cuenta_satelite_2.2_produccion_mercado,2400174000,miles de euros,sí,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Z43; miles de euros × 1.000; cifra provisional según el documento («(*) Cifras provisionales.»)
+2024,2.2.3 - Farmacia,cuenta_satelite_2.2_produccion_mercado,2480141000,miles de euros,sí,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!AA43; miles de euros × 1.000; cifra provisional según el documento («(*) Cifras provisionales.»)
+2002,2.2.4 - Traslado de enfermos,cuenta_satelite_2.2_produccion_mercado,78566412.59574951,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!E44; miles de euros × 1.000
+2003,2.2.4 - Traslado de enfermos,cuenta_satelite_2.2_produccion_mercado,80789629.27234983,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!F44; miles de euros × 1.000
+2004,2.2.4 - Traslado de enfermos,cuenta_satelite_2.2_produccion_mercado,87410063.56424713,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!G44; miles de euros × 1.000
+2005,2.2.4 - Traslado de enfermos,cuenta_satelite_2.2_produccion_mercado,89272071.36961272,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!H44; miles de euros × 1.000
+2006,2.2.4 - Traslado de enfermos,cuenta_satelite_2.2_produccion_mercado,97710000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!I44; miles de euros × 1.000
+2007,2.2.4 - Traslado de enfermos,cuenta_satelite_2.2_produccion_mercado,114717000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!J44; miles de euros × 1.000
+2008,2.2.4 - Traslado de enfermos,cuenta_satelite_2.2_produccion_mercado,135336000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!K44; miles de euros × 1.000
+2009,2.2.4 - Traslado de enfermos,cuenta_satelite_2.2_produccion_mercado,147628000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!L44; miles de euros × 1.000
+2010,2.2.4 - Traslado de enfermos,cuenta_satelite_2.2_produccion_mercado,176746000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!M44; miles de euros × 1.000
+2011,2.2.4 - Traslado de enfermos,cuenta_satelite_2.2_produccion_mercado,139102000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!N44; miles de euros × 1.000
+2012,2.2.4 - Traslado de enfermos,cuenta_satelite_2.2_produccion_mercado,151272000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!O44; miles de euros × 1.000
+2013,2.2.4 - Traslado de enfermos,cuenta_satelite_2.2_produccion_mercado,120165000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!P44; miles de euros × 1.000
+2014,2.2.4 - Traslado de enfermos,cuenta_satelite_2.2_produccion_mercado,135089000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Q44; miles de euros × 1.000
+2015,2.2.4 - Traslado de enfermos,cuenta_satelite_2.2_produccion_mercado,134357000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!R44; miles de euros × 1.000
+2016,2.2.4 - Traslado de enfermos,cuenta_satelite_2.2_produccion_mercado,131086000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!S44; miles de euros × 1.000
+2017,2.2.4 - Traslado de enfermos,cuenta_satelite_2.2_produccion_mercado,135013000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!T44; miles de euros × 1.000
+2018,2.2.4 - Traslado de enfermos,cuenta_satelite_2.2_produccion_mercado,134565000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!U44; miles de euros × 1.000
+2019,2.2.4 - Traslado de enfermos,cuenta_satelite_2.2_produccion_mercado,140996000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!V44; miles de euros × 1.000
+2020,2.2.4 - Traslado de enfermos,cuenta_satelite_2.2_produccion_mercado,146799000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!W44; miles de euros × 1.000
+2021,2.2.4 - Traslado de enfermos,cuenta_satelite_2.2_produccion_mercado,150599493,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!X44; miles de euros × 1.000
+2022,2.2.4 - Traslado de enfermos,cuenta_satelite_2.2_produccion_mercado,172016301.7595,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Y44; miles de euros × 1.000
+2023,2.2.4 - Traslado de enfermos,cuenta_satelite_2.2_produccion_mercado,170124000,miles de euros,sí,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Z44; miles de euros × 1.000; cifra provisional según el documento («(*) Cifras provisionales.»)
+2024,2.2.4 - Traslado de enfermos,cuenta_satelite_2.2_produccion_mercado,182727000,miles de euros,sí,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!AA44; miles de euros × 1.000; cifra provisional según el documento («(*) Cifras provisionales.»)
+2002,2.2.5 - Protesis y aparatos terapéuticos,cuenta_satelite_2.2_produccion_mercado,41831884.20368988,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!E45; miles de euros × 1.000
+2003,2.2.5 - Protesis y aparatos terapéuticos,cuenta_satelite_2.2_produccion_mercado,46082568.29799652,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!F45; miles de euros × 1.000
+2004,2.2.5 - Protesis y aparatos terapéuticos,cuenta_satelite_2.2_produccion_mercado,51340000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!G45; miles de euros × 1.000
+2005,2.2.5 - Protesis y aparatos terapéuticos,cuenta_satelite_2.2_produccion_mercado,57137000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!H45; miles de euros × 1.000
+2006,2.2.5 - Protesis y aparatos terapéuticos,cuenta_satelite_2.2_produccion_mercado,49128000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!I45; miles de euros × 1.000
+2007,2.2.5 - Protesis y aparatos terapéuticos,cuenta_satelite_2.2_produccion_mercado,50269000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!J45; miles de euros × 1.000
+2008,2.2.5 - Protesis y aparatos terapéuticos,cuenta_satelite_2.2_produccion_mercado,54775000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!K45; miles de euros × 1.000
+2009,2.2.5 - Protesis y aparatos terapéuticos,cuenta_satelite_2.2_produccion_mercado,55447000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!L45; miles de euros × 1.000
+2010,2.2.5 - Protesis y aparatos terapéuticos,cuenta_satelite_2.2_produccion_mercado,58943000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!M45; miles de euros × 1.000
+2011,2.2.5 - Protesis y aparatos terapéuticos,cuenta_satelite_2.2_produccion_mercado,53762000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!N45; miles de euros × 1.000
+2012,2.2.5 - Protesis y aparatos terapéuticos,cuenta_satelite_2.2_produccion_mercado,34571000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!O45; miles de euros × 1.000
+2013,2.2.5 - Protesis y aparatos terapéuticos,cuenta_satelite_2.2_produccion_mercado,25178000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!P45; miles de euros × 1.000
+2014,2.2.5 - Protesis y aparatos terapéuticos,cuenta_satelite_2.2_produccion_mercado,65317000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Q45; miles de euros × 1.000
+2015,2.2.5 - Protesis y aparatos terapéuticos,cuenta_satelite_2.2_produccion_mercado,46839000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!R45; miles de euros × 1.000
+2016,2.2.5 - Protesis y aparatos terapéuticos,cuenta_satelite_2.2_produccion_mercado,49342000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!S45; miles de euros × 1.000
+2017,2.2.5 - Protesis y aparatos terapéuticos,cuenta_satelite_2.2_produccion_mercado,51047000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!T45; miles de euros × 1.000
+2018,2.2.5 - Protesis y aparatos terapéuticos,cuenta_satelite_2.2_produccion_mercado,50476000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!U45; miles de euros × 1.000
+2019,2.2.5 - Protesis y aparatos terapéuticos,cuenta_satelite_2.2_produccion_mercado,52920000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!V45; miles de euros × 1.000
+2020,2.2.5 - Protesis y aparatos terapéuticos,cuenta_satelite_2.2_produccion_mercado,44174000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!W45; miles de euros × 1.000
+2021,2.2.5 - Protesis y aparatos terapéuticos,cuenta_satelite_2.2_produccion_mercado,55979353,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!X45; miles de euros × 1.000
+2022,2.2.5 - Protesis y aparatos terapéuticos,cuenta_satelite_2.2_produccion_mercado,66552521.76,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Y45; miles de euros × 1.000
+2023,2.2.5 - Protesis y aparatos terapéuticos,cuenta_satelite_2.2_produccion_mercado,71341000,miles de euros,sí,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Z45; miles de euros × 1.000; cifra provisional según el documento («(*) Cifras provisionales.»)
+2024,2.2.5 - Protesis y aparatos terapéuticos,cuenta_satelite_2.2_produccion_mercado,71465000,miles de euros,sí,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!AA45; miles de euros × 1.000; cifra provisional según el documento («(*) Cifras provisionales.»)
+2002,2.2 PRODUCCIÓN DE MERCADO,cuenta_satelite_2.2_produccion_mercado,1803653574.9683168,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!E46; miles de euros × 1.000
+2003,2.2 PRODUCCIÓN DE MERCADO,cuenta_satelite_2.2_produccion_mercado,1999947664.8784908,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!F46; miles de euros × 1.000
+2004,2.2 PRODUCCIÓN DE MERCADO,cuenta_satelite_2.2_produccion_mercado,2073905405.6881967,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!G46; miles de euros × 1.000
+2005,2.2 PRODUCCIÓN DE MERCADO,cuenta_satelite_2.2_produccion_mercado,2162797809.0312774,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!H46; miles de euros × 1.000
+2006,2.2 PRODUCCIÓN DE MERCADO,cuenta_satelite_2.2_produccion_mercado,2180949000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!I46; miles de euros × 1.000
+2007,2.2 PRODUCCIÓN DE MERCADO,cuenta_satelite_2.2_produccion_mercado,2350518000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!J46; miles de euros × 1.000
+2008,2.2 PRODUCCIÓN DE MERCADO,cuenta_satelite_2.2_produccion_mercado,2503674000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!K46; miles de euros × 1.000
+2009,2.2 PRODUCCIÓN DE MERCADO,cuenta_satelite_2.2_produccion_mercado,2670177000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!L46; miles de euros × 1.000
+2010,2.2 PRODUCCIÓN DE MERCADO,cuenta_satelite_2.2_produccion_mercado,2850968000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!M46; miles de euros × 1.000
+2011,2.2 PRODUCCIÓN DE MERCADO,cuenta_satelite_2.2_produccion_mercado,2499216000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!N46; miles de euros × 1.000
+2012,2.2 PRODUCCIÓN DE MERCADO,cuenta_satelite_2.2_produccion_mercado,2201267368.69,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!O46; miles de euros × 1.000
+2013,2.2 PRODUCCIÓN DE MERCADO,cuenta_satelite_2.2_produccion_mercado,2277958000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!P46; miles de euros × 1.000
+2014,2.2 PRODUCCIÓN DE MERCADO,cuenta_satelite_2.2_produccion_mercado,2214621000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Q46; miles de euros × 1.000
+2015,2.2 PRODUCCIÓN DE MERCADO,cuenta_satelite_2.2_produccion_mercado,2112201000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!R46; miles de euros × 1.000
+2016,2.2 PRODUCCIÓN DE MERCADO,cuenta_satelite_2.2_produccion_mercado,2140437000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!S46; miles de euros × 1.000
+2017,2.2 PRODUCCIÓN DE MERCADO,cuenta_satelite_2.2_produccion_mercado,2315604000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!T46; miles de euros × 1.000
+2018,2.2 PRODUCCIÓN DE MERCADO,cuenta_satelite_2.2_produccion_mercado,2386326000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!U46; miles de euros × 1.000
+2019,2.2 PRODUCCIÓN DE MERCADO,cuenta_satelite_2.2_produccion_mercado,2472127000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!V46; miles de euros × 1.000
+2020,2.2 PRODUCCIÓN DE MERCADO,cuenta_satelite_2.2_produccion_mercado,2574068000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!W46; miles de euros × 1.000
+2021,2.2 PRODUCCIÓN DE MERCADO,cuenta_satelite_2.2_produccion_mercado,2797777879.451,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!X46; miles de euros × 1.000
+2022,2.2 PRODUCCIÓN DE MERCADO,cuenta_satelite_2.2_produccion_mercado,2989622857.1794997,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Y46; miles de euros × 1.000
+2023,2.2 PRODUCCIÓN DE MERCADO,cuenta_satelite_2.2_produccion_mercado,3065871249.78,miles de euros,sí,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Z46; miles de euros × 1.000; cifra provisional según el documento («(*) Cifras provisionales.»)
+2024,2.2 PRODUCCIÓN DE MERCADO,cuenta_satelite_2.2_produccion_mercado,3176617774.24,miles de euros,sí,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!AA46; miles de euros × 1.000; cifra provisional según el documento («(*) Cifras provisionales.»)
+2002,3.1 - Entre AA.PP. Por servicios concertados,cuenta_satelite_3_transferencias_corrientes,8138000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!E49; miles de euros × 1.000
+2003,3.1 - Entre AA.PP. Por servicios concertados,cuenta_satelite_3_transferencias_corrientes,8361000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!F49; miles de euros × 1.000
+2004,3.1 - Entre AA.PP. Por servicios concertados,cuenta_satelite_3_transferencias_corrientes,8870000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!G49; miles de euros × 1.000
+2005,3.1 - Entre AA.PP. Por servicios concertados,cuenta_satelite_3_transferencias_corrientes,9455000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!H49; miles de euros × 1.000
+2006,3.1 - Entre AA.PP. Por servicios concertados,cuenta_satelite_3_transferencias_corrientes,10422000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!I49; miles de euros × 1.000
+2007,3.1 - Entre AA.PP. Por servicios concertados,cuenta_satelite_3_transferencias_corrientes,2709000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!J49; miles de euros × 1.000
+2008,3.1 - Entre AA.PP. Por servicios concertados,cuenta_satelite_3_transferencias_corrientes,3493000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!K49; miles de euros × 1.000
+2009,3.1 - Entre AA.PP. Por servicios concertados,cuenta_satelite_3_transferencias_corrientes,4210000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!L49; miles de euros × 1.000
+2010,3.1 - Entre AA.PP. Por servicios concertados,cuenta_satelite_3_transferencias_corrientes,4526000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!M49; miles de euros × 1.000
+2011,3.1 - Entre AA.PP. Por servicios concertados,cuenta_satelite_3_transferencias_corrientes,4997000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!N49; miles de euros × 1.000
+2012,3.1 - Entre AA.PP. Por servicios concertados,cuenta_satelite_3_transferencias_corrientes,5747000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!O49; miles de euros × 1.000
+2013,3.1 - Entre AA.PP. Por servicios concertados,cuenta_satelite_3_transferencias_corrientes,5554000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!P49; miles de euros × 1.000
+2014,3.1 - Entre AA.PP. Por servicios concertados,cuenta_satelite_3_transferencias_corrientes,5488000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Q49; miles de euros × 1.000
+2015,3.1 - Entre AA.PP. Por servicios concertados,cuenta_satelite_3_transferencias_corrientes,5665000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!R49; miles de euros × 1.000
+2016,3.1 - Entre AA.PP. Por servicios concertados,cuenta_satelite_3_transferencias_corrientes,5921000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!S49; miles de euros × 1.000
+2017,3.1 - Entre AA.PP. Por servicios concertados,cuenta_satelite_3_transferencias_corrientes,4181000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!T49; miles de euros × 1.000
+2018,3.1 - Entre AA.PP. Por servicios concertados,cuenta_satelite_3_transferencias_corrientes,22000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!U49; miles de euros × 1.000
+2019,3.1 - Entre AA.PP. Por servicios concertados,cuenta_satelite_3_transferencias_corrientes,88000,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!V49; miles de euros × 1.000
+2020,3.1 - Entre AA.PP. Por servicios concertados,cuenta_satelite_3_transferencias_corrientes,0,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!W49; miles de euros × 1.000
+2021,3.1 - Entre AA.PP. Por servicios concertados,cuenta_satelite_3_transferencias_corrientes,0,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!X49; miles de euros × 1.000
+2022,3.1 - Entre AA.PP. Por servicios concertados,cuenta_satelite_3_transferencias_corrientes,0,miles de euros,no,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Y49; miles de euros × 1.000
+2023,3.1 - Entre AA.PP. Por servicios concertados,cuenta_satelite_3_transferencias_corrientes,0,miles de euros,sí,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!Z49; miles de euros × 1.000; cifra provisional según el documento («(*) Cifras provisionales.»)
+2024,3.1 - Entre AA.PP. Por servicios concertados,cuenta_satelite_3_transferencias_corrientes,0,miles de euros,sí,MSAN-EGSP-001,OFICIAL_SECUNDARIA,Tabla 3.4.01!AA49; miles de euros × 1.000; cifra provisional según el documento («(*) Cifras provisionales.»)
