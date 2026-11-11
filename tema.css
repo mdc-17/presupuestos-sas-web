@@ -1,0 +1,54 @@
+/*
+  Tema del sitio público (portada y consulta). Lo copia e inserta scripts/publicacion/publicar_web.py.
+  Decisión del usuario (2026-11-11): colores relacionados con la Junta de Andalucía, sin color político.
+  Base: verde institucional de la bandera de Andalucía (verde y blanco; Pantone 356 C ≈ #007A33),
+  en tonos oscuros, distintos del verde lima usado por algún partido. Sin escudos ni logotipos.
+  Solo redefine variables de color: la estructura de las páginas no cambia.
+  Las fases (inicial, definitivo, obligaciones) usan una rampa de un solo tono, de claro a oscuro.
+*/
+:root {
+  --verde: #007a33;
+  --verde-osc: #00552a;
+  --bg: #f6f9f7;
+  --surface: #ffffff;
+  --ink: #15241b;
+  --ink-2: #4c5c53;
+  --line: #d5e2da;
+  --line-2: #e8f0eb;
+  --f1: #a7cdb5;      /* fase: crédito inicial */
+  --f2: #4f9a6c;      /* fase: crédito definitivo */
+  --f3: #0f4a2a;      /* fase: obligaciones reconocidas */
+  --accent: #007a33;
+  --band: rgba(0, 122, 51, 0.08);
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --verde: #4fb47a;
+    --verde-osc: #00552a;
+    --bg: #121a15; --surface: #18221c; --ink: #e6efe9; --ink-2: #a6b8ad;
+    --line: #2c3a31; --line-2: #1f2a23;
+    --f1: #2d5a40; --f2: #5ea67a; --f3: #c3e5cf;
+    --accent: #6cc493; --band: rgba(108, 196, 147, 0.10);
+  }
+}
+:root[data-theme="dark"] {
+  --verde: #4fb47a;
+  --verde-osc: #00552a;
+  --bg: #121a15; --surface: #18221c; --ink: #e6efe9; --ink-2: #a6b8ad;
+  --line: #2c3a31; --line-2: #1f2a23;
+  --f1: #2d5a40; --f2: #5ea67a; --f3: #c3e5cf;
+  --accent: #6cc493; --band: rgba(108, 196, 147, 0.10);
+}
+
+/* Franja superior verde, blanca y verde (colores de la bandera), en todo el ancho, sin alterar la maqueta */
+body {
+  background:
+    linear-gradient(var(--verde-osc) 0 5px, #ffffff 5px 8px, var(--verde) 8px 12px) top / 100% 12px no-repeat,
+    var(--bg);
+}
+h1 { color: var(--verde-osc); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) h1 { color: var(--ink); } }
+:root[data-theme="dark"] h1 { color: var(--ink); }
+
+/* Aviso de sitio no oficial */
+.aviso-no-oficial { font-size: 0.85rem; color: var(--ink-2); border-left: 3px solid var(--verde); padding: 2px 0 2px 10px; }
