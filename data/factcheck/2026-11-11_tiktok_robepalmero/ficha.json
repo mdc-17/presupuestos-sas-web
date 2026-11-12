@@ -1,0 +1,17 @@
+{
+  "plataforma": "TikTok",
+  "usuario": "@robepalmero",
+  "titulo_pagina": "«Día 3 · Desmontando los presupuestos» (sanidad): comprobación de sus afirmaciones",
+  "duracion": "2 min 47 s",
+  "fecha_revision": "2026-11-11",
+  "presentacion": "El vídeo comenta el Proyecto de Presupuesto de 2027, el Presupuesto de 2026 y la ejecución de las cuentas del Servicio Andaluz de Salud (SAS). Aquí se contrasta cada afirmación con datos que se puedan medir con los documentos oficiales del presupuesto, la Cuenta General y el Ministerio de Sanidad.",
+  "metodo": [
+    "Transcripción automática del audio en local (Whisper, modelo large-v3), revisada con el audio y con los rótulos que aparecen en pantalla. Los minutos son aproximados.",
+    "Los rótulos se leen en fotogramas ampliados del vídeo original; en su tipografía el 0, el 6 y el 8 se parecen, y cada cifra se contrasta con el resto del rótulo y con el documento citado.",
+    "Cada afirmación se contrasta con el documento oficial que el propio vídeo cita o, si no lo cita, con el más próximo: Ley y Proyecto de Presupuestos, Cuenta General (Intervención General), contratación pública (Perfil de Contratante y DOUE) y Estadística de Gasto Sanitario Público (Ministerio de Sanidad).",
+    "El ámbito de cada afirmación es el que indica el vídeo en ese momento: lo que se dice y el rótulo en pantalla. Si el rótulo concreta la medida o el ámbito de una expresión general de la voz (por ejemplo, «se gasta menos» como porcentaje ejecutado, o «mantenimiento» como «reposición en infraestructuras»), se comprueba con esa medida y la otra lectura se da en la explicación. Si la voz da una cifra distinta de la del rótulo, se comprueban las dos.",
+    "Las opiniones y valoraciones no se etiquetan: se listan aparte."
+  ],
+  "nota_valoraciones": "Opiniones, calificaciones y atribuciones de intención del vídeo que no contienen un dato medible. Se listan para que conste que no se han omitido; este proyecto no las valora ni las etiqueta.",
+  "pie": "Revisión elaborada con los documentos oficiales del catálogo del proyecto (URL oficial y huella sha256). Las etiquetas aplican el mismo criterio a todas las afirmaciones. Los datos de esta revisión (afirmaciones, cálculos y valoraciones) se pueden descargar en CSV."
+}

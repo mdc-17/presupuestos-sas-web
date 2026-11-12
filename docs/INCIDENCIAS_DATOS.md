@@ -39,6 +39,8 @@ Comprobado a partir del número y la fecha de la Ley (o del decreto de prórroga
 | 2023 | Ley 1/2022, de 27 de diciembre | No | 2023-BOJA-001 | comprobado |
 | 2024 | Ley 12/2023, de 26 de diciembre | No | 2024-BOJA-001 | comprobado |
 | 2025 | Ley 7/2024, de 23 de diciembre | No | 2025-BOJA-001 | comprobado |
+| 2026 | Ley 8/2025, de 22 de diciembre (BOJA nº 251, 31/12/2025) | No | 2026-BOJA-001 | comprobado |
+| 2027 | Proyecto de Ley del Presupuesto 2027 (presentado en octubre de 2026; no aprobado a 2026-11-11) | sin determinar | 2027-HAC-001 | pendiente de aprobación |
 
 ## Cambios de estructura (secciones y programas)
 
@@ -447,3 +449,35 @@ Los cambios de denominación implican cambios de competencias incluidas en la se
   - Programas: `data/equivalencias/programas.csv` no tiene el programa 41C en 2021-2025 (`sas_medios_ajenos_inicial_2010_2025.csv` lo usa como `4.1.C` en todos los años) ni el 31P en ningún año (citado en `notas` de los ficheros del artículo 25). `programas.csv` figura como «Pendiente» en su LEEME.
 - Estado: abierta.
 - Tratamiento aplicado: ninguno sobre los datos. Se recomienda completar `programas.csv` (41C del SAS 2021-2025; 31P) y documentar la regla de normalización de secciones.
+
+
+### INC-034 · Resumen mensual de junio de 2026 (Junta): fichero de modificaciones de crédito no disponible
+- Fecha de registro: 2026-11-11
+- Años afectados: 2026
+- Tipo: descarga
+- Descripción: la página oficial del resumen de ejecución mensual de junio de 2026 (Junta de Andalucía) enlaza el documento «Modificaciones de Crédito por Sección/Capítulo» (`descargas/junta/2_JUNTA-1.pdf`), pero el servidor devuelve 404. El resto de documentos de junio (Cuenta de Gastos Públicos a nivel de Seguimiento de la Junta y del SAS; modificaciones del SAS) sí se descargaron (`2026-IGJA-001`, `-003`, `-004`). El mismo documento de agosto de 2026 sí está disponible (`2026-IGJA-006`).
+- URL probadas / documentos:
+  - `https://www.juntadeandalucia.es/haciendayadministracionpublica/servicios/fiscalizacion/rendicion/mensuales2026/junio/descargas/junta/2_JUNTA-1.pdf` → HTTP 404 (enlace tomado de `…/mensuales2026/junio/junta.htm`).
+  - `…/mensuales2026/junio/descargas/junta/JUNTA-1.pdf` → HTTP 404.
+  - `…/mensuales2026/junio/descargas/junta/1_JUNTA-1.pdf` → HTTP 404.
+- Estado: abierta.
+- Tratamiento aplicado: `2026-IGJA-002` queda en el manifiesto `scripts/descarga/manifiesto_factcheck_2026_2027.csv` sin registrar en el catálogo (NO_DISPONIBLE). Se puede reintentar con `python3 scripts/descarga/descargar.py lote scripts/descarga/manifiesto_factcheck_2026_2027.csv`.
+
+
+### INC-035 · Contratos del SAS citados en el factcheck: documentos no localizados y diferencias entre documentos oficiales
+- Fecha de registro: 2026-11-11
+- Años afectados: 2023-2026 (contratación; no afecta a las series presupuestarias)
+- Tipo: descarga / discrepancia
+- Descripción:
+  - **Documentos no localizados (acuerdos marco de pruebas diagnósticas por provincia, 2025-2026).** En TED/DOUE (consulta del 2026-11-11) hay anuncio de licitación de las 8 provincias (`CONTR-TED-002`…`-014`), pero anuncio de adjudicación solo de Huelva, Almería, Jaén y Granada (`CONTR-TED-015`…`-019`). No se han encontrado anuncios de adjudicación ni de formalización de Cádiz (CONTR 2025 0000723897), Sevilla (CONTR 2025 0000697024), Málaga (CONTR 2025 0000737232) ni Córdoba (CONTR 2026 0000003051), ni los pliegos (PCAP) de ninguna de las ocho provincias. Las fichas de expediente del Perfil de Contratante de la Junta son una aplicación JavaScript sin contenido estático; los documentos solo se pueden descargar por URL directa (`…/pdc_sirec_documentacion/rest/descargar/documento/<n>` o `…/anuncio/<n>`) y no se ha encontrado el número de documento de estos anuncios. No se ha usado el índice interno de búsqueda de la plataforma.
+  - **Diferencias entre documentos oficiales del mismo expediente (se recogen tal cual, sin corregir):**
+    - Acuerdo marco de procedimientos quirúrgicos (CONTR 2023 0000902330): el importe 231.886.643,50 € figura como «Presupuesto base de licitación», «Importe total (con IVA)» e «Importe total (sin IVA)» con la misma cifra en el Perfil de Contratante (`CONTR-JDA-001`, `CONTR-JDA-002`), y como «Conjunto de contratos previstos: 231.886.643,50 € (IVA incluido)» en el DOUE (`CONTR-TED-001`). La nota de prensa del SAS (`CONTR-SAS-001`) lo denomina «valor estimado de 231 millones de euros»; el «Valor estimado» de los anuncios oficiales es 533.339.280,05 € (IVA excluido).
+    - Jaén (CONTR 2025 0000703722): el anuncio de licitación (`CONTR-TED-005`) indica «Presupuesto total: 22.120.166,68€ (exento IVA)» y «Valor estimado, IVA excluido: 50 876 383,36 EUR»; los anuncios de adjudicación (`CONTR-TED-017`, `-018`) indican «Presupuesto total: 22.120.166,68 € (IVA incluido)» y «Valor estimado, IVA excluido: 22 120 166,68 EUR».
+    - Huelva (CONTR 2025 0000690800): en el anuncio de adjudicación (`CONTR-TED-015`) el campo «Valor máximo del acuerdo marco» figura 9 veces como «39 319 433,80 EUR» y una vez (LOT-0008) como «3 919 433,80 EUR».
+- URL probadas / documentos:
+  - API de búsqueda de TED `https://api.ted.europa.eu/v3/notices/search` (consultas por texto «CONTR 2025 0000723897», «0000697024», «0000737232», «0000003051», por identificador de procedimiento y por «pruebas diagnósticas» + «Servicio Andaluz de Salud» con `notice-type=can-standard` desde 2026-01-01): sin anuncios de adjudicación para esas cuatro provincias. Algunas consultas devolvieron HTTP 429 (límite de peticiones) y se repitieron.
+  - Buscador web restringido a `juntadeandalucia.es` («pruebas diagnósticas» + anuncio de adjudicación/formalización 2026; números de expediente CONTR): sin resultados para estos expedientes.
+  - `https://www.juntadeandalucia.es/haciendayadministracionpublica/apl/pdc-front-publico/feed/rssPublicadas` → HTTP 200, pero solo contiene las últimas publicaciones (sin estos expedientes).
+  - `https://www.juntadeandalucia.es/haciendayadministracionpublica/apl/pdc-front-publico/perfiles-licitaciones/buscador-general` → HTTP 200, aplicación JavaScript sin datos en el HTML.
+- Estado: abierta.
+- Tratamiento aplicado: ninguno sobre las cifras. Se recomienda consultar manualmente en el navegador el Perfil de Contratante del SAS (buscador de licitaciones de la Junta) por número de expediente para descargar el PCAP y los anuncios de adjudicación/formalización que falten, y registrarlos en `scripts/descarga/manifiesto_factcheck_contratos.csv`.

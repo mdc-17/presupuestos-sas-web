@@ -35,6 +35,8 @@ a { color: var(--accent); }
 .cta { display: inline-block; padding: 12px 18px; border-radius: 6px; background: var(--accent); color: var(--bg);
        text-decoration: none; font-weight: 600; }
 .cta:hover { opacity: .9; }
+.botones { display: flex; flex-wrap: wrap; gap: 10px; }
+.cta-2 { background: transparent; color: var(--accent); border: 2px solid var(--accent); padding: 10px 16px; }
 ul { padding-left: 1.2em; }
 li { margin: 4px 0; }
 .meta { color: var(--ink-2); font-size: .9em; }
@@ -49,15 +51,15 @@ code { font-size: .9em; }
 <main>
 <h1>Presupuestos de la sanidad pública andaluza, 2010-2025</h1>
 <p class="lead">Presupuestos de la Consejería de Salud de la Junta de Andalucía y del Servicio Andaluz de Salud (SAS), a partir de documentos oficiales. Cada cifra distingue lo presupuestado de lo ejecutado e indica su fuente y su nivel de fiabilidad.</p>
-<p><a class="cta" href="web/">Abrir la consulta interactiva</a></p>
-<p class="meta">Permite comparar cualquier partida entre años por ámbito, programa y capítulo, en euros corrientes, euros constantes de 2025 y por habitante.</p>
+<p class="botones"><a class="cta" href="web/">Abrir la consulta interactiva</a> <a class="cta cta-2" href="web/factcheck/">Factcheck de vídeos</a></p>
+<p class="meta">Permite comparar cualquier partida entre años por ámbito, programa y capítulo, en euros corrientes, euros constantes de 2025 y por habitante. El factcheck contrasta con datos oficiales (presupuestos, Cuenta General, contratación pública y Ministerio de Sanidad) lo que se afirma en vídeos sobre la sanidad pública andaluza.</p>
 
 <h2>Criterios</h2>
 <ul class="reglas">
 <li><strong>Solo datos.</strong> Sin valoraciones ni atribución de intenciones.</li>
 <li><strong>Serie completa.</strong> La misma métrica y fórmula para todos los años.</li>
 <li><strong>Presupuestado y ejecutado.</strong> Crédito inicial, crédito definitivo, obligaciones reconocidas y grado de ejecución.</li>
-<li><strong>Trazabilidad.</strong> Cada cifra con su documento de origen, fecha de descarga y fiabilidad (<code>OFICIAL_PRIMARIA</code>, <code>OFICIAL_SECUNDARIA</code>, <code>DERIVADO</code>, <code>NO_DISPONIBLE</code>).</li>
+<li><strong>Trazabilidad.</strong> Cada cifra con su documento de origen, fecha de descarga y fiabilidad (<code>OFICIAL_PRIMARIA</code>, <code>OFICIAL_SECUNDARIA</code>, <code>DERIVADO</code>, <code>NO_DISPONIBLE</code>; <code>NO_OFICIAL</code> solo para identificar noticias citadas en los vídeos, siempre marcadas).</li>
 </ul>
 
 <h2>Datos descargables (CSV)</h2>
@@ -89,7 +91,7 @@ code { font-size: .9em; }
 
 <footer>
 <p class="aviso-no-oficial">Proyecto independiente elaborado con datos públicos oficiales. No es un sitio web de la Junta de Andalucía ni del Servicio Andaluz de Salud.</p>
-Versión de los datos: <code>d94f6d5</code> (2026-11-11) · Publicado el 2026-11-11.<br>
+Versión de los datos: <code>f77a7c0</code> (2026-11-12) · Publicado el 2026-11-12.<br>
 Proyecto en curso: solo se publican análisis revisados. Los documentos originales se enlazan por su URL oficial en el catálogo de fuentes.
 </footer>
 </main>

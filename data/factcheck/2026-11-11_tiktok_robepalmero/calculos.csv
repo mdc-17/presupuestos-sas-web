@@ -1,0 +1,312 @@
+clave,descripcion,valor,unidad,formula,fuente_id,pagina,fiabilidad
+A_cap6_2020_inicial,"SAS 2020, capítulo VI: crédito inicial",100.50,M€,suma de programas (data/processed/liquidacion_consejeria_sas_2020_2025.csv),2020-IGJA-010,,OFICIAL_PRIMARIA
+A_cap6_2020_definitivo,"SAS 2020, capítulo VI: crédito definitivo",299.58,M€,suma de programas,2020-IGJA-010,,OFICIAL_PRIMARIA
+A_cap6_2020_obligaciones,"SAS 2020, capítulo VI: obligaciones reconocidas",279.92,M€,suma de programas,2020-IGJA-010,,OFICIAL_PRIMARIA
+A_cap6_2020_ejecucion,"SAS 2020, capítulo VI: grado de ejecución",93.44,%,obligaciones / crédito definitivo × 100,2020-IGJA-010,,DERIVADO
+A_cap6_2020_sin_gastar,"SAS 2020, capítulo VI: crédito definitivo no ejecutado",19.66,M€,crédito definitivo − obligaciones reconocidas,2020-IGJA-010,,DERIVADO
+A_total_2020_inicial,"SAS 2020, total: crédito inicial",10069.33,M€,suma de programas (data/processed/liquidacion_consejeria_sas_2020_2025.csv),2020-IGJA-010,,OFICIAL_PRIMARIA
+A_total_2020_definitivo,"SAS 2020, total: crédito definitivo",11635.87,M€,suma de programas,2020-IGJA-010,,OFICIAL_PRIMARIA
+A_total_2020_obligaciones,"SAS 2020, total: obligaciones reconocidas",11488.90,M€,suma de programas,2020-IGJA-010,,OFICIAL_PRIMARIA
+A_total_2020_ejecucion,"SAS 2020, total: grado de ejecución",98.74,%,obligaciones / crédito definitivo × 100,2020-IGJA-010,,DERIVADO
+A_total_2020_sin_gastar,"SAS 2020, total: crédito definitivo no ejecutado",146.97,M€,crédito definitivo − obligaciones reconocidas,2020-IGJA-010,,DERIVADO
+A_cap6_2020_pct_de_lo_no_gastado,SAS 2020: parte del crédito no ejecutado del SAS que corresponde al capítulo VI,13.38,%,(def. − oblig.) cap. VI / (def. − oblig.) total SAS × 100,2020-IGJA-010,,DERIVADO
+A_2020_capitulo_con_mas_no_gastado,SAS 2020: capítulo con mayor crédito definitivo no ejecutado,2 (122.92 M€),capítulo,máximo de (def. − oblig.) por capítulo,2020-IGJA-010,,DERIVADO
+A_cap6_2020_peso_en_definitivo,SAS 2020: peso del capítulo VI en el crédito definitivo del SAS,2.57,%,def. cap. VI / def. total SAS × 100,2020-IGJA-010,,DERIVADO
+A_cap6_2021_inicial,"SAS 2021, capítulo VI: crédito inicial",149.77,M€,suma de programas (data/processed/liquidacion_consejeria_sas_2020_2025.csv),2021-IGJA-010,,OFICIAL_PRIMARIA
+A_cap6_2021_definitivo,"SAS 2021, capítulo VI: crédito definitivo",345.96,M€,suma de programas,2021-IGJA-010,,OFICIAL_PRIMARIA
+A_cap6_2021_obligaciones,"SAS 2021, capítulo VI: obligaciones reconocidas",121.09,M€,suma de programas,2021-IGJA-010,,OFICIAL_PRIMARIA
+A_cap6_2021_ejecucion,"SAS 2021, capítulo VI: grado de ejecución",35.00,%,obligaciones / crédito definitivo × 100,2021-IGJA-010,,DERIVADO
+A_cap6_2021_sin_gastar,"SAS 2021, capítulo VI: crédito definitivo no ejecutado",224.87,M€,crédito definitivo − obligaciones reconocidas,2021-IGJA-010,,DERIVADO
+A_total_2021_inicial,"SAS 2021, total: crédito inicial",10729.40,M€,suma de programas (data/processed/liquidacion_consejeria_sas_2020_2025.csv),2021-IGJA-010,,OFICIAL_PRIMARIA
+A_total_2021_definitivo,"SAS 2021, total: crédito definitivo",11790.49,M€,suma de programas,2021-IGJA-010,,OFICIAL_PRIMARIA
+A_total_2021_obligaciones,"SAS 2021, total: obligaciones reconocidas",11334.55,M€,suma de programas,2021-IGJA-010,,OFICIAL_PRIMARIA
+A_total_2021_ejecucion,"SAS 2021, total: grado de ejecución",96.13,%,obligaciones / crédito definitivo × 100,2021-IGJA-010,,DERIVADO
+A_total_2021_sin_gastar,"SAS 2021, total: crédito definitivo no ejecutado",455.93,M€,crédito definitivo − obligaciones reconocidas,2021-IGJA-010,,DERIVADO
+A_cap6_2021_pct_de_lo_no_gastado,SAS 2021: parte del crédito no ejecutado del SAS que corresponde al capítulo VI,49.32,%,(def. − oblig.) cap. VI / (def. − oblig.) total SAS × 100,2021-IGJA-010,,DERIVADO
+A_2021_capitulo_con_mas_no_gastado,SAS 2021: capítulo con mayor crédito definitivo no ejecutado,6 (224.87 M€),capítulo,máximo de (def. − oblig.) por capítulo,2021-IGJA-010,,DERIVADO
+A_cap6_2021_peso_en_definitivo,SAS 2021: peso del capítulo VI en el crédito definitivo del SAS,2.93,%,def. cap. VI / def. total SAS × 100,2021-IGJA-010,,DERIVADO
+A_cap6_2022_inicial,"SAS 2022, capítulo VI: crédito inicial",53.18,M€,suma de programas (data/processed/liquidacion_consejeria_sas_2020_2025.csv),2022-IGJA-010,,OFICIAL_PRIMARIA
+A_cap6_2022_definitivo,"SAS 2022, capítulo VI: crédito definitivo",358.64,M€,suma de programas,2022-IGJA-010,,OFICIAL_PRIMARIA
+A_cap6_2022_obligaciones,"SAS 2022, capítulo VI: obligaciones reconocidas",140.92,M€,suma de programas,2022-IGJA-010,,OFICIAL_PRIMARIA
+A_cap6_2022_ejecucion,"SAS 2022, capítulo VI: grado de ejecución",39.29,%,obligaciones / crédito definitivo × 100,2022-IGJA-010,,DERIVADO
+A_cap6_2022_sin_gastar,"SAS 2022, capítulo VI: crédito definitivo no ejecutado",217.72,M€,crédito definitivo − obligaciones reconocidas,2022-IGJA-010,,DERIVADO
+A_total_2022_inicial,"SAS 2022, total: crédito inicial",11395.50,M€,suma de programas (data/processed/liquidacion_consejeria_sas_2020_2025.csv),2022-IGJA-010,,OFICIAL_PRIMARIA
+A_total_2022_definitivo,"SAS 2022, total: crédito definitivo",12740.54,M€,suma de programas,2022-IGJA-010,,OFICIAL_PRIMARIA
+A_total_2022_obligaciones,"SAS 2022, total: obligaciones reconocidas",12499.47,M€,suma de programas,2022-IGJA-010,,OFICIAL_PRIMARIA
+A_total_2022_ejecucion,"SAS 2022, total: grado de ejecución",98.11,%,obligaciones / crédito definitivo × 100,2022-IGJA-010,,DERIVADO
+A_total_2022_sin_gastar,"SAS 2022, total: crédito definitivo no ejecutado",241.07,M€,crédito definitivo − obligaciones reconocidas,2022-IGJA-010,,DERIVADO
+A_cap6_2022_pct_de_lo_no_gastado,SAS 2022: parte del crédito no ejecutado del SAS que corresponde al capítulo VI,90.31,%,(def. − oblig.) cap. VI / (def. − oblig.) total SAS × 100,2022-IGJA-010,,DERIVADO
+A_2022_capitulo_con_mas_no_gastado,SAS 2022: capítulo con mayor crédito definitivo no ejecutado,6 (217.72 M€),capítulo,máximo de (def. − oblig.) por capítulo,2022-IGJA-010,,DERIVADO
+A_cap6_2022_peso_en_definitivo,SAS 2022: peso del capítulo VI en el crédito definitivo del SAS,2.81,%,def. cap. VI / def. total SAS × 100,2022-IGJA-010,,DERIVADO
+A_cap6_2023_inicial,"SAS 2023, capítulo VI: crédito inicial",414.10,M€,suma de programas (data/processed/liquidacion_consejeria_sas_2020_2025.csv),2023-IGJA-005,,OFICIAL_PRIMARIA
+A_cap6_2023_definitivo,"SAS 2023, capítulo VI: crédito definitivo",622.88,M€,suma de programas,2023-IGJA-005,,OFICIAL_PRIMARIA
+A_cap6_2023_obligaciones,"SAS 2023, capítulo VI: obligaciones reconocidas",507.38,M€,suma de programas,2023-IGJA-005,,OFICIAL_PRIMARIA
+A_cap6_2023_ejecucion,"SAS 2023, capítulo VI: grado de ejecución",81.46,%,obligaciones / crédito definitivo × 100,2023-IGJA-005,,DERIVADO
+A_cap6_2023_sin_gastar,"SAS 2023, capítulo VI: crédito definitivo no ejecutado",115.50,M€,crédito definitivo − obligaciones reconocidas,2023-IGJA-005,,DERIVADO
+A_total_2023_inicial,"SAS 2023, total: crédito inicial",13495.60,M€,suma de programas (data/processed/liquidacion_consejeria_sas_2020_2025.csv),2023-IGJA-005,,OFICIAL_PRIMARIA
+A_total_2023_definitivo,"SAS 2023, total: crédito definitivo",14145.03,M€,suma de programas,2023-IGJA-005,,OFICIAL_PRIMARIA
+A_total_2023_obligaciones,"SAS 2023, total: obligaciones reconocidas",13994.27,M€,suma de programas,2023-IGJA-005,,OFICIAL_PRIMARIA
+A_total_2023_ejecucion,"SAS 2023, total: grado de ejecución",98.93,%,obligaciones / crédito definitivo × 100,2023-IGJA-005,,DERIVADO
+A_total_2023_sin_gastar,"SAS 2023, total: crédito definitivo no ejecutado",150.76,M€,crédito definitivo − obligaciones reconocidas,2023-IGJA-005,,DERIVADO
+A_cap6_2023_pct_de_lo_no_gastado,SAS 2023: parte del crédito no ejecutado del SAS que corresponde al capítulo VI,76.61,%,(def. − oblig.) cap. VI / (def. − oblig.) total SAS × 100,2023-IGJA-005,,DERIVADO
+A_2023_capitulo_con_mas_no_gastado,SAS 2023: capítulo con mayor crédito definitivo no ejecutado,6 (115.50 M€),capítulo,máximo de (def. − oblig.) por capítulo,2023-IGJA-005,,DERIVADO
+A_cap6_2023_peso_en_definitivo,SAS 2023: peso del capítulo VI en el crédito definitivo del SAS,4.40,%,def. cap. VI / def. total SAS × 100,2023-IGJA-005,,DERIVADO
+A_cap6_2024_inicial,"SAS 2024, capítulo VI: crédito inicial",545.61,M€,suma de programas (data/processed/liquidacion_consejeria_sas_2020_2025.csv),2024-IGJA-005,,OFICIAL_PRIMARIA
+A_cap6_2024_definitivo,"SAS 2024, capítulo VI: crédito definitivo",634.73,M€,suma de programas,2024-IGJA-005,,OFICIAL_PRIMARIA
+A_cap6_2024_obligaciones,"SAS 2024, capítulo VI: obligaciones reconocidas",245.85,M€,suma de programas,2024-IGJA-005,,OFICIAL_PRIMARIA
+A_cap6_2024_ejecucion,"SAS 2024, capítulo VI: grado de ejecución",38.73,%,obligaciones / crédito definitivo × 100,2024-IGJA-005,,DERIVADO
+A_cap6_2024_sin_gastar,"SAS 2024, capítulo VI: crédito definitivo no ejecutado",388.88,M€,crédito definitivo − obligaciones reconocidas,2024-IGJA-005,,DERIVADO
+A_total_2024_inicial,"SAS 2024, total: crédito inicial",13893.24,M€,suma de programas (data/processed/liquidacion_consejeria_sas_2020_2025.csv),2024-IGJA-005,,OFICIAL_PRIMARIA
+A_total_2024_definitivo,"SAS 2024, total: crédito definitivo",15033.76,M€,suma de programas,2024-IGJA-005,,OFICIAL_PRIMARIA
+A_total_2024_obligaciones,"SAS 2024, total: obligaciones reconocidas",14427.28,M€,suma de programas,2024-IGJA-005,,OFICIAL_PRIMARIA
+A_total_2024_ejecucion,"SAS 2024, total: grado de ejecución",95.97,%,obligaciones / crédito definitivo × 100,2024-IGJA-005,,DERIVADO
+A_total_2024_sin_gastar,"SAS 2024, total: crédito definitivo no ejecutado",606.48,M€,crédito definitivo − obligaciones reconocidas,2024-IGJA-005,,DERIVADO
+A_cap6_2024_pct_de_lo_no_gastado,SAS 2024: parte del crédito no ejecutado del SAS que corresponde al capítulo VI,64.12,%,(def. − oblig.) cap. VI / (def. − oblig.) total SAS × 100,2024-IGJA-005,,DERIVADO
+A_2024_capitulo_con_mas_no_gastado,SAS 2024: capítulo con mayor crédito definitivo no ejecutado,6 (388.88 M€),capítulo,máximo de (def. − oblig.) por capítulo,2024-IGJA-005,,DERIVADO
+A_cap6_2024_peso_en_definitivo,SAS 2024: peso del capítulo VI en el crédito definitivo del SAS,4.22,%,def. cap. VI / def. total SAS × 100,2024-IGJA-005,,DERIVADO
+A_cap6_2025_inicial,"SAS 2025, capítulo VI: crédito inicial",563.32,M€,suma de programas (data/processed/liquidacion_consejeria_sas_2020_2025.csv),2025-IGJA-005,,OFICIAL_PRIMARIA
+A_cap6_2025_definitivo,"SAS 2025, capítulo VI: crédito definitivo",724.00,M€,suma de programas,2025-IGJA-005,,OFICIAL_PRIMARIA
+A_cap6_2025_obligaciones,"SAS 2025, capítulo VI: obligaciones reconocidas",253.75,M€,suma de programas,2025-IGJA-005,,OFICIAL_PRIMARIA
+A_cap6_2025_ejecucion,"SAS 2025, capítulo VI: grado de ejecución",35.05,%,obligaciones / crédito definitivo × 100,2025-IGJA-005,,DERIVADO
+A_cap6_2025_sin_gastar,"SAS 2025, capítulo VI: crédito definitivo no ejecutado",470.25,M€,crédito definitivo − obligaciones reconocidas,2025-IGJA-005,,DERIVADO
+A_total_2025_inicial,"SAS 2025, total: crédito inicial",14873.00,M€,suma de programas (data/processed/liquidacion_consejeria_sas_2020_2025.csv),2025-IGJA-005,,OFICIAL_PRIMARIA
+A_total_2025_definitivo,"SAS 2025, total: crédito definitivo",15223.23,M€,suma de programas,2025-IGJA-005,,OFICIAL_PRIMARIA
+A_total_2025_obligaciones,"SAS 2025, total: obligaciones reconocidas",14657.52,M€,suma de programas,2025-IGJA-005,,OFICIAL_PRIMARIA
+A_total_2025_ejecucion,"SAS 2025, total: grado de ejecución",96.28,%,obligaciones / crédito definitivo × 100,2025-IGJA-005,,DERIVADO
+A_total_2025_sin_gastar,"SAS 2025, total: crédito definitivo no ejecutado",565.71,M€,crédito definitivo − obligaciones reconocidas,2025-IGJA-005,,DERIVADO
+A_cap6_2025_pct_de_lo_no_gastado,SAS 2025: parte del crédito no ejecutado del SAS que corresponde al capítulo VI,83.12,%,(def. − oblig.) cap. VI / (def. − oblig.) total SAS × 100,2025-IGJA-005,,DERIVADO
+A_2025_capitulo_con_mas_no_gastado,SAS 2025: capítulo con mayor crédito definitivo no ejecutado,6 (470.25 M€),capítulo,máximo de (def. − oblig.) por capítulo,2025-IGJA-005,,DERIVADO
+A_cap6_2025_peso_en_definitivo,SAS 2025: peso del capítulo VI en el crédito definitivo del SAS,4.76,%,def. cap. VI / def. total SAS × 100,2025-IGJA-005,,DERIVADO
+B_602_2023_definitivo,"SAS 2023, concepto 602: crédito definitivo",199.53,M€,suma de las líneas del concepto,2023-IGJA-013,"102,103,104,106,135,136,137,138,139,140,164,165,166,167,168",DERIVADO
+B_602_2023_obligaciones,"SAS 2023, concepto 602: obligaciones reconocidas",112.91,M€,suma de las líneas del concepto,2023-IGJA-013,"102,103,104,106,135,136,137,138,139,140,164,165,166,167,168",DERIVADO
+B_602_2023_ejecucion,"SAS 2023, concepto 602: grado de ejecución",56.59,%,obligaciones / definitivo × 100,2023-IGJA-013,"102,103,104,106,135,136,137,138,139,140,164,165,166,167,168",DERIVADO
+B_602_2023_remanente,"SAS 2023, concepto 602: remanente de crédito (def. − oblig.)",86.62,M€,definitivo − obligaciones,2023-IGJA-013,"102,103,104,106,135,136,137,138,139,140,164,165,166,167,168",DERIVADO
+B_662_2023_definitivo,"SAS 2023, concepto 662: crédito definitivo",81.79,M€,suma de las líneas del concepto,2023-IGJA-013,"102,103,104,105,135,136,137,138,139,140,164,165,166,167,168",DERIVADO
+B_662_2023_obligaciones,"SAS 2023, concepto 662: obligaciones reconocidas",85.10,M€,suma de las líneas del concepto,2023-IGJA-013,"102,103,104,105,135,136,137,138,139,140,164,165,166,167,168",DERIVADO
+B_662_2023_ejecucion,"SAS 2023, concepto 662: grado de ejecución",104.05,%,obligaciones / definitivo × 100,2023-IGJA-013,"102,103,104,105,135,136,137,138,139,140,164,165,166,167,168",DERIVADO
+B_662_2023_remanente,"SAS 2023, concepto 662: remanente de crédito (def. − oblig.)",-3.32,M€,definitivo − obligaciones,2023-IGJA-013,"102,103,104,105,135,136,137,138,139,140,164,165,166,167,168",DERIVADO
+B_212_2023_definitivo,"SAS 2023, concepto 212: crédito definitivo",68.81,M€,suma de las líneas del concepto,2023-IGJA-013,"2,3,79,82,84,86,88,90,92,94,96,98,160,161,162,163,175,176,177,178,179,180,181,182",DERIVADO
+B_212_2023_obligaciones,"SAS 2023, concepto 212: obligaciones reconocidas",62.13,M€,suma de las líneas del concepto,2023-IGJA-013,"2,3,79,82,84,86,88,90,92,94,96,98,160,161,162,163,175,176,177,178,179,180,181,182",DERIVADO
+B_212_2023_ejecucion,"SAS 2023, concepto 212: grado de ejecución",90.30,%,obligaciones / definitivo × 100,2023-IGJA-013,"2,3,79,82,84,86,88,90,92,94,96,98,160,161,162,163,175,176,177,178,179,180,181,182",DERIVADO
+B_212_2023_remanente,"SAS 2023, concepto 212: remanente de crédito (def. − oblig.)",6.68,M€,definitivo − obligaciones,2023-IGJA-013,"2,3,79,82,84,86,88,90,92,94,96,98,160,161,162,163,175,176,177,178,179,180,181,182",DERIVADO
+B_cap6_2023_definitivo,"SAS 2023, concepto cap6: crédito definitivo",622.88,M€,suma de las líneas del concepto,2023-IGJA-013,"106,141,168,184",DERIVADO
+B_cap6_2023_obligaciones,"SAS 2023, concepto cap6: obligaciones reconocidas",507.38,M€,suma de las líneas del concepto,2023-IGJA-013,"106,141,168,184",DERIVADO
+B_cap6_2023_ejecucion,"SAS 2023, concepto cap6: grado de ejecución",81.46,%,obligaciones / definitivo × 100,2023-IGJA-013,"106,141,168,184",DERIVADO
+B_cap6_2023_remanente,"SAS 2023, concepto cap6: remanente de crédito (def. − oblig.)",115.50,M€,definitivo − obligaciones,2023-IGJA-013,"106,141,168,184",DERIVADO
+B_602_662_2023_definitivo,"SAS 2023, conceptos 602+662: crédito definitivo",281.32,M€,602 + 662,2023-IGJA-013,,DERIVADO
+B_602_662_2023_obligaciones,"SAS 2023, conceptos 602+662: obligaciones",198.01,M€,602 + 662,2023-IGJA-013,,DERIVADO
+B_602_662_2023_ejecucion,"SAS 2023, conceptos 602+662: grado de ejecución",70.39,%,(oblig. 602 + 662) / (def. 602 + 662) × 100,2023-IGJA-013,,DERIVADO
+B_602_2023_pct_remanente_cap6,SAS 2023: parte del remanente del capítulo VI que corresponde al concepto 602,75.00,%,(def. − oblig.) concepto / (def. − oblig.) cap. VI × 100,2023-IGJA-013,,DERIVADO
+B_662_2023_pct_remanente_cap6,SAS 2023: parte del remanente del capítulo VI que corresponde al concepto 662,-2.87,%,(def. − oblig.) concepto / (def. − oblig.) cap. VI × 100,2023-IGJA-013,,DERIVADO
+B_602_2024_definitivo,"SAS 2024, concepto 602: crédito definitivo",273.73,M€,suma de las líneas del concepto,2024-IGJA-013,4,OFICIAL_PRIMARIA
+B_602_2024_obligaciones,"SAS 2024, concepto 602: obligaciones reconocidas",93.30,M€,suma de las líneas del concepto,2024-IGJA-013,4,OFICIAL_PRIMARIA
+B_602_2024_ejecucion,"SAS 2024, concepto 602: grado de ejecución",34.08,%,obligaciones / definitivo × 100,2024-IGJA-013,4,DERIVADO
+B_602_2024_remanente,"SAS 2024, concepto 602: remanente de crédito (def. − oblig.)",180.43,M€,definitivo − obligaciones,2024-IGJA-013,4,DERIVADO
+B_662_2024_definitivo,"SAS 2024, concepto 662: crédito definitivo",198.75,M€,suma de las líneas del concepto,2024-IGJA-013,4,OFICIAL_PRIMARIA
+B_662_2024_obligaciones,"SAS 2024, concepto 662: obligaciones reconocidas",29.58,M€,suma de las líneas del concepto,2024-IGJA-013,4,OFICIAL_PRIMARIA
+B_662_2024_ejecucion,"SAS 2024, concepto 662: grado de ejecución",14.88,%,obligaciones / definitivo × 100,2024-IGJA-013,4,DERIVADO
+B_662_2024_remanente,"SAS 2024, concepto 662: remanente de crédito (def. − oblig.)",169.17,M€,definitivo − obligaciones,2024-IGJA-013,4,DERIVADO
+B_212_2024_definitivo,"SAS 2024, concepto 212: crédito definitivo",74.24,M€,suma de las líneas del concepto,2024-IGJA-013,2,OFICIAL_PRIMARIA
+B_212_2024_obligaciones,"SAS 2024, concepto 212: obligaciones reconocidas",73.44,M€,suma de las líneas del concepto,2024-IGJA-013,2,OFICIAL_PRIMARIA
+B_212_2024_ejecucion,"SAS 2024, concepto 212: grado de ejecución",98.92,%,obligaciones / definitivo × 100,2024-IGJA-013,2,DERIVADO
+B_212_2024_remanente,"SAS 2024, concepto 212: remanente de crédito (def. − oblig.)",0.80,M€,definitivo − obligaciones,2024-IGJA-013,2,DERIVADO
+B_cap6_2024_definitivo,"SAS 2024, concepto cap6: crédito definitivo",634.73,M€,suma de las líneas del concepto,2024-IGJA-013,5,OFICIAL_PRIMARIA
+B_cap6_2024_obligaciones,"SAS 2024, concepto cap6: obligaciones reconocidas",245.85,M€,suma de las líneas del concepto,2024-IGJA-013,5,OFICIAL_PRIMARIA
+B_cap6_2024_ejecucion,"SAS 2024, concepto cap6: grado de ejecución",38.73,%,obligaciones / definitivo × 100,2024-IGJA-013,5,DERIVADO
+B_cap6_2024_remanente,"SAS 2024, concepto cap6: remanente de crédito (def. − oblig.)",388.88,M€,definitivo − obligaciones,2024-IGJA-013,5,DERIVADO
+B_602_662_2024_definitivo,"SAS 2024, conceptos 602+662: crédito definitivo",472.47,M€,602 + 662,2024-IGJA-013,,DERIVADO
+B_602_662_2024_obligaciones,"SAS 2024, conceptos 602+662: obligaciones",122.87,M€,602 + 662,2024-IGJA-013,,DERIVADO
+B_602_662_2024_ejecucion,"SAS 2024, conceptos 602+662: grado de ejecución",26.01,%,(oblig. 602 + 662) / (def. 602 + 662) × 100,2024-IGJA-013,,DERIVADO
+B_602_2024_pct_remanente_cap6,SAS 2024: parte del remanente del capítulo VI que corresponde al concepto 602,46.40,%,(def. − oblig.) concepto / (def. − oblig.) cap. VI × 100,2024-IGJA-013,,DERIVADO
+B_662_2024_pct_remanente_cap6,SAS 2024: parte del remanente del capítulo VI que corresponde al concepto 662,43.50,%,(def. − oblig.) concepto / (def. − oblig.) cap. VI × 100,2024-IGJA-013,,DERIVADO
+B_602_2025_definitivo,"SAS 2025, concepto 602: crédito definitivo",392.12,M€,suma de las líneas del concepto,2025-IGJA-013,4,OFICIAL_PRIMARIA
+B_602_2025_obligaciones,"SAS 2025, concepto 602: obligaciones reconocidas",119.15,M€,suma de las líneas del concepto,2025-IGJA-013,4,OFICIAL_PRIMARIA
+B_602_2025_ejecucion,"SAS 2025, concepto 602: grado de ejecución",30.39,%,obligaciones / definitivo × 100,2025-IGJA-013,4,DERIVADO
+B_602_2025_remanente,"SAS 2025, concepto 602: remanente de crédito (def. − oblig.)",272.97,M€,definitivo − obligaciones,2025-IGJA-013,4,DERIVADO
+B_662_2025_definitivo,"SAS 2025, concepto 662: crédito definitivo",172.63,M€,suma de las líneas del concepto,2025-IGJA-013,4,OFICIAL_PRIMARIA
+B_662_2025_obligaciones,"SAS 2025, concepto 662: obligaciones reconocidas",20.92,M€,suma de las líneas del concepto,2025-IGJA-013,4,OFICIAL_PRIMARIA
+B_662_2025_ejecucion,"SAS 2025, concepto 662: grado de ejecución",12.12,%,obligaciones / definitivo × 100,2025-IGJA-013,4,DERIVADO
+B_662_2025_remanente,"SAS 2025, concepto 662: remanente de crédito (def. − oblig.)",151.71,M€,definitivo − obligaciones,2025-IGJA-013,4,DERIVADO
+B_212_2025_definitivo,"SAS 2025, concepto 212: crédito definitivo",89.73,M€,suma de las líneas del concepto,2025-IGJA-013,2,OFICIAL_PRIMARIA
+B_212_2025_obligaciones,"SAS 2025, concepto 212: obligaciones reconocidas",88.45,M€,suma de las líneas del concepto,2025-IGJA-013,2,OFICIAL_PRIMARIA
+B_212_2025_ejecucion,"SAS 2025, concepto 212: grado de ejecución",98.57,%,obligaciones / definitivo × 100,2025-IGJA-013,2,DERIVADO
+B_212_2025_remanente,"SAS 2025, concepto 212: remanente de crédito (def. − oblig.)",1.28,M€,definitivo − obligaciones,2025-IGJA-013,2,DERIVADO
+B_cap6_2025_definitivo,"SAS 2025, concepto cap6: crédito definitivo",724.00,M€,suma de las líneas del concepto,2025-IGJA-013,4,OFICIAL_PRIMARIA
+B_cap6_2025_obligaciones,"SAS 2025, concepto cap6: obligaciones reconocidas",253.75,M€,suma de las líneas del concepto,2025-IGJA-013,4,OFICIAL_PRIMARIA
+B_cap6_2025_ejecucion,"SAS 2025, concepto cap6: grado de ejecución",35.05,%,obligaciones / definitivo × 100,2025-IGJA-013,4,DERIVADO
+B_cap6_2025_remanente,"SAS 2025, concepto cap6: remanente de crédito (def. − oblig.)",470.25,M€,definitivo − obligaciones,2025-IGJA-013,4,DERIVADO
+B_602_662_2025_definitivo,"SAS 2025, conceptos 602+662: crédito definitivo",564.75,M€,602 + 662,2025-IGJA-013,,DERIVADO
+B_602_662_2025_obligaciones,"SAS 2025, conceptos 602+662: obligaciones",140.07,M€,602 + 662,2025-IGJA-013,,DERIVADO
+B_602_662_2025_ejecucion,"SAS 2025, conceptos 602+662: grado de ejecución",24.80,%,(oblig. 602 + 662) / (def. 602 + 662) × 100,2025-IGJA-013,,DERIVADO
+B_602_2025_pct_remanente_cap6,SAS 2025: parte del remanente del capítulo VI que corresponde al concepto 602,58.05,%,(def. − oblig.) concepto / (def. − oblig.) cap. VI × 100,2025-IGJA-013,,DERIVADO
+B_662_2025_pct_remanente_cap6,SAS 2025: parte del remanente del capítulo VI que corresponde al concepto 662,32.26,%,(def. − oblig.) concepto / (def. − oblig.) cap. VI × 100,2025-IGJA-013,,DERIVADO
+C_25204_2018_inicial,"SAS 2018, 252.04 «Con entidades privadas»: crédito inicial",161.15,M€,literal del estado de gastos,2018-HAC-005,41,OFICIAL_PRIMARIA
+C_25204_2025_inicial,"SAS 2025, 252.04 «Con entidades privadas»: crédito inicial",285.80,M€,literal del estado de gastos,2025-HAC-005,43,OFICIAL_PRIMARIA
+C_25204_2026_inicial,"SAS 2026, 252.04 «Con entidades privadas»: crédito inicial",289.74,M€,literal del estado de gastos,2026-HAC-005,42,OFICIAL_PRIMARIA
+C_art25_2026_inicial,"SAS 2026, artículo 25 completo: crédito inicial",492.99,M€,literal (total del artículo 25),2026-HAC-005,42,OFICIAL_PRIMARIA
+C_25204_2027_inicial,"SAS 2027 (PROYECTO), 252.04 «Con entidades privadas»: crédito inicial",289.74,M€,literal del estado de gastos,2027-HAC-006,41,OFICIAL_PRIMARIA
+C_art25_2027_inicial,"SAS 2027 (PROYECTO), artículo 25 completo: crédito inicial",492.99,M€,literal (total del artículo 25),2027-HAC-006,41,OFICIAL_PRIMARIA
+C_25204_var_2018_2025,252.04: variación del crédito inicial 2018-2025 (euros corrientes),77.3,%,(inicial 2025 − inicial 2018) / inicial 2018 × 100,2018-HAC-005|2025-HAC-005,,DERIVADO
+C_25204_var_2018_2026,252.04: variación del crédito inicial 2018-2026 (euros corrientes),79.8,%,(inicial 2026 − inicial 2018) / inicial 2018 × 100,2018-HAC-005|2026-HAC-005,,DERIVADO
+C_25204_var_2018_2027,252.04: variación del crédito inicial 2018-2027 (euros corrientes),79.8,%,(inicial 2027 − inicial 2018) / inicial 2018 × 100,2018-HAC-005|2027-HAC-006,,DERIVADO
+C_25204_2018_inicial_eur2025,252.04 crédito inicial 2018 en euros constantes de 2025,198.56,M€ de 2025,inicial 2018 × factor IPC Andalucía 2018→2025,2018-HAC-005|INE-IPC-001,,DERIVADO
+C_25204_var_real_2018_2025,252.04: variación real del crédito inicial 2018-2025 (euros de 2025),43.9,%,(inicial 2025 − inicial 2018 en € 2025) / inicial 2018 en € 2025 × 100,2018-HAC-005|2025-HAC-005|INE-IPC-001,,DERIVADO
+C_252_2018_obligaciones,"SAS 2018, concepto 252: obligaciones reconocidas",178.10,M€,suma de las 10 líneas con código 252xx al nivel partida (programa × centro gestor × subconcepto × sufijo),2018-IGJA-012,"253,255,259,264,268,272,277,281,285,290",DERIVADO
+C_252_2025_obligaciones,"SAS 2025, concepto 252: obligaciones reconocidas",254.64,M€,copia de la línea del concepto,2025-IGJA-013,3,OFICIAL_PRIMARIA
+D_funcion_41_2026,"Presupuesto 2026, función 41 «Sanidad» (consolidado) (según el Libro 2027)",15989.3,M€,literal,2027-HAC-011,121,OFICIAL_PRIMARIA
+D_funcion_41_2027,"PROYECTO 2027, función 41 «Sanidad» (consolidado)",16904.6,M€,literal,2027-HAC-011,121,OFICIAL_PRIMARIA
+D_funcion_41_dif_17037,Diferencia entre 17.037 M€ (rótulo) y función 41 «Sanidad» (consolidado) 2027,132.4,M€,17.037 M€ − importe oficial,2027-HAC-011,121,DERIVADO
+D_seccion_01_2026,"Presupuesto 2026, sección 01 Consejería de Presidencia, Sanidad y Emergencias (consolidada; incluye Presidencia y Emergencias) (según el Libro 2027)",16782.6,M€,literal,2027-HAC-011,123,OFICIAL_PRIMARIA
+D_seccion_01_2027,"PROYECTO 2027, sección 01 Consejería de Presidencia, Sanidad y Emergencias (consolidada; incluye Presidencia y Emergencias)",17948.4,M€,literal,2027-HAC-011,123,OFICIAL_PRIMARIA
+D_seccion_01_dif_17037,"Diferencia entre 17.037 M€ (rótulo) y sección 01 Consejería de Presidencia, Sanidad y Emergencias (consolidada; incluye Presidencia y Emergencias) 2027",-911.4,M€,17.037 M€ − importe oficial,2027-HAC-011,123,DERIVADO
+D_politica_sanidad_2026,"Presupuesto 2026, política de gasto 6 «Sanidad» (según el Libro 2027)",16003.5,M€,literal,2027-HAC-011,139,OFICIAL_PRIMARIA
+D_politica_sanidad_2027,"PROYECTO 2027, política de gasto 6 «Sanidad»",16919.1,M€,literal,2027-HAC-011,139,OFICIAL_PRIMARIA
+D_politica_sanidad_dif_17037,Diferencia entre 17.037 M€ (rótulo) y política de gasto 6 «Sanidad» 2027,117.9,M€,17.037 M€ − importe oficial,2027-HAC-011,139,DERIVADO
+D_busqueda_17037,Apariciones literales de «17.037» en los documentos del PROYECTO 2027 consultados,ninguna,texto,búsqueda de la expresión regular 17[.\s]?037 en el texto de cada página,2027-HAC-001|2027-HAC-002|2027-HAC-003|2027-HAC-004|2027-HAC-005|2027-HAC-006|2027-HAC-007|2027-HAC-008|2027-HAC-009|2027-HAC-010|2027-HAC-011|2027-HAC-012|2027-HAC-013,,DERIVADO
+E_2023000995_disposiciones_2025,Proyecto 2023000995 «Actuacionesnuevas eninfraest.sanit.» (fuente 17): disposiciones 2025,40.12,M€,literal,2025-IGJA-015,2,OFICIAL_PRIMARIA
+E_2023000995_obligaciones_2025,Proyecto 2023000995 «Actuacionesnuevas eninfraest.sanit.»: obligaciones 2025,27.19,M€,literal,2025-IGJA-015,2,OFICIAL_PRIMARIA
+E_2023000995_oblig_sobre_disp,Proyecto 2023000995: obligaciones / disposiciones 2025,67.8,%,obligaciones / disposiciones × 100 (no es grado de ejecución: no hay crédito por proyecto),2025-IGJA-015,2,DERIVADO
+E_2023000996_disposiciones_2025,Proyecto 2023000996 «Actuac.reposiciónen infraest.sanit.» (fuente 17): disposiciones 2025,21.65,M€,literal,2025-IGJA-015,2,OFICIAL_PRIMARIA
+E_2023000996_obligaciones_2025,Proyecto 2023000996 «Actuac.reposiciónen infraest.sanit.»: obligaciones 2025,11.32,M€,literal,2025-IGJA-015,2,OFICIAL_PRIMARIA
+E_2023000996_oblig_sobre_disp,Proyecto 2023000996: obligaciones / disposiciones 2025,52.3,%,obligaciones / disposiciones × 100 (no es grado de ejecución: no hay crédito por proyecto),2025-IGJA-015,2,DERIVADO
+E_2023001022_disposiciones_2025,Proyecto 2023001022 «Actuacionesnuevas eninfraest.sanit.de» (fuente 17): disposiciones 2025,26.17,M€,literal,2025-IGJA-015,2,OFICIAL_PRIMARIA
+E_2023001022_obligaciones_2025,Proyecto 2023001022 «Actuacionesnuevas eninfraest.sanit.de»: obligaciones 2025,12.48,M€,literal,2025-IGJA-015,2,OFICIAL_PRIMARIA
+E_2023001022_oblig_sobre_disp,Proyecto 2023001022: obligaciones / disposiciones 2025,47.7,%,obligaciones / disposiciones × 100 (no es grado de ejecución: no hay crédito por proyecto),2025-IGJA-015,2,DERIVADO
+E_2023001023_disposiciones_2025,Proyecto 2023001023 «Actuac.reposiciónen infraest.sanit.de» (fuente 17): disposiciones 2025,1.61,M€,literal,2025-IGJA-015,2,OFICIAL_PRIMARIA
+E_2023001023_obligaciones_2025,Proyecto 2023001023 «Actuac.reposiciónen infraest.sanit.de»: obligaciones 2025,1.35,M€,literal,2025-IGJA-015,2,OFICIAL_PRIMARIA
+E_2023001023_oblig_sobre_disp,Proyecto 2023001023: obligaciones / disposiciones 2025,83.7,%,obligaciones / disposiciones × 100 (no es grado de ejecución: no hay crédito por proyecto),2025-IGJA-015,2,DERIVADO
+E_2022000889_disposiciones_2025,Proyecto 2022000889 «Actuacionesnuevas eninfraestructuras» (fuente 17): disposiciones 2025,10.68,M€,literal,2025-IGJA-015,1,OFICIAL_PRIMARIA
+E_2022000889_obligaciones_2025,Proyecto 2022000889 «Actuacionesnuevas eninfraestructuras»: obligaciones 2025,10.68,M€,literal,2025-IGJA-015,1,OFICIAL_PRIMARIA
+E_2022000889_oblig_sobre_disp,Proyecto 2022000889: obligaciones / disposiciones 2025,100.0,%,obligaciones / disposiciones × 100 (no es grado de ejecución: no hay crédito por proyecto),2025-IGJA-015,1,DERIVADO
+E_2025001022_disposiciones_2025,Proyecto 2025001022 «Actuac.nuevasen infraest.sanit.VG.» (fuente 18): disposiciones 2025,0.40,M€,literal,2025-IGJA-015,3,OFICIAL_PRIMARIA
+E_2025001022_obligaciones_2025,Proyecto 2025001022 «Actuac.nuevasen infraest.sanit.VG.»: obligaciones 2025,0.36,M€,literal,2025-IGJA-015,3,OFICIAL_PRIMARIA
+E_2025001022_oblig_sobre_disp,Proyecto 2025001022: obligaciones / disposiciones 2025,88.1,%,obligaciones / disposiciones × 100 (no es grado de ejecución: no hay crédito por proyecto),2025-IGJA-015,3,DERIVADO
+E_2024001139_disposiciones_2025,Proyecto 2024001139 «Actuac.reposición Infraest.sanit.Habilitar» (fuente 18): disposiciones 2025,0.34,M€,literal,2025-IGJA-015,2,OFICIAL_PRIMARIA
+E_2024001139_obligaciones_2025,Proyecto 2024001139 «Actuac.reposición Infraest.sanit.Habilitar»: obligaciones 2025,0.22,M€,literal,2025-IGJA-015,2,OFICIAL_PRIMARIA
+E_2024001139_oblig_sobre_disp,Proyecto 2024001139: obligaciones / disposiciones 2025,64.2,%,obligaciones / disposiciones × 100 (no es grado de ejecución: no hay crédito por proyecto),2025-IGJA-015,2,DERIVADO
+E_busqueda_110_31,"Proyectos con algún importe = 110.31 M€ (±0,005) en 2025-IGJA-015",ninguno,texto,comparación con todas las columnas de todos los proyectos,2025-IGJA-015,1-4,DERIVADO
+E_busqueda_73_54,"Proyectos con algún importe = 73.54 M€ (±0,005) en 2025-IGJA-015",ninguno,texto,comparación con todas las columnas de todos los proyectos,2025-IGJA-015,1-4,DERIVADO
+E_total_cap6_disposiciones,"Liquidación de proyectos 2025 del SAS, Totalcapítulo:6: disposiciones",322.25,M€,literal,2025-IGJA-015,3,OFICIAL_PRIMARIA
+E_total_cap6_obligaciones,"Liquidación de proyectos 2025 del SAS, Totalcapítulo:6: obligaciones",253.48,M€,literal,2025-IGJA-015,3,OFICIAL_PRIMARIA
+E_total_general_disposiciones,"Liquidación de proyectos 2025 del SAS, Totalgeneral: disposiciones",322.87,M€,literal,2025-IGJA-015,4,OFICIAL_PRIMARIA
+E_total_general_obligaciones,"Liquidación de proyectos 2025 del SAS, Totalgeneral: obligaciones",254.10,M€,literal,2025-IGJA-015,4,OFICIAL_PRIMARIA
+G_andalucia_2024,"Gasto sanitario público consolidado por habitante 2024 (provisional), Andalucía",1658,€/hab,literal,MSAN-EGSP-002,161,OFICIAL_SECUNDARIA
+G_media_2024,"Gasto sanitario público consolidado por habitante 2024 (provisional), sector Comunidades Autónomas",1958,€/hab,literal,MSAN-EGSP-002,161,OFICIAL_SECUNDARIA
+G_dif_2024,"Diferencia Andalucía − media de las CCAA, 2024",-300,€/hab,Andalucía − media,MSAN-EGSP-002,161,DERIVADO
+G_anios_ultima,Años 2002-2024 en que Andalucía tiene el menor gasto por habitante de las 17 CCAA,"2007, 2009, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021, 2022, 2023, 2024",años,mínimo de las 17 comunidades en cada año,MSAN-EGSP-002,161,DERIVADO
+G_anios_total,Años de la serie,2002-2024 (23),años,,MSAN-EGSP-002,161,DERIVADO
+H_qx_presupuesto_base,Acuerdo marco de procedimientos quirúrgicos (CONTR 2023 0000902330): presupuesto base de licitación,231.89,M€,literal,CONTR-JDA-002,1,OFICIAL_PRIMARIA
+H_qx_valor_estimado,Acuerdo marco de procedimientos quirúrgicos: valor estimado (24 meses + 24 de prórroga),533.34,M€,literal,CONTR-JDA-002,,OFICIAL_PRIMARIA
+H_qx_fechas,Acuerdo marco de procedimientos quirúrgicos: fechas de adjudicación y formalización,30/05/2025 / 25/08/2025,fecha,literal,CONTR-JDA-002,,OFICIAL_PRIMARIA
+H_dx_Huelva_valor,"Acuerdo marco de pruebas diagnósticas, Huelva: valor estimado / valor máximo (IVA excluido)",39.32,M€,literal (anuncio de licitación),CONTR-TED-002,1,OFICIAL_PRIMARIA
+H_dx_Huelva_presupuesto,"Acuerdo marco de pruebas diagnósticas, Huelva: presupuesto total",17.10,M€,literal (anuncio de licitación),CONTR-TED-002,1,OFICIAL_PRIMARIA
+H_dx_Sevilla_valor,"Acuerdo marco de pruebas diagnósticas, Sevilla: valor estimado / valor máximo (IVA excluido)",126.80,M€,literal (anuncio de licitación),CONTR-TED-003,1,OFICIAL_PRIMARIA
+H_dx_Sevilla_presupuesto,"Acuerdo marco de pruebas diagnósticas, Sevilla: presupuesto total",55.13,M€,literal (anuncio de licitación),CONTR-TED-003,1,OFICIAL_PRIMARIA
+H_dx_Jaén_valor,"Acuerdo marco de pruebas diagnósticas, Jaén: valor estimado / valor máximo (IVA excluido)",50.88,M€,literal (anuncio de licitación),CONTR-TED-005,1,OFICIAL_PRIMARIA
+H_dx_Jaén_presupuesto,"Acuerdo marco de pruebas diagnósticas, Jaén: presupuesto total",22.12,M€,literal (anuncio de licitación),CONTR-TED-005,1,OFICIAL_PRIMARIA
+H_dx_Almería_valor,"Acuerdo marco de pruebas diagnósticas, Almería: valor estimado / valor máximo (IVA excluido)",61.36,M€,literal (anuncio de licitación),CONTR-TED-006,1,OFICIAL_PRIMARIA
+H_dx_Almería_presupuesto,"Acuerdo marco de pruebas diagnósticas, Almería: presupuesto total",26.68,M€,literal (anuncio de licitación),CONTR-TED-006,1,OFICIAL_PRIMARIA
+H_dx_Cádiz_valor,"Acuerdo marco de pruebas diagnósticas, Cádiz: valor estimado / valor máximo (IVA excluido)",133.26,M€,literal (anuncio de licitación),CONTR-TED-007,1,OFICIAL_PRIMARIA
+H_dx_Cádiz_presupuesto,"Acuerdo marco de pruebas diagnósticas, Cádiz: presupuesto total",53.30,M€,literal (anuncio de licitación),CONTR-TED-007,1,OFICIAL_PRIMARIA
+H_dx_Málaga_valor,"Acuerdo marco de pruebas diagnósticas, Málaga: valor estimado / valor máximo (IVA excluido)",131.81,M€,literal (anuncio de licitación),CONTR-TED-011,1,OFICIAL_PRIMARIA
+H_dx_Málaga_presupuesto,"Acuerdo marco de pruebas diagnósticas, Málaga: presupuesto total",57.31,M€,literal (anuncio de licitación),CONTR-TED-011,1,OFICIAL_PRIMARIA
+H_dx_Granada_valor,"Acuerdo marco de pruebas diagnósticas, Granada: valor estimado / valor máximo (IVA excluido)",62.52,M€,literal (anuncio de licitación),CONTR-TED-013,1,OFICIAL_PRIMARIA
+H_dx_Granada_presupuesto,"Acuerdo marco de pruebas diagnósticas, Granada: presupuesto total",27.18,M€,literal (anuncio de licitación),CONTR-TED-013,1,OFICIAL_PRIMARIA
+H_dx_Córdoba_valor,"Acuerdo marco de pruebas diagnósticas, Córdoba: valor estimado / valor máximo (IVA excluido)",13.45,M€,literal (anuncio de licitación),CONTR-TED-014,1,OFICIAL_PRIMARIA
+H_dx_Córdoba_presupuesto,"Acuerdo marco de pruebas diagnósticas, Córdoba: presupuesto total",5.85,M€,literal (anuncio de licitación),CONTR-TED-014,1,OFICIAL_PRIMARIA
+H_dx_suma_valor,Suma de los valores estimados / máximos de los 8 acuerdos marco provinciales de pruebas diagnósticas,619392377.73,€,suma de 8 literales: Huelva 39.32; Sevilla 126.80; Jaén 50.88; Almería 61.36; Cádiz 133.26; Málaga 131.81; Granada 62.52; Córdoba 13.45,CONTR-TED-002|003|005|006|007|011|013|014,,DERIVADO
+H_dx_suma_presupuesto,Suma de los «presupuesto total» de los 8 acuerdos marco,264666056.62,€,suma de 8 literales,CONTR-TED-002|003|005|006|007|011|013|014,,DERIVADO
+I_2025-HAC-008,Menciones a la UCI del Hospital de Puerto Real en 2025-HAC-008,"p.12: …de salud Ejido, Almería; obras de reforma de la UCI en el Hospital de Puerto Real, en Cádiz…",texto,búsqueda de «Puerto Real» con «UCI»/«intensiv» en los 70 caracteres anteriores,2025-HAC-008,,OFICIAL_PRIMARIA
+I_2026-HAC-012,Menciones a la UCI del Hospital de Puerto Real en 2026-HAC-012,"p.7: …lgeciras. Además, se comenzará la reforma de la UCI en el Hospital de Puerto Real (Cádiz) y…",texto,búsqueda de «Puerto Real» con «UCI»/«intensiv» en los 70 caracteres anteriores,2026-HAC-012,,OFICIAL_PRIMARIA
+I_2027-HAC-012,Menciones a la UCI del Hospital de Puerto Real en 2027-HAC-012,"p.8: …l Hospital universitario Puerta del mar, la nueva uCi del Hospital de Puerto real, la refor…",texto,búsqueda de «Puerto Real» con «UCI»/«intensiv» en los 70 caracteres anteriores,2027-HAC-012,,OFICIAL_PRIMARIA
+I_2026-HAC-013,Menciones a la UCI del Hospital de Puerto Real en 2026-HAC-013,ninguna,texto,búsqueda de «Puerto Real» con «UCI»/«intensiv» en los 70 caracteres anteriores,2026-HAC-013,,OFICIAL_PRIMARIA
+I_2027-HAC-013,Menciones a la UCI del Hospital de Puerto Real en 2027-HAC-013,ninguna,texto,búsqueda de «Puerto Real» con «UCI»/«intensiv» en los 70 caracteres anteriores,2027-HAC-013,,OFICIAL_PRIMARIA
+I_denominaciones_2026-HAC-013,Denominación de los proyectos 2023000995/996 en 2026-HAC-013,2023000995 ACTUACIONES NUEVAS EN INFRAEST. SANIT. | 2023000996 ACTUAC. REPOSICIÓN EN INFRAEST. SANIT.,texto,literal,2026-HAC-013,,OFICIAL_PRIMARIA
+I_denominaciones_2027-HAC-013,Denominación de los proyectos 2023000995/996 en 2027-HAC-013,2023000995 ACTUACIONES NUEVAS EN INFRAEST. SANIT. | 2023000996 ACTUAC. REPOSICIÓN EN INFRAEST. SANIT.,texto,literal,2027-HAC-013,,OFICIAL_PRIMARIA
+J_cap6_2015_inicial,"SAS 2015 (sección 1231, liquidación consolidada): capítulo VI, crédito inicial",88.27,M€,literal,2015-IGJA-009,,OFICIAL_PRIMARIA
+J_cap6_2015_definitivo,"SAS 2015 (sección 1231, liquidación consolidada): capítulo VI, crédito definitivo",91.32,M€,literal,2015-IGJA-009,,OFICIAL_PRIMARIA
+J_cap6_2015_obligaciones,"SAS 2015 (sección 1231, liquidación consolidada): capítulo VI, obligaciones",88.38,M€,literal,2015-IGJA-009,,OFICIAL_PRIMARIA
+J_cap6_2015_ejecucion,"SAS 2015 (sección 1231, liquidación consolidada): capítulo VI, grado de ejecución",96.8,%,obligaciones / definitivo × 100,2015-IGJA-009,,DERIVADO
+J_total_2015_ejecucion,"SAS 2015 (sección 1231, liquidación consolidada): total del SAS, grado de ejecución",99.0,%,obligaciones / definitivo × 100,2015-IGJA-009,,DERIVADO
+J_cap6_2015_pct_no_ejecutado,"SAS 2015 (sección 1231, liquidación consolidada): parte del capítulo VI en el crédito no ejecutado del SAS",3.3,%,(def. − oblig.) cap. VI / (def. − oblig.) total × 100,2015-IGJA-009,,DERIVADO
+J_2015_capitulo_con_mas_no_ejecutado,"SAS 2015 (sección 1231, liquidación consolidada): capítulo con más crédito no ejecutado",1,capítulo,máximo de (def. − oblig.) por capítulo,2015-IGJA-009,,DERIVADO
+J_cap6_2016_inicial,"SAS 2016 (sección 1231, liquidación consolidada): capítulo VI, crédito inicial",78.80,M€,literal,2016-IGJA-009,,OFICIAL_PRIMARIA
+J_cap6_2016_definitivo,"SAS 2016 (sección 1231, liquidación consolidada): capítulo VI, crédito definitivo",33.28,M€,literal,2016-IGJA-009,,OFICIAL_PRIMARIA
+J_cap6_2016_obligaciones,"SAS 2016 (sección 1231, liquidación consolidada): capítulo VI, obligaciones",29.50,M€,literal,2016-IGJA-009,,OFICIAL_PRIMARIA
+J_cap6_2016_ejecucion,"SAS 2016 (sección 1231, liquidación consolidada): capítulo VI, grado de ejecución",88.7,%,obligaciones / definitivo × 100,2016-IGJA-009,,DERIVADO
+J_total_2016_ejecucion,"SAS 2016 (sección 1231, liquidación consolidada): total del SAS, grado de ejecución",98.8,%,obligaciones / definitivo × 100,2016-IGJA-009,,DERIVADO
+J_cap6_2016_pct_no_ejecutado,"SAS 2016 (sección 1231, liquidación consolidada): parte del capítulo VI en el crédito no ejecutado del SAS",3.5,%,(def. − oblig.) cap. VI / (def. − oblig.) total × 100,2016-IGJA-009,,DERIVADO
+J_2016_capitulo_con_mas_no_ejecutado,"SAS 2016 (sección 1231, liquidación consolidada): capítulo con más crédito no ejecutado",1,capítulo,máximo de (def. − oblig.) por capítulo,2016-IGJA-009,,DERIVADO
+J_cap6_2017_inicial,"SAS 2017 (sección 1231, liquidación consolidada): capítulo VI, crédito inicial",115.29,M€,literal,2017-IGJA-009,,OFICIAL_PRIMARIA
+J_cap6_2017_definitivo,"SAS 2017 (sección 1231, liquidación consolidada): capítulo VI, crédito definitivo",68.60,M€,literal,2017-IGJA-009,,OFICIAL_PRIMARIA
+J_cap6_2017_obligaciones,"SAS 2017 (sección 1231, liquidación consolidada): capítulo VI, obligaciones",52.43,M€,literal,2017-IGJA-009,,OFICIAL_PRIMARIA
+J_cap6_2017_ejecucion,"SAS 2017 (sección 1231, liquidación consolidada): capítulo VI, grado de ejecución",76.4,%,obligaciones / definitivo × 100,2017-IGJA-009,,DERIVADO
+J_total_2017_ejecucion,"SAS 2017 (sección 1231, liquidación consolidada): total del SAS, grado de ejecución",98.7,%,obligaciones / definitivo × 100,2017-IGJA-009,,DERIVADO
+J_cap6_2017_pct_no_ejecutado,"SAS 2017 (sección 1231, liquidación consolidada): parte del capítulo VI en el crédito no ejecutado del SAS",13.3,%,(def. − oblig.) cap. VI / (def. − oblig.) total × 100,2017-IGJA-009,,DERIVADO
+J_2017_capitulo_con_mas_no_ejecutado,"SAS 2017 (sección 1231, liquidación consolidada): capítulo con más crédito no ejecutado",1,capítulo,máximo de (def. − oblig.) por capítulo,2017-IGJA-009,,DERIVADO
+J_cap6_2018_inicial,"SAS 2018 (sección 1231, liquidación consolidada): capítulo VI, crédito inicial",110.68,M€,literal,2018-IGJA-009,,OFICIAL_PRIMARIA
+J_cap6_2018_definitivo,"SAS 2018 (sección 1231, liquidación consolidada): capítulo VI, crédito definitivo",110.38,M€,literal,2018-IGJA-009,,OFICIAL_PRIMARIA
+J_cap6_2018_obligaciones,"SAS 2018 (sección 1231, liquidación consolidada): capítulo VI, obligaciones",83.19,M€,literal,2018-IGJA-009,,OFICIAL_PRIMARIA
+J_cap6_2018_ejecucion,"SAS 2018 (sección 1231, liquidación consolidada): capítulo VI, grado de ejecución",75.4,%,obligaciones / definitivo × 100,2018-IGJA-009,,DERIVADO
+J_total_2018_ejecucion,"SAS 2018 (sección 1231, liquidación consolidada): total del SAS, grado de ejecución",99.7,%,obligaciones / definitivo × 100,2018-IGJA-009,,DERIVADO
+J_cap6_2018_pct_no_ejecutado,"SAS 2018 (sección 1231, liquidación consolidada): parte del capítulo VI en el crédito no ejecutado del SAS",86.6,%,(def. − oblig.) cap. VI / (def. − oblig.) total × 100,2018-IGJA-009,,DERIVADO
+J_2018_capitulo_con_mas_no_ejecutado,"SAS 2018 (sección 1231, liquidación consolidada): capítulo con más crédito no ejecutado",6,capítulo,máximo de (def. − oblig.) por capítulo,2018-IGJA-009,,DERIVADO
+J_cap6_2019_inicial,"SAS 2019 (sección 1531, liquidación consolidada): capítulo VI, crédito inicial",100.15,M€,literal,2019-IGJA-009,,OFICIAL_PRIMARIA
+J_cap6_2019_definitivo,"SAS 2019 (sección 1531, liquidación consolidada): capítulo VI, crédito definitivo",83.01,M€,literal,2019-IGJA-009,,OFICIAL_PRIMARIA
+J_cap6_2019_obligaciones,"SAS 2019 (sección 1531, liquidación consolidada): capítulo VI, obligaciones",54.09,M€,literal,2019-IGJA-009,,OFICIAL_PRIMARIA
+J_cap6_2019_ejecucion,"SAS 2019 (sección 1531, liquidación consolidada): capítulo VI, grado de ejecución",65.2,%,obligaciones / definitivo × 100,2019-IGJA-009,,DERIVADO
+J_total_2019_ejecucion,"SAS 2019 (sección 1531, liquidación consolidada): total del SAS, grado de ejecución",99.5,%,obligaciones / definitivo × 100,2019-IGJA-009,,DERIVADO
+J_cap6_2019_pct_no_ejecutado,"SAS 2019 (sección 1531, liquidación consolidada): parte del capítulo VI en el crédito no ejecutado del SAS",59.2,%,(def. − oblig.) cap. VI / (def. − oblig.) total × 100,2019-IGJA-009,,DERIVADO
+J_2019_capitulo_con_mas_no_ejecutado,"SAS 2019 (sección 1531, liquidación consolidada): capítulo con más crédito no ejecutado",6,capítulo,máximo de (def. − oblig.) por capítulo,2019-IGJA-009,,DERIVADO
+J_cap6_2020_inicial,"SAS 2020 (sección 1531, liquidación consolidada): capítulo VI, crédito inicial",100.50,M€,literal,2020-IGJA-013,,OFICIAL_PRIMARIA
+J_cap6_2020_definitivo,"SAS 2020 (sección 1531, liquidación consolidada): capítulo VI, crédito definitivo",299.58,M€,literal,2020-IGJA-013,,OFICIAL_PRIMARIA
+J_cap6_2020_obligaciones,"SAS 2020 (sección 1531, liquidación consolidada): capítulo VI, obligaciones",279.92,M€,literal,2020-IGJA-013,,OFICIAL_PRIMARIA
+J_cap6_2020_ejecucion,"SAS 2020 (sección 1531, liquidación consolidada): capítulo VI, grado de ejecución",93.4,%,obligaciones / definitivo × 100,2020-IGJA-013,,DERIVADO
+J_total_2020_ejecucion,"SAS 2020 (sección 1531, liquidación consolidada): total del SAS, grado de ejecución",98.7,%,obligaciones / definitivo × 100,2020-IGJA-013,,DERIVADO
+J_cap6_2020_pct_no_ejecutado,"SAS 2020 (sección 1531, liquidación consolidada): parte del capítulo VI en el crédito no ejecutado del SAS",13.4,%,(def. − oblig.) cap. VI / (def. − oblig.) total × 100,2020-IGJA-013,,DERIVADO
+J_2020_capitulo_con_mas_no_ejecutado,"SAS 2020 (sección 1531, liquidación consolidada): capítulo con más crédito no ejecutado",2,capítulo,máximo de (def. − oblig.) por capítulo,2020-IGJA-013,,DERIVADO
+J_cap6_2021_inicial,"SAS 2021 (sección 1531, liquidación consolidada): capítulo VI, crédito inicial",149.77,M€,literal,2021-IGJA-013,,OFICIAL_PRIMARIA
+J_cap6_2021_definitivo,"SAS 2021 (sección 1531, liquidación consolidada): capítulo VI, crédito definitivo",345.96,M€,literal,2021-IGJA-013,,OFICIAL_PRIMARIA
+J_cap6_2021_obligaciones,"SAS 2021 (sección 1531, liquidación consolidada): capítulo VI, obligaciones",121.09,M€,literal,2021-IGJA-013,,OFICIAL_PRIMARIA
+J_cap6_2021_ejecucion,"SAS 2021 (sección 1531, liquidación consolidada): capítulo VI, grado de ejecución",35.0,%,obligaciones / definitivo × 100,2021-IGJA-013,,DERIVADO
+J_total_2021_ejecucion,"SAS 2021 (sección 1531, liquidación consolidada): total del SAS, grado de ejecución",96.1,%,obligaciones / definitivo × 100,2021-IGJA-013,,DERIVADO
+J_cap6_2021_pct_no_ejecutado,"SAS 2021 (sección 1531, liquidación consolidada): parte del capítulo VI en el crédito no ejecutado del SAS",49.3,%,(def. − oblig.) cap. VI / (def. − oblig.) total × 100,2021-IGJA-013,,DERIVADO
+J_2021_capitulo_con_mas_no_ejecutado,"SAS 2021 (sección 1531, liquidación consolidada): capítulo con más crédito no ejecutado",6,capítulo,máximo de (def. − oblig.) por capítulo,2021-IGJA-013,,DERIVADO
+J_cap6_2022_inicial,"SAS 2022 (sección 1531, liquidación consolidada): capítulo VI, crédito inicial",53.18,M€,literal,2022-IGJA-013,,OFICIAL_PRIMARIA
+J_cap6_2022_definitivo,"SAS 2022 (sección 1531, liquidación consolidada): capítulo VI, crédito definitivo",358.64,M€,literal,2022-IGJA-013,,OFICIAL_PRIMARIA
+J_cap6_2022_obligaciones,"SAS 2022 (sección 1531, liquidación consolidada): capítulo VI, obligaciones",140.92,M€,literal,2022-IGJA-013,,OFICIAL_PRIMARIA
+J_cap6_2022_ejecucion,"SAS 2022 (sección 1531, liquidación consolidada): capítulo VI, grado de ejecución",39.3,%,obligaciones / definitivo × 100,2022-IGJA-013,,DERIVADO
+J_total_2022_ejecucion,"SAS 2022 (sección 1531, liquidación consolidada): total del SAS, grado de ejecución",98.1,%,obligaciones / definitivo × 100,2022-IGJA-013,,DERIVADO
+J_cap6_2022_pct_no_ejecutado,"SAS 2022 (sección 1531, liquidación consolidada): parte del capítulo VI en el crédito no ejecutado del SAS",90.3,%,(def. − oblig.) cap. VI / (def. − oblig.) total × 100,2022-IGJA-013,,DERIVADO
+J_2022_capitulo_con_mas_no_ejecutado,"SAS 2022 (sección 1531, liquidación consolidada): capítulo con más crédito no ejecutado",6,capítulo,máximo de (def. − oblig.) por capítulo,2022-IGJA-013,,DERIVADO
+J_cap6_2023_inicial,"SAS 2023 (sección 1331, liquidación consolidada): capítulo VI, crédito inicial",414.10,M€,literal,2023-IGJA-009,,OFICIAL_PRIMARIA
+J_cap6_2023_definitivo,"SAS 2023 (sección 1331, liquidación consolidada): capítulo VI, crédito definitivo",622.88,M€,literal,2023-IGJA-009,,OFICIAL_PRIMARIA
+J_cap6_2023_obligaciones,"SAS 2023 (sección 1331, liquidación consolidada): capítulo VI, obligaciones",507.38,M€,literal,2023-IGJA-009,,OFICIAL_PRIMARIA
+J_cap6_2023_ejecucion,"SAS 2023 (sección 1331, liquidación consolidada): capítulo VI, grado de ejecución",81.5,%,obligaciones / definitivo × 100,2023-IGJA-009,,DERIVADO
+J_total_2023_ejecucion,"SAS 2023 (sección 1331, liquidación consolidada): total del SAS, grado de ejecución",98.9,%,obligaciones / definitivo × 100,2023-IGJA-009,,DERIVADO
+J_cap6_2023_pct_no_ejecutado,"SAS 2023 (sección 1331, liquidación consolidada): parte del capítulo VI en el crédito no ejecutado del SAS",76.6,%,(def. − oblig.) cap. VI / (def. − oblig.) total × 100,2023-IGJA-009,,DERIVADO
+J_2023_capitulo_con_mas_no_ejecutado,"SAS 2023 (sección 1331, liquidación consolidada): capítulo con más crédito no ejecutado",6,capítulo,máximo de (def. − oblig.) por capítulo,2023-IGJA-009,,DERIVADO
+J_cap6_2024_inicial,"SAS 2024 (sección 1331, liquidación consolidada): capítulo VI, crédito inicial",545.61,M€,literal,2024-IGJA-009,,OFICIAL_PRIMARIA
+J_cap6_2024_definitivo,"SAS 2024 (sección 1331, liquidación consolidada): capítulo VI, crédito definitivo",634.73,M€,literal,2024-IGJA-009,,OFICIAL_PRIMARIA
+J_cap6_2024_obligaciones,"SAS 2024 (sección 1331, liquidación consolidada): capítulo VI, obligaciones",245.85,M€,literal,2024-IGJA-009,,OFICIAL_PRIMARIA
+J_cap6_2024_ejecucion,"SAS 2024 (sección 1331, liquidación consolidada): capítulo VI, grado de ejecución",38.7,%,obligaciones / definitivo × 100,2024-IGJA-009,,DERIVADO
+J_total_2024_ejecucion,"SAS 2024 (sección 1331, liquidación consolidada): total del SAS, grado de ejecución",96.0,%,obligaciones / definitivo × 100,2024-IGJA-009,,DERIVADO
+J_cap6_2024_pct_no_ejecutado,"SAS 2024 (sección 1331, liquidación consolidada): parte del capítulo VI en el crédito no ejecutado del SAS",64.1,%,(def. − oblig.) cap. VI / (def. − oblig.) total × 100,2024-IGJA-009,,DERIVADO
+J_2024_capitulo_con_mas_no_ejecutado,"SAS 2024 (sección 1331, liquidación consolidada): capítulo con más crédito no ejecutado",6,capítulo,máximo de (def. − oblig.) por capítulo,2024-IGJA-009,,DERIVADO
+J_cap6_2025_inicial,"SAS 2025 (sección 1331, liquidación consolidada): capítulo VI, crédito inicial",563.32,M€,literal,2025-IGJA-009,,OFICIAL_PRIMARIA
+J_cap6_2025_definitivo,"SAS 2025 (sección 1331, liquidación consolidada): capítulo VI, crédito definitivo",724.00,M€,literal,2025-IGJA-009,,OFICIAL_PRIMARIA
+J_cap6_2025_obligaciones,"SAS 2025 (sección 1331, liquidación consolidada): capítulo VI, obligaciones",253.75,M€,literal,2025-IGJA-009,,OFICIAL_PRIMARIA
+J_cap6_2025_ejecucion,"SAS 2025 (sección 1331, liquidación consolidada): capítulo VI, grado de ejecución",35.0,%,obligaciones / definitivo × 100,2025-IGJA-009,,DERIVADO
+J_total_2025_ejecucion,"SAS 2025 (sección 1331, liquidación consolidada): total del SAS, grado de ejecución",96.3,%,obligaciones / definitivo × 100,2025-IGJA-009,,DERIVADO
+J_cap6_2025_pct_no_ejecutado,"SAS 2025 (sección 1331, liquidación consolidada): parte del capítulo VI en el crédito no ejecutado del SAS",83.1,%,(def. − oblig.) cap. VI / (def. − oblig.) total × 100,2025-IGJA-009,,DERIVADO
+J_2025_capitulo_con_mas_no_ejecutado,"SAS 2025 (sección 1331, liquidación consolidada): capítulo con más crédito no ejecutado",6,capítulo,máximo de (def. − oblig.) por capítulo,2025-IGJA-009,,DERIVADO
+K_adm_general_2025_definitivo,"Cuenta General 2025, Junta de Andalucía (Administración General): crédito definitivo",51617.61,M€,literal,2025-IGJA-001,1,OFICIAL_PRIMARIA
+K_adm_general_2025_obligaciones,"Cuenta General 2025, Junta de Andalucía (Administración General): obligaciones reconocidas",48602.50,M€,literal,2025-IGJA-001,1,OFICIAL_PRIMARIA
+K_adm_general_2025_remanente,"Cuenta General 2025, Junta de Andalucía (Administración General): remanentes de crédito",3015113398.04,€,literal,2025-IGJA-001,1,OFICIAL_PRIMARIA
+K_adm_general_2025_ejecucion,"Cuenta General 2025, Junta de Andalucía (Administración General): obligaciones / definitivo",94.16,%,obligaciones / definitivo × 100,2025-IGJA-001,1,DERIVADO
+K_adm_general_2025_remanente_pct,"Cuenta General 2025, Junta de Andalucía (Administración General): remanentes / definitivo",5.8,%,remanentes / definitivo × 100,2025-IGJA-001,1,DERIVADO
+K_consolidado_2025_definitivo,"Cuenta General 2025, presupuesto consolidado (Junta y entidades del consolidado): crédito definitivo",52105.81,M€,literal,2025-IGJA-010,1,OFICIAL_PRIMARIA
+K_consolidado_2025_obligaciones,"Cuenta General 2025, presupuesto consolidado (Junta y entidades del consolidado): obligaciones reconocidas",47721.48,M€,literal,2025-IGJA-010,1,OFICIAL_PRIMARIA
+K_consolidado_2025_remanente,"Cuenta General 2025, presupuesto consolidado (Junta y entidades del consolidado): remanentes de crédito",4384339028.10,€,literal,2025-IGJA-010,1,OFICIAL_PRIMARIA
+K_consolidado_2025_ejecucion,"Cuenta General 2025, presupuesto consolidado (Junta y entidades del consolidado): obligaciones / definitivo",91.59,%,obligaciones / definitivo × 100,2025-IGJA-010,1,DERIVADO
+K_consolidado_2025_remanente_pct,"Cuenta General 2025, presupuesto consolidado (Junta y entidades del consolidado): remanentes / definitivo",8.4,%,remanentes / definitivo × 100,2025-IGJA-010,1,DERIVADO
