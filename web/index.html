@@ -154,7 +154,14 @@ svg text { fill: var(--ink-2); font-family: var(--font-body); }
 /* Tablas */
 .seccion { display: grid; gap: 12px; }
 .seccion-cab { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 6px 16px; }
-.tabla-scroll { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+.tabla-scroll { overflow: auto; max-height: 85vh; border: 1px solid var(--line); border-radius: var(--radius); background: var(--surface); }
+/* Cabecera fija: si la tabla cabe en su recuadro (clase «cabe», la pone el script del final), el recuadro no
+   tiene desplazamiento propio y la cabecera se queda arriba de la PÁGINA al hacer scroll. Si no cabe (pantallas
+   estrechas), la tabla se desplaza dentro de su recuadro (alto máximo 85vh) y la cabecera se queda arriba de él. */
+.tabla-scroll.cabe { overflow: visible; max-height: none; }
+.tabla-scroll.cabe thead th:first-child { border-top-left-radius: var(--radius); }
+.tabla-scroll.cabe thead th:last-child { border-top-right-radius: var(--radius); }
+table.datos thead th { z-index: 2; box-shadow: inset 0 -1px 0 var(--line); }
 table.datos { width: 100%; border-collapse: collapse; font-size: 0.9rem; }
 table.datos th, table.datos td { padding: 8px 12px; border-bottom: 1px solid var(--line-2); text-align: right; white-space: nowrap; font-variant-numeric: tabular-nums; }
 table.datos th:first-child, table.datos td:first-child { text-align: left; }
@@ -1019,5 +1026,19 @@ footer { font-size: 0.82rem; color: var(--ink-2); border-top: 1px solid var(--li
         fasesDe(estado.ambito).filter(f => estado.fases.has(f.id)));
     }, 120);
   });
+})();
+</script>
+
+<script>
+// Cabecera fija de las tablas: marca con la clase «cabe» los recuadros cuya tabla no es más ancha que ellos.
+(() => {
+  const ajusta = () => document.querySelectorAll(".tabla-scroll").forEach(d => {
+    const t = d.querySelector("table");
+    d.classList.toggle("cabe", !!t && t.scrollWidth <= d.clientWidth + 1);
+  });
+  const ro = new ResizeObserver(ajusta);
+  document.querySelectorAll(".tabla-scroll, .tabla-scroll table").forEach(el => ro.observe(el));
+  window.addEventListener("resize", ajusta);
+  ajusta();
 })();
 </script>
